@@ -1,0 +1,330 @@
+{
+  "company": "Nucor Corporation",
+  "ticker": "NUE",
+  "as_of": "2026-09-12",
+  "baseline_period": "2025",
+  "membership": {
+    "index": "S&P500",
+    "verified_current_secondary": true,
+    "source_id": "INDEX",
+    "limitation": "Current licensed S&P500 full constituent list not retrieved; current secondary constituent row confirmed membership."
+  },
+  "observations": [
+    {
+      "id": "N01",
+      "metric": "Company-wide GHG inventory",
+      "values": {
+        "scope1": 6600000,
+        "scope2_unspecified_method": 6200000,
+        "scope3_reported_selected_boundary": 6400000,
+        "total": 19200000
+      },
+      "unit": "metric tonnes CO2e",
+      "period": "2025",
+      "boundary": "Steel mills, DRI plants, product groups, scrap processing and transportation",
+      "geography": "Primarily North America; company-wide boundaries include Trinidad DRI when stated",
+      "status": "reported",
+      "assurance": "Not independently established",
+      "source_url": "https://indd.adobe.com/view/publication/cc4a577c-36f1-4ae0-a823-7e9f3f547ca5/4a1d/publication-web-resources/pdf/2025_Sustainability_Report.pdf",
+      "source_id": "CSR",
+      "page_or_table": "37, company-wide chart",
+      "notes": "Scope2 market/location designation absent. Scope3 described as purchased raw-material production/transportation; not established as all15 categories. Sum=19.2Mt. Do not add steel-mill inventory to this. Rounded0.1Mt."
+    },
+    {
+      "id": "N02",
+      "metric": "Steel-mill GHG inventory",
+      "values": {
+        "scope1": 4700000,
+        "scope2_unspecified_method": 5400000,
+        "scope3_category1": 7600000,
+        "total": 17700000
+      },
+      "unit": "metric tonnes CO2e",
+      "period": "2025",
+      "boundary": "Owned/operated mills with melting capacity, excluding ramp-up Lexington and Kingman",
+      "geography": "Primarily North America; company-wide boundaries include Trinidad DRI when stated",
+      "status": "reported",
+      "assurance": "Company says SCS verified Scope1,2,3(category1) to ISO14064-3:2019; assurance level not verified",
+      "source_url": "https://indd.adobe.com/view/publication/cc4a577c-36f1-4ae0-a823-7e9f3f547ca5/4a1d/publication-web-resources/pdf/2025_Sustainability_Report.pdf",
+      "source_id": "CSR",
+      "page_or_table": "37, steel-mill chart and footnote1",
+      "notes": "Sum=17.7Mt. Scope3 category1 assurance claim; corporate and mill Scope3 differ due to boundary, including internal DRI transfers. Exact verifier statement not obtained."
+    },
+    {
+      "id": "N03",
+      "metric": "Two distinct emissions intensity boundaries",
+      "values": {
+        "steel_mill_intensity_t_per_t": 0.77,
+        "GSCC_hot_rolled_kg_per_t_2025": 1051,
+        "GSCC_hot_rolled_kg_per_t_2024": 1039,
+        "GSCC_hot_rolled_kg_per_t_2023": 1091,
+        "GSCC_2030_target_kg_per_t": 975
+      },
+      "unit": "mixed as keys specify: tCO2e/t steel versus kgCO2e/t hot-rolled steel",
+      "period": "2025",
+      "boundary": "0.77 includes ALL owned/operated melting mills per footnote2; GSCC company-average hot-rolled steel is a separate boundary",
+      "geography": "Primarily North America; company-wide boundaries include Trinidad DRI when stated",
+      "status": "reported",
+      "assurance": "SCS verification reported for mill inventory and GSCC submission; exact statement not retrieved",
+      "source_url": "https://indd.adobe.com/view/publication/cc4a577c-36f1-4ae0-a823-7e9f3f547ca5/4a1d/publication-web-resources/pdf/2025_Sustainability_Report.pdf",
+      "source_id": "CSR",
+      "page_or_table": "37 footnotes1-2;38 GSCC target chart",
+      "notes": "Do not interpret975kg target as worse than770kg current: different denominators/system boundary. 2025-to2030 target gap=76kg/t=7.231%; 2023 waterfall116kg/t cannot all be claimed additional from2025."
+    },
+    {
+      "id": "N04",
+      "metric": "Raw steel production and route",
+      "values": {
+        "metric_tonnes_cast": 23000000,
+        "EAF_percent": 100,
+        "BOF_percent": 0
+      },
+      "unit": "metric tonnes; percent",
+      "period": "2025",
+      "boundary": "Nucor owned/operated steel mills; raw steel cast",
+      "geography": "Primarily North America; company-wide boundaries include Trinidad DRI when stated",
+      "status": "reported",
+      "assurance": "Not independently established",
+      "source_url": "https://indd.adobe.com/view/publication/6d377ab4-2e50-4f66-95a6-c80d5be2b416/hwsy/publication-web-resources/pdf/SASB.pdf",
+      "source_id": "SASB",
+      "page_or_table": "3, EM-IS-000.A",
+      "notes": "Table label says Metric Tons Cast (million t) but numeric value23,000,000 clearly absolute tonnes; not23trillion. Not shipped tonnage or hot-rolled denominator. Rounded23Mt."
+    },
+    {
+      "id": "N05",
+      "metric": "Enterprise energy and electricity",
+      "values": {
+        "total_GJ": 170044000,
+        "fuel_GJ": 103810000,
+        "electricity_GJ": 66234000,
+        "fuel_natural_gas_percent": 83,
+        "fuel_renewable_percent": 0,
+        "electricity_renewable_percent": 17,
+        "electricity_carbon_free_percent": 42
+      },
+      "unit": "GJ and percent",
+      "period": "2025",
+      "boundary": "All steel mills, DRI, DJJ and product divisions",
+      "geography": "Primarily North America; company-wide boundaries include Trinidad DRI when stated",
+      "status": "reported including company estimates",
+      "assurance": "Not independently established",
+      "source_url": "https://indd.adobe.com/view/publication/cc4a577c-36f1-4ae0-a823-7e9f3f547ca5/4a1d/publication-web-resources/pdf/2025_Sustainability_Report.pdf",
+      "source_id": "CSR",
+      "page_or_table": "44, Enterprise Total Energy Consumption",
+      "notes": "Estimates for unavailable facility data. Fuel+electricity exactly=total. Electricity=18,398,333.333MWh. Renewable and carbon-free overlap; cannot add17+42."
+    },
+    {
+      "id": "N06",
+      "metric": "Steel-mill energy and fuel",
+      "values": {
+        "total_energy_GJ": 119914000,
+        "grid_electricity_percent": 51,
+        "renewable_percent": 4,
+        "fuel_GJ": 58727000,
+        "fuel_coal_percent": 24,
+        "fuel_natural_gas_percent": 71,
+        "reported_intensity_GJ_per_t": 5.22
+      },
+      "unit": "GJ; percent; GJ/metric tonne",
+      "period": "2025",
+      "boundary": "Steel Mills segment; excludes Steel Products and Raw Materials",
+      "geography": "Primarily North America; company-wide boundaries include Trinidad DRI when stated",
+      "status": "reported",
+      "assurance": "Not independently established",
+      "source_url": "https://indd.adobe.com/view/publication/6d377ab4-2e50-4f66-95a6-c80d5be2b416/hwsy/publication-web-resources/pdf/SASB.pdf",
+      "source_id": "SASB",
+      "page_or_table": "6, EM-IS-130a.1/.2; CSR44 intensity",
+      "notes": "Residual total minus fuel=61,187,000GJ=16,996,388.889MWh, a DERIVED electricity estimate;51% rounded gives different61,156,140GJ.119.914m/23m=5.21365GJ/t consistent with5.22 at rounded production. Do not apply enterprise mix to mills without evidence."
+    },
+    {
+      "id": "N07",
+      "metric": "Scrap and virgin iron feedstock",
+      "values": {
+        "scrap_recycled_net_short_tons": 22500000,
+        "pig_iron_received_gross_long_tons_lower_bound": 2000000,
+        "DRI_supplied_to_mills_metric_tonnes": 3370000
+      },
+      "unit": "mixed: net/short tons, gross/long tons, metric tonnes",
+      "period": "2025",
+      "boundary": "Scrap recycling total company; pig iron received; own Trinidad/Louisiana DRI supplied internally to mills",
+      "geography": "Primarily North America; company-wide boundaries include Trinidad DRI when stated",
+      "status": "reported",
+      "assurance": "Not independently established",
+      "source_url": "https://s202.q4cdn.com/531038915/files/doc_financials/2025/ar/a1091887-5d3b-4cc2-b1c5-7623695cc1b5.pdf",
+      "source_id": "10K",
+      "page_or_table": "1;11-12 Raw Materials; SASB2",
+      "notes": "22.5m net tons from SASB2, approximately20m gross tons in10K1.1short ton=0.90718474t;1gross/long ton=1.0160469088t. Scrap22.5m short=20.41165665Mt;20m gross=20.320938176Mt, consistent rough rounding. Pig iron >2.032093818Mt. Receipts/recycling are not exact consumed charge quantities. 10K11 says roughly1.1tons scrap+substitutes per ton steel; no per-grade breakdown."
+    },
+    {
+      "id": "N08",
+      "metric": "Enterprise water flows",
+      "values": {
+        "freshwater_withdrawal_m3": 41300000,
+        "discharge_m3": 17300000,
+        "surface_freshwater_withdrawal_percent": 24,
+        "renewable_groundwater_percent": 41,
+        "nonrenewable_groundwater_percent": 12,
+        "third_party_withdrawal_percent": 23,
+        "enterprise_recycled_percent": 69
+      },
+      "unit": "m3 and percent",
+      "period": "2025",
+      "boundary": "Process water, steel mills, DRI and product divisions; unavailable data estimated",
+      "geography": "Primarily North America; company-wide boundaries include Trinidad DRI when stated",
+      "status": "reported including company estimates",
+      "assurance": "Not independently established",
+      "source_url": "https://indd.adobe.com/view/publication/cc4a577c-36f1-4ae0-a823-7e9f3f547ca5/4a1d/publication-web-resources/pdf/2025_Sustainability_Report.pdf",
+      "source_id": "CSR",
+      "page_or_table": "50 Enterprise Water Consumption & Discharge",
+      "notes": "Withdrawals-discharge=24m m3 DERIVED apparent net use, not a separately measured reported consumption number; storage/other boundary adjustments unavailable. Withdrawal shares sum100%. Recycling is internal circulation, not new water supply."
+    },
+    {
+      "id": "N09",
+      "metric": "Steel-mill water pressure",
+      "values": {
+        "withdrawal_m3": 30000000,
+        "recycled_percent": 83,
+        "high_or_extremely_high_water_stress_operations_percent": 22,
+        "withdrawal_intensity_m3_per_t": 1.297
+      },
+      "unit": "m3; percent; m3/metric tonne",
+      "period": "2025",
+      "boundary": "Steel mills; stress based on WRI Aqueduct4.0 location assessment",
+      "geography": "Primarily North America; company-wide boundaries include Trinidad DRI when stated",
+      "status": "reported",
+      "assurance": "Not independently established",
+      "source_url": "https://indd.adobe.com/view/publication/6d377ab4-2e50-4f66-95a6-c80d5be2b416/hwsy/publication-web-resources/pdf/SASB.pdf",
+      "source_id": "SASB",
+      "page_or_table": "7 EM-IS-140a.1; CSR50",
+      "notes": "CSR splits high6%,extremely high16%. Rounded30m/23m=1.3043m3/t vs reported1.297; use reported intensity, do not force exact reconciliation. Stress% is operations, not volume-weighted water exposure."
+    },
+    {
+      "id": "N10",
+      "metric": "Enterprise and scrap-group waste",
+      "values": {
+        "enterprise_total_tons": 1279000,
+        "hazardous_tons": 434000,
+        "nonhazardous_tons": 844000,
+        "enterprise_recycled_percent": 55,
+        "enterprise_landfilled_percent": 45,
+        "scrap_group_nonhazardous_tons": 1123000,
+        "scrap_group_beneficial_reuse_percent": 100
+      },
+      "unit": "tons as reported; exact short/metric basis unconfirmed; percent",
+      "period": "2025",
+      "boundary": "Enterprise=steel mills,DRI,products; scrap/DJJ separate; combined covers>95% company waste, DJJ table>90% segment",
+      "geography": "Primarily North America; company-wide boundaries include Trinidad DRI when stated",
+      "status": "reported including company estimates",
+      "assurance": "Not independently established",
+      "source_url": "https://indd.adobe.com/view/publication/cc4a577c-36f1-4ae0-a823-7e9f3f547ca5/4a1d/publication-web-resources/pdf/2025_Sustainability_Report.pdf",
+      "source_id": "CSR",
+      "page_or_table": "48 Enterprise Waste and Scrap Recycling Group",
+      "notes": "Hazardous+nonhazardous=1,278,000, 1,000below roundedtotal. Company estimates missing facility data. Avoid metric conversion until ton basis confirmed. Beneficial reuse not same endpoint as recycling; no avoided-impact credit."
+    },
+    {
+      "id": "N11",
+      "metric": "Steel-mill waste",
+      "values": {
+        "waste_t": 1080000,
+        "hazardous_percent": 36,
+        "recycled_percent": 57
+      },
+      "unit": "t per SASB; precise ton basis not explicit in table",
+      "period": "2025",
+      "boundary": "Steel mills only",
+      "geography": "Primarily North America; company-wide boundaries include Trinidad DRI when stated",
+      "status": "reported",
+      "assurance": "Not independently established",
+      "source_url": "https://indd.adobe.com/view/publication/6d377ab4-2e50-4f66-95a6-c80d5be2b416/hwsy/publication-web-resources/pdf/SASB.pdf",
+      "source_id": "SASB",
+      "page_or_table": "7 EM-IS-150a.1",
+      "notes": "SASB narrative says ~99% of slag+baghouse dust recycled but table total waste recycling57%; classifications/boundary require reconciliation. Do not infer99% of all waste or universal recycling opportunity."
+    }
+  ],
+  "candidate_intervention_inputs": [
+    {
+      "intervention": "Additional low-carbon electricity plus EAF efficiency",
+      "baseline_inputs": [
+        "N02",
+        "N05",
+        "N06"
+      ],
+      "usable_quantity": "Enterprise18.398TWh; mills residual16.996TWh estimated",
+      "constraints": "Grid/contractual accounting unresolved. Separate efficiency load reduction then supply decarbonization; existing PPAs already reflected. Firming requirements and hourly/location impact."
+    },
+    {
+      "intervention": "Reheat efficiency/hot charging and carbon-injection optimization",
+      "baseline_inputs": [
+        "N03",
+        "N04",
+        "N06"
+      ],
+      "usable_quantity": "Mills58.727PJfuel,71%NG and24%coal; aggregate screening only",
+      "constraints": "No site process split or installed technology inventory. Preserve steel grade/quality/output; company2030 plan overlaps."
+    },
+    {
+      "intervention": "Cleaner virgin iron and enhanced scrap sorting",
+      "baseline_inputs": [
+        "N02",
+        "N07"
+      ],
+      "usable_quantity": "3.37Mt own DRI delivered; >2m gross tons pigiron received",
+      "constraints": "Copper/tin limits; availability and embodied factors; never count own-DRI reduction in companyScope1 plus millScope3 twice."
+    },
+    {
+      "intervention": "Water reuse and waste recovery",
+      "baseline_inputs": [
+        "N08",
+        "N09",
+        "N10",
+        "N11"
+      ],
+      "usable_quantity": "41.3m m3withdrawal;17.3m discharge; enterprise69%reuse",
+      "constraints": "Plant/basin and contaminant quality needed; recirculation rates cannot be treated as remaining freshwater abatement shares."
+    }
+  ],
+  "missing_data": [
+    "2025 exact Scope2 market- and location-based numbers and supplier/residual emission factors, contractual-instrument reconciliation.",
+    "2025 SCS verification statements, assurance level/materiality and exact covered facility list. PDF here text is not an active link in downloaded PDF.",
+    "Complete15-category Scope3 inventory and Category1 decomposition between external pig iron, own DRI, purchased DRI, alloys, electrodes, scrap and transport; corporate intercompany eliminations.",
+    "Matching GSCC hot-rolled steel production denominator and asset/product coverage; do not multiply hot-rolled kg/t by cast23Mt.",
+    "Energy by facility/process, existing preheaters/reheat furnace status, MWh matched to incremental carbon-free contracts, downtime and quality limits.",
+    "Feedstock actually charged by mill/grade; scrap copper/tin quality and yields; DRI/pig iron quantities produced vs supplied/received and their life-cycle factors.",
+    "Water measured consumption/storage change, facility/basin withdrawal/discharge/consumption and effluent quality; water-stress percentages are not volume shares.",
+    "Waste exact short/metric ton definition; slag/dust product-versus-waste classifications, hazardous endpoints and slight rounded-total mismatch.",
+    "Current licensed S&P500 full constituent list not retrieved; current secondary constituent row confirmed membership."
+  ],
+  "sources": [
+    {
+      "id": "CSR",
+      "title": "Nucor 2025 Sustainability Report",
+      "url": "https://indd.adobe.com/view/publication/cc4a577c-36f1-4ae0-a823-7e9f3f547ca5/4a1d/publication-web-resources/pdf/2025_Sustainability_Report.pdf",
+      "landing_page": "https://nucor.com/sustainability/",
+      "local": "sources/nucor/csr2025.pdf",
+      "accessed": "2026-09-12",
+      "method": "Downloaded original linked Adobe publication PDF; text tables read; page37 chart visually verified."
+    },
+    {
+      "id": "SASB",
+      "title": "Nucor SASB Index, 2025 data",
+      "url": "https://indd.adobe.com/view/publication/6d377ab4-2e50-4f66-95a6-c80d5be2b416/hwsy/publication-web-resources/pdf/SASB.pdf",
+      "local": "sources/nucor/other1.pdf",
+      "accessed": "2026-09-12"
+    },
+    {
+      "id": "10K",
+      "title": "Nucor 2025 Form 10-K",
+      "url": "https://s202.q4cdn.com/531038915/files/doc_financials/2025/ar/a1091887-5d3b-4cc2-b1c5-7623695cc1b5.pdf",
+      "local": "sources/nucor/10k2025.pdf",
+      "accessed": "2026-09-12"
+    },
+    {
+      "id": "INDEX",
+      "title": "Current S&P 500 constituent list, Nucor row",
+      "url": "https://en.wikipedia.org/wiki/List_of_S%26P_500_companies",
+      "accessed": "2026-09-12",
+      "note": "Secondary current constituent list explicitly includes NUE, Materials/Steel. Not a licensed index-provider full constituent snapshot."
+    }
+  ],
+  "no_composite_harm_score": true
+}

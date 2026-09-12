@@ -1,0 +1,76 @@
+{
+  "factor": {
+    "value": 255.12,
+    "unit": "2024 USD/tCO2e",
+    "source_url": "https://capitalscoalition.org/wp-content/uploads/2026/07/Global-Value-Factors-Database-V4-2026-External.xlsx",
+    "source_cell": "GHGs!H15",
+    "database": "Global Value Factors Database V4",
+    "sheet_update": "June18,2026",
+    "price_year": 2024,
+    "application": "One common published factor applied to different company reporting years for a screening comparison. No emission-year escalation assumed; not claimed as complete methodology compliance.",
+    "scenario_use": "Applying the same factor to net scenario emissions differences is an analytical extension; the GHG inventory methodology itself does not validate avoided-emission claims.",
+    "uncertainty": "Damage-model, ethical discounting, GWP and inventory uncertainty remain. No statistical interval inferred from database decimal precision."
+  },
+  "companies": [
+    {
+      "company": "Microsoft",
+      "reporting_period": "FY25 July2024\u2013June2025",
+      "scope1_tco2e": 170887,
+      "factor_usd2024_per_tco2e": 255.12,
+      "modeled_damage_usd2024": 43596691.44,
+      "meaning": "Fixed-factor modeled lifetime societal climate damage associated with one reported-year direct inventory; not observed annual losses or company liability.",
+      "exclusions": "Purchased electricity, suppliers, sold products, financed emissions, water, pollution, nature and social impacts.",
+      "source_url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf#page=3",
+      "source_observation": "microsoft-footprint.json:MSFT-01",
+      "valuation_source": "https://capitalscoalition.org/wp-content/uploads/2026/07/Global-Value-Factors-Database-V4-2026-External.xlsx"
+    },
+    {
+      "company": "Walmart",
+      "reporting_period": "FY2026 February2025\u2013January2026",
+      "scope1_tco2e": 8160000.0,
+      "factor_usd2024_per_tco2e": 255.12,
+      "modeled_damage_usd2024": 2081779200.0,
+      "meaning": "Fixed-factor modeled lifetime societal climate damage associated with one reported-year direct inventory; not observed annual losses or company liability.",
+      "exclusions": "Purchased electricity, suppliers, sold products, financed emissions, water, pollution, nature and social impacts.",
+      "source_url": "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2026/FY2026-Walmart-ESG-Report.pdf",
+      "source_observation": "walmart-footprint.json:WMT01",
+      "valuation_source": "https://capitalscoalition.org/wp-content/uploads/2026/07/Global-Value-Factors-Database-V4-2026-External.xlsx"
+    },
+    {
+      "company": "ExxonMobil",
+      "reporting_period": "2025; operated basis",
+      "scope1_tco2e": 90000000.0,
+      "factor_usd2024_per_tco2e": 255.12,
+      "modeled_damage_usd2024": 22960800000.0,
+      "meaning": "Fixed-factor modeled lifetime societal climate damage associated with one reported-year direct inventory; not observed annual losses or company liability.",
+      "exclusions": "Purchased electricity, suppliers, sold products, financed emissions, water, pollution, nature and social impacts.",
+      "source_url": "https://corporate.exxonmobil.com/publications/metrics-and-data",
+      "source_observation": "exxon-footprint.json:operated_ghg",
+      "valuation_source": "https://capitalscoalition.org/wp-content/uploads/2026/07/Global-Value-Factors-Database-V4-2026-External.xlsx"
+    },
+    {
+      "company": "JPMorgan Chase",
+      "reporting_period": "2024",
+      "scope1_tco2e": 100024,
+      "factor_usd2024_per_tco2e": 255.12,
+      "modeled_damage_usd2024": 25518122.88,
+      "meaning": "Fixed-factor modeled lifetime societal climate damage associated with one reported-year direct inventory; not observed annual losses or company liability.",
+      "exclusions": "Purchased electricity, suppliers, sold products, financed emissions, water, pollution, nature and social impacts.",
+      "source_url": "https://www.jpmorganchase.com/content/dam/jpmorganchase/documents/2024-operational-ghg-emissions-and-electric-power-use.pdf",
+      "source_observation": "jpmorgan-footprint.json:JPM01",
+      "valuation_source": "https://capitalscoalition.org/wp-content/uploads/2026/07/Global-Value-Factors-Database-V4-2026-External.xlsx"
+    },
+    {
+      "company": "Nucor",
+      "reporting_period": "2025; company-wide",
+      "scope1_tco2e": 6600000,
+      "factor_usd2024_per_tco2e": 255.12,
+      "modeled_damage_usd2024": 1683792000.0,
+      "meaning": "Fixed-factor modeled lifetime societal climate damage associated with one reported-year direct inventory; not observed annual losses or company liability.",
+      "exclusions": "Purchased electricity, suppliers, sold products, financed emissions, water, pollution, nature and social impacts.",
+      "source_url": "https://indd.adobe.com/view/publication/cc4a577c-36f1-4ae0-a823-7e9f3f547ca5/4a1d/publication-web-resources/pdf/2025_Sustainability_Report.pdf",
+      "source_observation": "nucor-footprint.json:N01",
+      "valuation_source": "https://capitalscoalition.org/wp-content/uploads/2026/07/Global-Value-Factors-Database-V4-2026-External.xlsx"
+    }
+  ]
+}

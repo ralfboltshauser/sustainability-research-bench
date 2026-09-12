@@ -1,0 +1,7 @@
+company,scenario,annual_tco2e_reduction,factor_usd2024_per_tco2e,damage_avoided_usd2024,boundary,source_file,forecast
+Walmart,IF 25% of source emissions are eligible and treated; extent is assumed,1019465.9685863873,255.12,260086157.90575916,Direct refrigerant emissions only; energy/lifecycle penalties excluded,walmart-gap-scenarios.json,False
+Walmart,IF 50% of source emissions are eligible and treated; extent is assumed,2038931.9371727747,255.12,520172315.8115183,Direct refrigerant emissions only; energy/lifecycle penalties excluded,walmart-gap-scenarios.json,False
+Walmart,IF 100% of source emissions are eligible and treated; extent is assumed,4077863.8743455494,255.12,1040344631.6230366,Direct refrigerant emissions only; energy/lifecycle penalties excluded,walmart-gap-scenarios.json,False
+ExxonMobil,IF 25% of source emissions are eligible and treated; extent is assumed,43788.54,255.12,11171332.3248,Methane capture less complete combustion CO2; other lifecycle effects excluded,exxon-gap-scenarios.json,False
+ExxonMobil,IF 50% of source emissions are eligible and treated; extent is assumed,87577.08,255.12,22342664.6496,Methane capture less complete combustion CO2; other lifecycle effects excluded,exxon-gap-scenarios.json,False
+ExxonMobil,IF 100% of source emissions are eligible and treated; extent is assumed,175154.16,255.12,44685329.2992,Methane capture less complete combustion CO2; other lifecycle effects excluded,exxon-gap-scenarios.json,False

@@ -1,0 +1,547 @@
+{
+  "company": "JPMorgan Chase & Co.",
+  "ticker": "JPM",
+  "research_as_of": "2026-09-12",
+  "baseline_period": "2024 company report, published October2025; underlying client emissions may lag; index holding September10 2026",
+  "latest_disclosure_check": "Live JPMorgan sustainability and IR pages linked 2024 Sustainability Report; no later consolidated climate/sustainability report established. This does not prove none exists.",
+  "observations": [
+    {
+      "id": "JPM01",
+      "metric": "Operational GHG inventory",
+      "values": {
+        "scope1": 100024,
+        "scope2_location_based": 773852,
+        "scope2_market_based": 6806,
+        "scope1_plus_scope2_location_based": 873876,
+        "scope1_plus_scope2_market_based": 106830
+      },
+      "unit": "tCO2e",
+      "period": "2024",
+      "geography": "Global unless stated otherwise",
+      "portfolio_boundary": "JPMorgan operational control: buildings, vehicles and aircraft; excludes Neovest data centers and outside-control joint ventures; 2024 acquisitions included with revenue-based estimation",
+      "reported_vs_modeled": "company reported; calculated inventory includes estimation",
+      "assurance": "Independent accountants limited assurance over Scope1 and both Scope2 metrics; report August7 2025",
+      "source_url": "https://www.jpmorganchase.com/content/dam/jpmorganchase/documents/2024-operational-ghg-emissions-and-electric-power-use.pdf",
+      "page_or_table": "PDF p1; management assertion pp4-5"
+    },
+    {
+      "id": "JPM02",
+      "metric": "Electricity",
+      "values": {
+        "purchased": 2041374,
+        "purchased_renewable_contractual": 2041374,
+        "onsite_solar_generation": 57420
+      },
+      "unit": "MWh",
+      "period": "2024",
+      "geography": "Global unless stated otherwise",
+      "portfolio_boundary": "JPMorgan operational control: buildings, vehicles and aircraft; excludes Neovest data centers and outside-control joint ventures; 2024 acquisitions included with revenue-based estimation",
+      "reported_vs_modeled": "company reported; calculated inventory includes estimation",
+      "assurance": "Limited assurance on purchased and purchased renewable electricity; on-site generation not marked assured",
+      "source_url": "https://www.jpmorganchase.com/content/dam/jpmorganchase/documents/2024-operational-ghg-emissions-and-electric-power-use.pdf",
+      "page_or_table": "PDF p1"
+    },
+    {
+      "id": "JPM03",
+      "metric": "Operational emissions sources",
+      "values": {
+        "natural_gas": 49354,
+        "fugitive": 33121,
+        "jet_fuel": 12414,
+        "purchased_electricity_location_based": 767046
+      },
+      "unit": "tCO2e",
+      "period": "2024",
+      "geography": "Global unless stated otherwise",
+      "portfolio_boundary": "JPMorgan operational control: buildings, vehicles and aircraft; excludes Neovest data centers and outside-control joint ventures; 2024 acquisitions included with revenue-based estimation",
+      "reported_vs_modeled": "company reported; calculated inventory includes estimation",
+      "assurance": "Aggregate inventory assured; component rows not individually marked assured",
+      "source_url": "https://www.jpmorganchase.com/content/dam/jpmorganchase/documents/2024-operational-ghg-emissions-and-electric-power-use.pdf",
+      "page_or_table": "PDF p1"
+    },
+    {
+      "id": "JPM04",
+      "metric": "Carbon credits reported separately",
+      "values": {
+        "verified_carbon_credits": 367311
+      },
+      "unit": "tCO2e",
+      "period": "2024",
+      "geography": "Global unless stated otherwise",
+      "portfolio_boundary": "Purchased verified credits from nature-based, hybrid and engineered removals; not subtracted from physical inventory",
+      "reported_vs_modeled": "company reported; calculated inventory includes estimation",
+      "assurance": "Limited assurance of reported credit metric, not proof of additionality/permanence",
+      "source_url": "https://www.jpmorganchase.com/content/dam/jpmorganchase/documents/2024-operational-ghg-emissions-and-electric-power-use.pdf",
+      "page_or_table": "PDF p1; management assertion p5"
+    },
+    {
+      "id": "JPM05",
+      "metric": "Portfolio output intensities and 2030 targets",
+      "values": [
+        {
+          "sector": "Energy Mix",
+          "scope": "Scope3 end use",
+          "unit": "gCO2/MJ",
+          "baseline_year": 2019,
+          "baseline": 45.9,
+          "as_of_2024": 30.6,
+          "target_2030": 29.5,
+          "reported_change_percent": -33.2
+        },
+        {
+          "sector": "Oil & Gas Operational",
+          "scope": "Scopes1 and2",
+          "unit": "gCO2e/MJ",
+          "baseline_year": 2019,
+          "baseline": 4.9,
+          "as_of_2024": 4.0,
+          "target_2030": null,
+          "reported_change_percent": -17.2,
+          "target_2030_percent_change": -45,
+          "target_from_rounded_baseline_derived": 2.6950000000000003
+        },
+        {
+          "sector": "Electric Power",
+          "scope": "Scope1",
+          "unit": "kgCO2/MWh",
+          "baseline_year": 2019,
+          "baseline": 342.6,
+          "as_of_2024": 248.4,
+          "target_2030": 105.3,
+          "reported_change_percent": -27.5
+        },
+        {
+          "sector": "Auto Manufacturing",
+          "scope": "Scopes1,2,3 tank-to-wheel",
+          "unit": "gCO2e/km",
+          "baseline_year": 2019,
+          "baseline": 164.8,
+          "as_of_2024": 131.3,
+          "target_2030": 86.1,
+          "reported_change_percent": -20.3
+        },
+        {
+          "sector": "Aviation",
+          "scope": "Scope1 tank-to-wake",
+          "unit": "gCO2/RTK",
+          "baseline_year": 2021,
+          "baseline": 972.6,
+          "as_of_2024": 777.3,
+          "target_2030": 625.0,
+          "reported_change_percent": -20.1
+        },
+        {
+          "sector": "Shipping",
+          "scope": "Scope1 tank-to-wake",
+          "unit": "gCO2/t-nm",
+          "baseline_year": 2021,
+          "baseline": 10.9,
+          "as_of_2024": 11.5,
+          "target_2030": 8.4,
+          "reported_change_percent": 5.7,
+          "baseline_restated_from": 11.4
+        },
+        {
+          "sector": "Iron & Steel",
+          "scope": "Scopes1 and2",
+          "unit": "tCO2e/t crude steel",
+          "baseline_year": 2020,
+          "baseline": 1.412,
+          "as_of_2024": 1.291,
+          "target_2030": 0.981,
+          "reported_change_percent": -8.6
+        },
+        {
+          "sector": "Cement",
+          "scope": "Scopes1 and2",
+          "unit": "kgCO2e/t cementitious product",
+          "baseline_year": 2020,
+          "baseline": 639.3,
+          "as_of_2024": 619.6,
+          "target_2030": 460,
+          "reported_change_percent": -3.1
+        },
+        {
+          "sector": "Aluminum",
+          "scope": "Scopes1 and2",
+          "unit": "tCO2e/t aluminum",
+          "baseline_year": 2021,
+          "baseline": 8.6,
+          "as_of_2024": 9.5,
+          "target_2030": 6.5,
+          "reported_change_percent": 10.4
+        }
+      ],
+      "unit": "Sector-specific; see each row",
+      "period": "As of December31 2024; borrower emissions vintages can lag",
+      "geography": "Global unless stated otherwise",
+      "portfolio_boundary": "Carbon Compass in-scope global sector clients; lending, tax-oriented investments, capital markets; intensity is financing-weighted, not physical aggregate or whole-economy change",
+      "reported_vs_modeled": "company reported; calculated inventory includes estimation",
+      "assurance": "Not established for this metric",
+      "source_url": "https://www.jpmorganchase.com/content/dam/jpmorganchase/documents/about/jpmc-sustainability-report-2024.pdf",
+      "page_or_table": "p24 target table; p25 explanations"
+    },
+    {
+      "id": "JPM06",
+      "metric": "Carbon Compass absolute attributed emissions",
+      "values": [
+        {
+          "sector": "Energy Mix",
+          "borrower_scopes": "Scope3 end use",
+          "financed_MtCO2e": 84.4,
+          "facilitated_MtCO2e": 42.9,
+          "financed_tCO2e_per_million_USD": 1876.2,
+          "facilitated_tCO2e_per_million_USD": 2961.8,
+          "data_quality_1_best_5_worst": 3.1
+        },
+        {
+          "sector": "Oil & Gas Operational",
+          "borrower_scopes": "Scopes1 and2",
+          "financed_MtCO2e": 4.3,
+          "facilitated_MtCO2e": 2.9,
+          "financed_tCO2e_per_million_USD": 212.2,
+          "facilitated_tCO2e_per_million_USD": 404.1,
+          "data_quality_1_best_5_worst": 3.2
+        },
+        {
+          "sector": "Electric Power",
+          "borrower_scopes": "Scope1",
+          "financed_MtCO2e": 21.1,
+          "facilitated_MtCO2e": 6.3,
+          "financed_tCO2e_per_million_USD": 515.3,
+          "facilitated_tCO2e_per_million_USD": 438.8,
+          "data_quality_1_best_5_worst": 3.1
+        },
+        {
+          "sector": "Auto Manufacturing",
+          "borrower_scopes": "Scopes1,2,3 tank-to-wheel",
+          "financed_MtCO2e": 2.2,
+          "facilitated_MtCO2e": 1.0,
+          "financed_tCO2e_per_million_USD": 511.6,
+          "facilitated_tCO2e_per_million_USD": 457.0,
+          "data_quality_1_best_5_worst": 3.1
+        },
+        {
+          "sector": "Aviation",
+          "borrower_scopes": "Scope1 tank-to-wake",
+          "financed_MtCO2e": 1.2,
+          "facilitated_MtCO2e": 0.6,
+          "financed_tCO2e_per_million_USD": 762.3,
+          "facilitated_tCO2e_per_million_USD": 766.6,
+          "data_quality_1_best_5_worst": 3.0
+        },
+        {
+          "sector": "Shipping",
+          "borrower_scopes": "Scope1 tank-to-wake",
+          "financed_MtCO2e": 0.2,
+          "facilitated_MtCO2e": 0.1,
+          "financed_tCO2e_per_million_USD": 395.5,
+          "facilitated_tCO2e_per_million_USD": 306.4,
+          "data_quality_1_best_5_worst": 2.6
+        },
+        {
+          "sector": "Iron & Steel",
+          "borrower_scopes": "Scopes1 and2",
+          "financed_MtCO2e": 3.4,
+          "facilitated_MtCO2e": 1,
+          "financed_tCO2e_per_million_USD": 1592.6,
+          "facilitated_tCO2e_per_million_USD": 1504.3,
+          "data_quality_1_best_5_worst": 1.2
+        },
+        {
+          "sector": "Cement",
+          "borrower_scopes": "Scopes1 and2",
+          "financed_MtCO2e": 1.4,
+          "facilitated_MtCO2e": 0.3,
+          "financed_tCO2e_per_million_USD": 1310.5,
+          "facilitated_tCO2e_per_million_USD": 1113.3,
+          "data_quality_1_best_5_worst": 1.4
+        },
+        {
+          "sector": "Aluminum",
+          "borrower_scopes": "Scopes1 and2",
+          "financed_MtCO2e": 0.4,
+          "facilitated_MtCO2e": 0.6,
+          "financed_tCO2e_per_million_USD": 706,
+          "facilitated_tCO2e_per_million_USD": 1804.1,
+          "data_quality_1_best_5_worst": 3.0
+        }
+      ],
+      "unit": "MtCO2e; economic intensity tCO2e/million USD",
+      "period": "2024",
+      "geography": "Global unless stated otherwise",
+      "portfolio_boundary": "12-month monthly-average committed lending; monthly-average outstanding tax-oriented investments; 100% of bank transaction share on 3-year rolling basis for capital markets; 3-year average EVIC or debt+equity",
+      "reported_vs_modeled": "Company reported model allocation of client inventory/proxies; not direct measurement or causal attribution",
+      "assurance": "Not established for this metric",
+      "source_url": "https://www.jpmorganchase.com/content/dam/jpmorganchase/documents/about/jpmc-sustainability-report-2024.pdf",
+      "page_or_table": "p26 table and footnotes; p64 comparison"
+    },
+    {
+      "id": "JPM07",
+      "metric": "PCAF-aligned absolute attributed emissions",
+      "values": [
+        {
+          "sector": "Energy Mix",
+          "borrower_scopes": "Scope3 end use",
+          "financed_MtCO2e": 19.3,
+          "facilitated_MtCO2e": 30.9,
+          "financed_tCO2e_per_million_USD": 3709.2,
+          "facilitated_tCO2e_per_million_USD": 1357.6,
+          "data_quality_1_best_5_worst": 3.1
+        },
+        {
+          "sector": "Oil & Gas Operational",
+          "borrower_scopes": "Scopes1 and2",
+          "financed_MtCO2e": 0.8,
+          "facilitated_MtCO2e": 1.8,
+          "financed_tCO2e_per_million_USD": 242.5,
+          "facilitated_tCO2e_per_million_USD": 129.8,
+          "data_quality_1_best_5_worst": 3.1
+        },
+        {
+          "sector": "Electric Power",
+          "borrower_scopes": "Scope1",
+          "financed_MtCO2e": 1.9,
+          "facilitated_MtCO2e": 3,
+          "financed_tCO2e_per_million_USD": 621.8,
+          "facilitated_tCO2e_per_million_USD": 161,
+          "data_quality_1_best_5_worst": 3.2
+        },
+        {
+          "sector": "Auto Manufacturing",
+          "borrower_scopes": "Scopes1,2,3 tank-to-wheel",
+          "financed_MtCO2e": 0.2,
+          "facilitated_MtCO2e": 0.4,
+          "financed_tCO2e_per_million_USD": 853,
+          "facilitated_tCO2e_per_million_USD": 177.9,
+          "data_quality_1_best_5_worst": 3
+        },
+        {
+          "sector": "Aviation",
+          "borrower_scopes": "Scope1 tank-to-wake",
+          "financed_MtCO2e": 0.1,
+          "facilitated_MtCO2e": 0.3,
+          "financed_tCO2e_per_million_USD": 601.5,
+          "facilitated_tCO2e_per_million_USD": 268,
+          "data_quality_1_best_5_worst": 3
+        },
+        {
+          "sector": "Shipping",
+          "borrower_scopes": "Scope1 tank-to-wake",
+          "financed_MtCO2e": 0.04,
+          "facilitated_MtCO2e": 0.07,
+          "financed_tCO2e_per_million_USD": 251.1,
+          "facilitated_tCO2e_per_million_USD": 84.7,
+          "data_quality_1_best_5_worst": 3.1
+        },
+        {
+          "sector": "Iron & Steel",
+          "borrower_scopes": "Scopes1 and2",
+          "financed_MtCO2e": 0.6,
+          "facilitated_MtCO2e": 0.9,
+          "financed_tCO2e_per_million_USD": 1444.6,
+          "facilitated_tCO2e_per_million_USD": 683,
+          "data_quality_1_best_5_worst": 1.1
+        },
+        {
+          "sector": "Cement",
+          "borrower_scopes": "Scopes1 and2",
+          "financed_MtCO2e": 0.5,
+          "facilitated_MtCO2e": 0.1,
+          "financed_tCO2e_per_million_USD": 1954.1,
+          "facilitated_tCO2e_per_million_USD": 188.2,
+          "data_quality_1_best_5_worst": 1.3
+        },
+        {
+          "sector": "Aluminum",
+          "borrower_scopes": "Scopes1 and2",
+          "financed_MtCO2e": 0.1,
+          "facilitated_MtCO2e": 0.3,
+          "financed_tCO2e_per_million_USD": 970.2,
+          "facilitated_tCO2e_per_million_USD": 650.4,
+          "data_quality_1_best_5_worst": 3
+        }
+      ],
+      "unit": "MtCO2e; economic intensity tCO2e/million USD",
+      "period": "2024",
+      "geography": "Global unless stated otherwise",
+      "portfolio_boundary": "Only Carbon Compass in-scope clients; wholesale credit excluding overdrafts, year-end drawn exposure; facilitated current-year issuances weighted33%; includes securitized products, green bonds, tax-oriented investment syndications, excludes syndicated loans; period-end EVIC",
+      "reported_vs_modeled": "Company reported model allocation with deviations; not interchangeable with Carbon Compass or additive to it",
+      "assurance": "Not established for this metric",
+      "source_url": "https://www.jpmorganchase.com/content/dam/jpmorganchase/documents/about/jpmc-sustainability-report-2024.pdf",
+      "page_or_table": "p63 table footnotes; p64 comparison"
+    },
+    {
+      "id": "JPM08",
+      "metric": "Energy Supply Financing Ratio",
+      "values": {
+        "low_carbon": 36.4,
+        "high_carbon": 32.3,
+        "reported_ratio": 1.13,
+        "derived_ratio": 1.126934984520124
+      },
+      "unit": "USD billion; ratio dimensionless",
+      "period": "2024",
+      "geography": "Global unless stated otherwise",
+      "portfolio_boundary": "Global energy-supply financing, including lending, tax-oriented investments and capital markets; metric specific to bank methodology, not financing additionality or avoided emissions",
+      "reported_vs_modeled": "Company reported financing classification; ratio arithmetic checked",
+      "assurance": "Not established for this metric",
+      "source_url": "https://www.jpmorganchase.com/content/dam/jpmorganchase/documents/about/jpmc-sustainability-report-2024.pdf",
+      "page_or_table": "pp22-23"
+    },
+    {
+      "id": "JPM09",
+      "metric": "Green objective financing and facilitation",
+      "values": {
+        "2024": 68,
+        "cumulative_2021_2024": 309,
+        "target_by_end2030": 1000
+      },
+      "unit": "USD billion",
+      "period": "2024 and cumulative2021-2024",
+      "geography": "Global unless stated otherwise",
+      "portfolio_boundary": "SDT Green eligibility; financing and facilitation including raising capital, credit, advisory, risk management, principal investment; not capex or impact dollar total",
+      "reported_vs_modeled": "Company reported eligibility-based transaction accounting",
+      "assurance": "Not established for this metric",
+      "source_url": "https://www.jpmorganchase.com/content/dam/jpmorganchase/documents/about/jpmc-sustainability-report-2024.pdf",
+      "page_or_table": "pp9-10"
+    },
+    {
+      "id": "JPM10",
+      "metric": "Operational target status",
+      "values": {
+        "time_and_percent_bound_targets": "replaced with decision framework"
+      },
+      "unit": "Qualitative",
+      "period": "Report published October2025",
+      "geography": "Global unless stated otherwise",
+      "portfolio_boundary": "Own operations only",
+      "reported_vs_modeled": "Company policy disclosure",
+      "assurance": "Not established for this metric",
+      "source_url": "https://www.jpmorganchase.com/content/dam/jpmorganchase/documents/about/jpmc-sustainability-report-2024.pdf",
+      "page_or_table": "p18"
+    },
+    {
+      "id": "JPM11",
+      "metric": "Data availability and boundary limitations",
+      "values": {
+        "business_travel_scope3_category6": "no longer disclosed",
+        "auto_regulatory_data_lag_years": "2-3",
+        "total_portfolio_emissions_coverage_fraction": null
+      },
+      "unit": "Qualitative; years",
+      "period": "2024",
+      "geography": "Global unless stated otherwise",
+      "portfolio_boundary": "Reported sector samples exclude other sectors, scopes and clients; financing portfolio denominator/complete asset-class inventory not established",
+      "reported_vs_modeled": "Company disclosure and research missing-data finding",
+      "assurance": "Not established for this metric",
+      "source_url": "https://www.jpmorganchase.com/content/dam/jpmorganchase/documents/about/jpmc-sustainability-report-2024.pdf",
+      "page_or_table": "pp20,27,63"
+    },
+    {
+      "id": "JPM12",
+      "metric": "S&P500 membership cross-check",
+      "values": {
+        "SPY_holding": "JPMORGAN CHASE + CO",
+        "ticker": "JPM",
+        "weight_percent": 1.447452
+      },
+      "unit": "Percent of SPY holdings",
+      "period": "September10 2026",
+      "geography": "Global unless stated otherwise",
+      "portfolio_boundary": "US listed equity; S&P500 tracker holdings proxy, not a licensed index constituent file",
+      "reported_vs_modeled": "Primary ETF issuer holdings directly downloaded and parsed",
+      "assurance": "Not applicable",
+      "source_url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-spy.xlsx",
+      "page_or_table": "Holdings sheet, date header and JPM row"
+    }
+  ],
+  "candidate_intervention_inputs": [
+    {
+      "intervention": "Borrower methane leak abatement",
+      "baseline": "Oil & Gas operational intensity4.0gCO2e/MJ; attributed scopes1+2 are allocation, not intervention tonnes",
+      "needed": "Asset-level leaks, measurements, gas volume/value, abatement equipment costs, fixed MJ output, financing additionality"
+    },
+    {
+      "intervention": "Borrower low-carbon electricity/industrial retrofits",
+      "baseline": "Power248.4kgCO2/MWh; cement619.6kgCO2e/t; steel1.291tCO2e/t",
+      "needed": "Plant output, fuel/grid mix, asset-specific capex, operational constraints and by2031 commissioning; borrower identity match"
+    },
+    {
+      "intervention": "Own buildings refrigerant/heating/electricity",
+      "baseline": "Natural gas49,354tCO2e; fugitives33,121tCO2e; purchased electricity2,041,374MWh",
+      "needed": "Equipment inventory, measured leakage, floor area and comfort/service held constant, hourly marginal electricity, capex/opex"
+    }
+  ],
+  "missing_data": [
+    "Borrower identities, LEIs, facility ownership, geolocation, baseline physical emissions and output by asset; borrower reporting vintage and uncertainty.",
+    "Complete exposure and emissions inventory across asset classes; explicit portfolio coverage denominators and treatment of unreported clients/scopes.",
+    "Intervention-specific retrofit eligibility, capex/opex, energy prices, utilization, useful life, deployment schedule by2031, and service/output held constant.",
+    "Matched financing counterfactual: would asset owner implement without JPMorgan, alternative lenders, financing terms, covenants and completion evidence.",
+    "Absolute changes separated into borrower physical performance, production/output, portfolio entry/exit, exposure weights, market valuations, methodology and proxy changes.",
+    "Power hourly/location matching and procurement additionality; no inference of zero grid emissions from EAC-backed zero market-based electricity.",
+    "Methane direct measurements versus estimates; fossil CH4 GWP basis and gas-specific data for interventions.",
+    "Supplier Scope3 and business-travel completeness; no all-company harm total.",
+    "Water, land, biodiversity, local air pollutants, resource extraction and social impacts need separate location-specific inventories."
+  ],
+  "non_additivity_rules": [
+    "Do not sum Carbon Compass and PCAF views.",
+    "Keep own operational, client financed and client facilitated accounts separate.",
+    "Borrower Scope1 may recur in its lender attributed emissions and another company Scope2 or Scope3. Maintain single physical source ledger keyed by asset/gas/year plus separate lender allocation.",
+    "Energy Mix and power targets partly overlap; Energy Mix oil/gas end use also overlaps downstream fuel users.",
+    "Financing withdrawal, lower exposure or higher EVIC is not necessarily lower atmospheric emissions.",
+    "Financed and facilitated emissions are allocation metrics, not proven incremental damage caused by bank."
+  ],
+  "sources": [
+    {
+      "id": "report",
+      "url": "https://www.jpmorganchase.com/content/dam/jpmorganchase/documents/about/jpmc-sustainability-report-2024.pdf",
+      "title": "2024 Sustainability Report",
+      "published": "October2025",
+      "pages": [
+        9,
+        10,
+        18,
+        20,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        63,
+        64
+      ]
+    },
+    {
+      "id": "operations",
+      "url": "https://www.jpmorganchase.com/content/dam/jpmorganchase/documents/2024-operational-ghg-emissions-and-electric-power-use.pdf",
+      "title": "2024 Operational GHG Emissions and Electric Power Use",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "membership",
+      "url": "https://www.ssga.com/library-content/products/fund-data/etfs/us/holdings-daily-us-en-spy.xlsx",
+      "title": "State Street SPY daily holdings",
+      "as_of": "2026-09-10"
+    },
+    {
+      "id": "latest_check",
+      "url": "https://www.jpmorganchase.com/impact/environmental-sustainability",
+      "title": "JPMorgan environmental sustainability resources"
+    }
+  ],
+  "numerical_checks": {
+    "operational_sum_location_based": true,
+    "operational_sum_market_based": true,
+    "ESFR_rounded": true,
+    "intensity_percentage_caution": "Published percentages use unrounded inputs; do not replace with rounded-value recalculation.",
+    "attributed_emissions_total": "Not computed because sector/scopes/financing views overlap."
+  }
+}

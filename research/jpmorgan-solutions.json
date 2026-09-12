@@ -1,0 +1,322 @@
+{
+  "company": "JPMorgan Chase & Co.",
+  "as_of": "2026-09-12",
+  "conclusion": "Quantifiable historical project exemplars; no verified bankwide feasible physical gap, identified eligible borrower pipeline, or billion-dollar repayment forecast.",
+  "interventions": [
+    {
+      "id": "cooling_retrofit",
+      "name": "Borrower chilled-water and pumping equipment finance",
+      "status": "historical project exemplar; current quotes and borrower eligibility required",
+      "jpmorgan_relationship_verified": false,
+      "geography": "Spring Hill, Tennessee, United States",
+      "functional_unit": "unchanged site manufacturing output and process/comfort cooling; exact production and cooling ton-hours undisclosed",
+      "boundary": "annual site purchased electricity; equipment embodied impacts and refrigerants excluded/unknown",
+      "technology": "piping optimization, variable-frequency drives, controls and metering",
+      "inputs": [
+        {
+          "name": "capital_cost",
+          "value": 2000000,
+          "unit": "USD nominal",
+          "period": "historical project reported 2018",
+          "source_id": "gm_cooling",
+          "url": "https://betterbuildingssolutioncenter.energy.gov/showcase-projects/general-motors-chilled-water-system-optimization-project",
+          "locator": "Financial Overview / Solutions",
+          "approximate": true
+        },
+        {
+          "name": "annual_bill_savings",
+          "value": 760000,
+          "unit": "USD/year nominal",
+          "period": "annual post-project savings reported 2018",
+          "source_id": "gm_cooling",
+          "url": "https://betterbuildingssolutioncenter.energy.gov/showcase-projects/general-motors-chilled-water-system-optimization-project",
+          "locator": "Solutions"
+        },
+        {
+          "name": "annual_electricity_savings",
+          "value": 8600,
+          "unit": "MWh/year",
+          "period": "annual post-project savings reported 2018",
+          "source_id": "gm_cooling",
+          "url": "https://betterbuildingssolutioncenter.energy.gov/showcase-projects/general-motors-chilled-water-system-optimization-project",
+          "locator": "Other Benefits"
+        },
+        {
+          "name": "site_energy_per_production_reduction",
+          "value": 3.4,
+          "unit": "percent",
+          "period": "post-project versus historical baseline",
+          "source_id": "gm_cooling",
+          "url": "https://betterbuildingssolutioncenter.energy.gov/showcase-projects/general-motors-chilled-water-system-optimization-project",
+          "locator": "Annual Energy Use"
+        }
+      ],
+      "illustration": {
+        "label": "conditional historical one-project calculation; not portfolio estimate or 2026 price quote",
+        "full_operating_years": 5,
+        "gross_savings_usd": 3800000,
+        "principal_only_annual_payment_usd": 400000,
+        "annual_cash_before_unreported_costs_usd": 360000,
+        "simple_gross_payback_years": 2.6315789473684212,
+        "electricity_reduction_mwh": 43000,
+        "formulas": [
+          "gross savings = 760000 * 5",
+          "principal payment = 2000000 / 5",
+          "gross cash headroom = 760000 - 400000",
+          "gross simple payback = 2000000 / 760000",
+          "electricity = 8600 * 5"
+        ],
+        "assumptions": [
+          "unchanged historical savings across five full years",
+          "commissioning delay shortens impact before2031",
+          "incremental costs, defaults and fees not quantified; not assumed zero"
+        ]
+      },
+      "net_tco2e": null,
+      "repayment": "contracted utility savings, net of all operating and credit costs",
+      "additionality": "prove upgrade deferred absent financing; avoid refinancing already funded project",
+      "overlap": "borrower Scope2; generator Scope1; bank attributed emissions; count physical project once"
+    },
+    {
+      "id": "methane_controls",
+      "name": "Finance instrument-air replacement of gas-driven pneumatic controls",
+      "status": "mature technology; historical economics require complete refresh",
+      "jpmorgan_relationship_verified": false,
+      "geography": "United States generic medium production facility illustration",
+      "functional_unit": "unchanged production and process-control service; source models35 control loops plus utility uses",
+      "boundary": "avoided vented natural gas and added compressor electricity; composition, downstream combustion and lifecycle changes unresolved",
+      "inputs": [
+        {
+          "name": "installed_capex",
+          "value": 59917,
+          "unit": "USD nominal",
+          "period": "February2006 cost base",
+          "source_id": "epa_air",
+          "url": "https://19january2021snapshot.epa.gov/sites/static/files/2016-06/documents/ll_instrument_air.pdf",
+          "locator": "p7 Exhibit8"
+        },
+        {
+          "name": "gas_saved",
+          "value": 23652,
+          "unit": "Mcf natural gas/year",
+          "period": "modeled full operating year",
+          "source_id": "epa_air",
+          "url": "https://19january2021snapshot.epa.gov/sites/static/files/2016-06/documents/ll_instrument_air.pdf",
+          "locator": "p7 Exhibit10"
+        },
+        {
+          "name": "gas_price",
+          "value": 7,
+          "unit": "USD/Mcf",
+          "period": "source scenario, not current market price",
+          "source_id": "epa_air",
+          "url": "https://19january2021snapshot.epa.gov/sites/static/files/2016-06/documents/ll_instrument_air.pdf",
+          "locator": "p7 Exhibit10"
+        },
+        {
+          "name": "electricity_cost",
+          "value": 13140,
+          "unit": "USD/year",
+          "period": "source scenario",
+          "source_id": "epa_air",
+          "url": "https://19january2021snapshot.epa.gov/sites/static/files/2016-06/documents/ll_instrument_air.pdf",
+          "locator": "p7 Exhibit9"
+        },
+        {
+          "name": "other_maintenance",
+          "value": 4630,
+          "unit": "USD/year",
+          "period": "source scenario",
+          "source_id": "epa_air",
+          "url": "https://19january2021snapshot.epa.gov/sites/static/files/2016-06/documents/ll_instrument_air.pdf",
+          "locator": "p8 Exhibit11"
+        },
+        {
+          "name": "year5_overhaul",
+          "value": 6286,
+          "unit": "USD",
+          "period": "fifth modeled operating year",
+          "source_id": "epa_air",
+          "url": "https://19january2021snapshot.epa.gov/sites/static/files/2016-06/documents/ll_instrument_air.pdf",
+          "locator": "p8 Exhibit11"
+        },
+        {
+          "name": "net_cash_years1to4",
+          "value": 147830,
+          "unit": "USD/year",
+          "period": "modeled years1-4",
+          "source_id": "epa_air",
+          "url": "https://19january2021snapshot.epa.gov/sites/static/files/2016-06/documents/ll_instrument_air.pdf",
+          "locator": "p8 Exhibit11"
+        },
+        {
+          "name": "net_cash_year5",
+          "value": 141543,
+          "unit": "USD/year",
+          "period": "modeled year5",
+          "source_id": "epa_air",
+          "url": "https://19january2021snapshot.epa.gov/sites/static/files/2016-06/documents/ll_instrument_air.pdf",
+          "locator": "p8 Exhibit11"
+        }
+      ],
+      "net_tco2e": null,
+      "repayment": "collected recovered-gas revenue or avoided purchased-gas cost net of electricity/maintenance",
+      "additionality": "must identify unconverted, not already funded assets and current mandatory-upgrade baseline",
+      "limitations": [
+        "not2026 costs",
+        "natural gas volume is not pure methane mass",
+        "source horsepower-to-kW convention requires checking",
+        "no portfolio eligible count or production composition"
+      ],
+      "overlap": "operator Scope1 and lender attribution; account recovered-gas downstream combustion; no separate offset against end-use baseline"
+    },
+    {
+      "id": "shared_savings",
+      "name": "ESCO shared-savings receivables finance",
+      "status": "demonstrated financing mechanism, enabling rather than separate physical intervention",
+      "jpmorgan_relationship_verified": false,
+      "geography": "GM industrial portfolio; exact site/fuel composition absent",
+      "functional_unit": "maintained building functionality/comfort; heterogeneous project energy savings",
+      "boundary": "operational energy; fuel breakdown and lifecycle emissions undisclosed",
+      "inputs": [
+        {
+          "name": "esco_investment",
+          "value": 40000000,
+          "unit": "USD nominal",
+          "period": "projects since2012 reported2015",
+          "source_id": "gm_epc",
+          "url": "https://betterbuildingssolutioncenter.energy.gov/implementation-models/general-motors-funds-energy-conservation-projects-through-energy-performance",
+          "locator": "Overview / Outcomes",
+          "qualifier": "more than"
+        },
+        {
+          "name": "annual_energy_savings",
+          "value": 120000,
+          "unit": "MWh/year",
+          "period": "reported2015",
+          "source_id": "gm_epc",
+          "url": "https://betterbuildingssolutioncenter.energy.gov/implementation-models/general-motors-funds-energy-conservation-projects-through-energy-performance",
+          "locator": "Outcomes"
+        },
+        {
+          "name": "contract_term_limit",
+          "value": 5,
+          "unit": "years",
+          "period": "historical program goal",
+          "source_id": "gm_epc",
+          "url": "https://betterbuildingssolutioncenter.energy.gov/implementation-models/general-motors-funds-energy-conservation-projects-through-energy-performance",
+          "locator": "Goal Setting"
+        }
+      ],
+      "net_tco2e": null,
+      "repayment": "ESCO shares verified energy cost savings and repays its lender; terms and collection risk project-specific",
+      "additionality": "identify capital-budget/procurement/performance-risk barrier and compare alternative finance",
+      "overlap": "enables equipment projects; zero additional tonnes if same project counted under cooling or other corporate intervention"
+    }
+  ],
+  "billion_dollar_scenario": {
+    "capital_usd": 1000000000,
+    "origin": "user scenario, not observed opportunity",
+    "five_full_years_minimum_average_net_principal_cash_usd_per_year": 200000000,
+    "formula": "1000000000 / 5",
+    "recoverability_demonstrated": false,
+    "portfolio_impact_tco2e": null,
+    "eligible_projects_count": null,
+    "requirements": [
+      "named audited pipeline",
+      "current engineering bids",
+      "signed collection and repayment rights",
+      "net cash after development/verification/fees/maintenance/defaults",
+      "additionality and commissioning schedules",
+      "no capital-recovery claim for grants",
+      "no avoided societal damage treated as cash"
+    ]
+  },
+  "excluded_quantification": [
+    {
+      "case": "Skyven/California Dairies",
+      "reason": "DOE award poster labels9m USD state funding rather than full capex;7,000-ton lifetime versus annual emissions conflict with implementation page; achieved amounts also inconsistent",
+      "source_ids": [
+        "skyven_case",
+        "skyven_poster"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "bank2024",
+      "url": "https://www.jpmorganchase.com/content/dam/jpmorganchase/documents/about/jpmc-sustainability-report-2024.pdf",
+      "title": "2024 Sustainability Report",
+      "published": "2025-10",
+      "locator": "printed pp16-18",
+      "type": "original bank disclosure"
+    },
+    {
+      "id": "pcaf2025",
+      "url": "https://carbonaccountingfinancials.com/files/standard-launch-2025/PartA-PCAF-Supplement-Avoided-Emissions-FLM.pdf",
+      "title": "PCAF Supplemental Guidance on Financed Avoided Emissions and Forward-Looking Metrics",
+      "published": "2025",
+      "locator": "printed pp8-9",
+      "type": "official accounting methodology"
+    },
+    {
+      "id": "gm_cooling",
+      "url": "https://betterbuildingssolutioncenter.energy.gov/showcase-projects/general-motors-chilled-water-system-optimization-project",
+      "title": "General Motors: Chilled Water System Optimization Project",
+      "published": "2018-01-02",
+      "locator": "Financial Overview; Solutions; Other Benefits; Annual Energy Use",
+      "type": "DOE-hosted company-reported case"
+    },
+    {
+      "id": "epa_air",
+      "url": "https://19january2021snapshot.epa.gov/sites/static/files/2016-06/documents/ll_instrument_air.pdf",
+      "title": "Convert Gas Pneumatic Controls To Instrument Air",
+      "published": "2006-10",
+      "locator": "printed p7 Exhibits8-10; p8 Exhibit11",
+      "type": "official historical engineering illustration"
+    },
+    {
+      "id": "gm_epc",
+      "url": "https://betterbuildingssolutioncenter.energy.gov/implementation-models/general-motors-funds-energy-conservation-projects-through-energy-performance",
+      "title": "General Motors Funds Energy Conservation Projects through an Energy Performance Contracting Model",
+      "published": "2015-10-22",
+      "locator": "Overview; Goal Setting; Contracting Mechanism; Outcomes",
+      "type": "DOE-hosted company-reported case"
+    },
+    {
+      "id": "skyven_case",
+      "url": "https://betterbuildingssolutioncenter.energy.gov/implementation-models/skyven-technologies-decarbonizing-industrial-process-heat-public-private/printpdf",
+      "title": "Skyven Technologies: Decarbonizing Industrial Process Heat with Public-Private Funding and an Energy-as-a-Service Model",
+      "locator": "Overview; Outcome; Outcomes",
+      "type": "DOE-hosted case; internally inconsistent"
+    },
+    {
+      "id": "skyven_poster",
+      "url": "https://betterbuildingssolutioncenter.energy.gov/sites/default/files/Climate_Finance_Award_Poster_Skyven.pdf",
+      "title": "2024 Climate Finance Award: Skyven Technologies",
+      "published": "2024",
+      "locator": "p1",
+      "type": "official poster; conflicts with case"
+    }
+  ],
+  "missing_data": [
+    "bank borrower relationship and exposure",
+    "eligible asset inventory and service output",
+    "current equipment baseline and planned/required replacement",
+    "current capex tariffs and financing alternatives",
+    "methane composition and reference conditions",
+    "site/hour emission factors",
+    "refrigerants and embodied emissions",
+    "cash costs credit risk collections",
+    "commissioning schedule and persistence",
+    "causal additionality"
+  ],
+  "accounting_rules": [
+    "Physical project effects separated from bank PCAF attribution",
+    "Financed emissions can change due to ownership/value/exposure without physical changes",
+    "No bankwide adoption assumption",
+    "No aggregation with borrower corporate inventories",
+    "PCAF avoided/forward metrics separately disclosed and not deducted from financed emissions",
+    "Own-operation intervention not estimated absent capex and measured incremental effect"
+  ]
+}

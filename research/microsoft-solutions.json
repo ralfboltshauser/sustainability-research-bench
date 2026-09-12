@@ -1,0 +1,297 @@
+{
+  "company": "Microsoft",
+  "as_of": "2026-09-12",
+  "baseline": "FY25 activity at fixed service output; weather held comparable for engineering comparison",
+  "horizon": "Feasible adoption through 2031 using commercially available components/technologies today",
+  "status": "Three source-grounded interventions; no defensible companywide feasible total or principal-safe investable capacity quantified",
+  "method": "Separate frozen-practice technical gap, committed/business-as-usual deployment, and causal additional effect of new fund capital. Growth-only datacenter construction excluded from strict fixed-output case. No invented adoption fractions.",
+  "interventions": [
+    {
+      "id": "direct_chip_cooling",
+      "name": "Direct-to-chip cooling, with site-selected dry heat rejection and control optimization",
+      "relevant_activity": "Operating owned or cooperatively managed leased datacenters; eligible refresh of existing compute service.",
+      "commercial_today": true,
+      "maturity_evidence": "Vertiv commercial direct-to-chip CDU product family available in EMEA June 2025; Microsoft deployment and operational disclosures. Integrated Microsoft zero-evaporation new-build design has deployment timing uncertainty; components are available, not proof every legacy site is retrofit-ready.",
+      "baseline_inputs_needed": [
+        "Equivalent delivered virtual-core-hours, memory/storage and SLA, separately from AI accelerator service",
+        "Eligible air-cooled rack/server inventory, refresh schedule and compatibility",
+        "Site hourly IT and total electricity, cooling water withdrawal/consumption, weather and heat rejection design",
+        "Site marginal power/water factors and coolant/refrigerant inventory"
+      ],
+      "quantified_effects": [
+        {
+          "metric": "GHG",
+          "reduction_fraction": 0.15,
+          "unit": "relative cradle-to-grave kgCO2e per annualized virtual core",
+          "case": "Cold plate vs air, 2021 US average-grid model",
+          "source": "cooling_lca"
+        },
+        {
+          "metric": "nonrenewable_primary_energy",
+          "reduction_fraction": 0.15,
+          "unit": "relative MJ per annualized virtual core",
+          "case": "Same model; NOT metered electricity savings",
+          "source": "cooling_lca"
+        },
+        {
+          "metric": "blue_water_consumption",
+          "reduction_fraction": 0.31,
+          "unit": "relative life-cycle water per annualized virtual core",
+          "case": "Same model; NOT site-only water withdrawals",
+          "source": "cooling_lca"
+        },
+        {
+          "metric": "onsite_cooling_evaporation",
+          "reduction_fraction": 1.0,
+          "case": "Only for cooling evaporation eliminated by a fully dry closed-loop design; excludes fill, maintenance, sanitation, upstream electricity and manufacturing",
+          "source": "zero_water"
+        }
+      ],
+      "applicability_bounds": "LCA assumes 15-year datacenter, 6-year servers; cold-plate scenario has 20% overclocking, 28% more virtual cores and 3% lower PUE. Cannot infer generic fleet or AI GPU reduction. Baseline service must actually be deliverable with this configuration. Water-free heat rejection is a different design comparison and may increase power.",
+      "bounded_subcase": {
+        "site": "Phoenix owned datacenters FY25",
+        "baseline_withdrawal_ML": 981,
+        "baseline_facility_electricity_MWh": 954206,
+        "gross_withdrawal_avoidance_physical_ceiling_ML_per_year": 981,
+        "validated_feasible_savings_ML_per_year": null,
+        "interpretation": "0\u2013981 ML is only a deliberately loose gross withdrawal ceiling at fixed FY25 service/weather, not a deployment estimate, net lifecycle saving, or expected range. Actual cooling fraction, necessary withdrawals and feasible retrofit share are unknown.",
+        "source": "factsheet_2026"
+      },
+      "conditional_calculation": "For independently validated LCA-matched cohort: avoided GHG = 0.15 * cohort baseline cradle-to-grave GHG; avoided blue water = 0.31 * matched cohort baseline lifecycle consumption. For dry conversion: avoided site water = eligible cooling evaporation eliminated, then subtract additional upstream water. Do not combine these as independent savings.",
+      "uptake_by_2031": {
+        "fraction": null,
+        "scenario": "Replace only eligible racks at documented scheduled refreshes through 2031; dry conversion only after site engineering and power/water tradeoff measurement. No public cohort inventory supports a percentage."
+      },
+      "already_implemented_or_committed": "New designs use zero-evaporation approach since August 2024; published schedule says pilots in 2026/new sites online late 2027. June 2026 disclosure says about 90% of owned fleet already uses efficient low-/zero-water cooling and Phoenix WUE improved 23% in FY25, with operational improvements rolling out globally.",
+      "costs": {
+        "incremental_capex_usd": null,
+        "annual_cash_savings_usd": null,
+        "cashflow_formula": "Avoided purchased kWh * tariff + avoided billed water/sewer * tariff - added electricity - service/maintenance - financing/admin. Use measured electricity, not primary-energy LCA percentage.",
+        "warning": "Water-driven dry conversion can worsen electricity operating cost; no quoted Microsoft retrofit cost or payback found."
+      },
+      "repayable_mechanism": "Proposed equipment lease or metered savings contract; fund finances compatible cooling equipment and receives actual contracted payments. Only underwrite measured, creditworthy cashflow sufficient for nominal principal plus losses and administration; not a water-damage valuation.",
+      "additional_investor_effect": "Unproven. Exclude existing installed or funded/committed work; identify a financing-constrained eligible retrofit and demonstrate acceleration or otherwise absent deployment.",
+      "constraints_and_shifted_harms": [
+        "Electrical capacity/headroom, uptime and shutdown windows, liquid compatibility, warranties, chip service equivalence",
+        "Dry rejection adds electricity and possibly upstream water/emissions; site climate matters",
+        "Coolant/refrigerant manufacture, leakage, disposal and copper replacement; use product-specific inventory",
+        "Two-phase immersion excluded from selected intervention; its fluid hazards and architecture differ"
+      ],
+      "overlap": [
+        "Electricity decarbonization reduces the carbon benefit of electricity efficiency; calculate once on residual electricity",
+        "Do not add dry cooling, controls and the full cold-plate LCA percentage for same cohort",
+        "Construction embodied impacts already included in LCA must not be counted again under timber"
+      ],
+      "sources": [
+        "cooling_lca",
+        "zero_water",
+        "water_2026",
+        "factsheet_2026",
+        "vertiv"
+      ]
+    },
+    {
+      "id": "hybrid_mass_timber",
+      "name": "Hybrid cross-laminated timber structure for eligible replacement datacenter buildings",
+      "relevant_activity": "Embodied construction emissions in capital goods; only construction required to sustain fixed service output fits strict fixed-output case.",
+      "commercial_today": true,
+      "maturity_evidence": "Commercial CLT; Microsoft had a CLT campus in 2021 and reported its first two hybrid datacenters built in May 2025.",
+      "baseline_inputs_needed": [
+        "Project-specific same-capacity steel or precast design BOM and embodied LCA",
+        "Eligible replacement building area/volume through 2031, excluding growth-only capacity",
+        "CLT procurement, sourcing/forest counterfactual, product EPD, transport and end-of-life treatment",
+        "Contractor cost and schedule quotes"
+      ],
+      "quantified_effects": [
+        {
+          "metric": "building_embodied_GHG",
+          "reduction_fraction": 0.35,
+          "baseline": "conventional steel building",
+          "status": "Microsoft two-project estimate, not measured fleet-wide factor",
+          "source": "timber"
+        },
+        {
+          "metric": "building_embodied_GHG",
+          "reduction_fraction": 0.65,
+          "baseline": "typical precast concrete building",
+          "status": "Alternative baseline, not additive to steel comparison",
+          "source": "timber"
+        }
+      ],
+      "applicability_bounds": "Apply only to a project with the same structural/service requirements and comparable LCA boundary. Public announcement does not expose module boundaries, absolute emissions or biogenic accounting. Cannot apply to total Scope 3 capital goods (which also contains servers and equipment).",
+      "conditional_calculation": "Avoided project embodied emissions = 0.35 * independently validated comparable steel-building baseline, OR 0.65 * comparable precast baseline. Sum only verified eligible replacement projects; do not sum the two factors.",
+      "bounded_subcase": {
+        "normalized_comparable_steel_baseline_tCO2e": 1,
+        "conditional_avoided_tCO2e": 0.35,
+        "absolute_company_savings_tCO2e": null,
+        "interpretation": "Unit scenario only; not evidence that Microsoft has an unimplemented one-tonne or larger eligible cohort."
+      },
+      "uptake_by_2031": {
+        "fraction": null,
+        "scenario": "Eligible naturally required replacements with completed structural/fire approvals and contracted material supply. If no building replacement needed to sustain baseline output by 2031, strict fixed-output construction subcase is zero; do not invent growth projects to create savings."
+      },
+      "already_implemented_or_committed": "Two Virginia hybrid buildings and campus timber are existing actions. Low-carbon material procurement is already an active program.",
+      "costs": {
+        "incremental_capex_usd": null,
+        "annual_cash_savings_usd": null,
+        "warning": "Published 5\u201310% premium compares CLT with traditional residential timber, not datacenter steel/concrete; unusable as project premium. Need comparable contractor bids.",
+        "possible_cash_benefit": "Shorter construction or lower steel quantities could reduce total project cost, but unquantified."
+      },
+      "repayable_mechanism": "Proposed supplier equipment/working-capital loan secured by purchase orders, or eligible property lease. Repayment comes from timber sales or lease payments. A material price premium alone has no automatic savings stream.",
+      "additional_investor_effect": "Requires supplier capacity or working-capital bottleneck and additional uncommitted eligible orders; buying Microsoft shares or refinancing existing construction does not establish extra avoided emissions.",
+      "constraints_and_shifted_harms": [
+        "Fire/structural code, moisture, loads, local construction skills and transport",
+        "Forest harvest counterfactual, biodiversity, land competition, adhesives and end-of-life carbon release must be evaluated",
+        "Construction-only result is not annual recurring reduction unless lifecycle annualization is explicitly adopted"
+      ],
+      "overlap": [
+        "Other low-carbon concrete/steel strategies act on remaining material quantities; never stack whole-building percentages",
+        "Recalculate building component if combined with cold-plate whole-datacenter LCA"
+      ],
+      "sources": [
+        "timber",
+        "timber_built"
+      ]
+    },
+    {
+      "id": "additional_clean_power",
+      "name": "Additional wind/solar supply with storage or existing hydro flexibility where deliverable",
+      "relevant_activity": "Datacenter electricity, focusing on residual fossil generation serving fixed existing service demand.",
+      "commercial_today": true,
+      "maturity_evidence": "Operating renewable portfolio and Powerex hourly-matched hydro/wind/solar service demonstrate commercial procurement models; regional replication remains contingent on physical resources.",
+      "baseline_inputs_needed": [
+        "Hourly location-specific loads, grid dispatch/marginal emissions, existing contracted generators and start dates",
+        "Generation profiles, connection status, transmission rights, curtailment and storage roundtrip losses",
+        "Generation and storage lifecycle EPDs, land/water/ecology data",
+        "Incremental capex, PPA price, maintenance, tax, debt seniority and repayment schedule"
+      ],
+      "quantified_effects": [
+        {
+          "metric": "avoided_GHG_per_delivered_MWh",
+          "value": null,
+          "unit": "tCO2e/MWh",
+          "reason": "No Microsoft/site-specific credible marginal displacement factor established; annual certificates or grid-average inventory differences are insufficient."
+        },
+        {
+          "metric": "operational_generation_CO2",
+          "value": 0,
+          "unit": "direct combustion CO2 from wind/solar operation",
+          "reason": "Physical non-combustion generation property; excludes full lifecycle and grid counterfactual. Never use as zero lifecycle emissions."
+        }
+      ],
+      "conditional_calculation": "Avoided physical tCO2e = sum_hour(additional delivered MWh * displaced marginal tCO2e/MWh) - incremental lifecycle generation/storage/grid emissions - induced system leakage. Must model project system counterfactual; storage shifts time and loses energy, it does not itself generate clean power.",
+      "uptake_by_2031": {
+        "fraction": null,
+        "scenario": "Only new incremental, permitted/interconnected projects feasibly operating by 2031 and demonstrably serving/displacing residual fossil energy. Existing contracted projects belong in no-new-fund case."
+      },
+      "already_implemented_or_committed": "February 2026: 40 GW renewable supply contracted, 19 GW online, remainder expected over five years; FY25 annual renewable matching achieved. Powerex agreement provides hourly service in Washington. These are not unclaimed future funding benefits.",
+      "costs": {
+        "incremental_capex_usd": null,
+        "annual_cash_savings_usd": null,
+        "cashflow_formula": "Actual project PPA/electricity receipts minus O&M, taxes, lease, replacement reserve and senior debt; compare contractual repayable cash to fund principal.",
+        "warning": "No Microsoft-specific contract prices/project costs retrieved; generic LCOE is not a PPA price or guaranteed investment return."
+      },
+      "repayable_mechanism": "Proposed project loan to additional contracted wind/solar/storage assets, repaid from PPA receipts. A Microsoft offtake can support bankability, but availability of such investment and principal recovery require diligence; neither is established here.",
+      "additional_investor_effect": "Demonstrate fund causes financing close, earlier in-service date or additional project volume beyond 40 GW commitments and business-as-usual developers. PPA additionality is not identical to this fund additionality.",
+      "constraints_and_shifted_harms": [
+        "Interconnection/transmission, seasonal mismatch, firm capacity and storage losses",
+        "Land/biodiversity, mining/material processing and disposal; hydro water/ecological impacts",
+        "Reallocating existing clean electricity can leave other customers with more fossil power; hourly matching alone does not resolve counterfactual"
+      ],
+      "overlap": [
+        "Apply to electricity remaining after efficiency; do not add market/location Scope2 accounting gap as avoided physical emissions",
+        "Supplier clean electricity and Microsoft direct electricity must be attributed separately to avoid double counting"
+      ],
+      "sources": [
+        "energy_2026",
+        "powerex"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "cooling_lca",
+      "title": "Alissa et al., Using life cycle assessment to drive innovation for sustainable cool clouds, Nature 641, 331\u2013338 (2025)",
+      "url": "https://www.nature.com/articles/s41586-025-08832-3",
+      "accessible_pdf": "https://d-nb.info/137120098X/34",
+      "locator": "Table 3 p335; Table 4 p336; functional unit/lifetimes p334; Methods",
+      "date": "2025-04-30",
+      "type": "primary peer-reviewed Microsoft/WSP LCA",
+      "local_file": "sources/microsoft/cooling-lca-2025.pdf",
+      "inspection": "Full article read; PDF tables extracted and screenshot requested; reductions taken from Table 4, not abstract range."
+    },
+    {
+      "id": "zero_water",
+      "title": "Next-generation datacenters consume zero water for cooling",
+      "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/",
+      "locator": "Mitigating energy impacts; Pilot projects and implementation; final footnote",
+      "date": "2024-12-09",
+      "type": "Microsoft design announcement; current page has timing and basis footnote"
+    },
+    {
+      "id": "water_2026",
+      "title": "Inside Microsoft\u2019s two-decade push to cut water intensity while scaling for growth",
+      "url": "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/",
+      "locator": "Early water stewardship by design; Modernizing cooling; footnote 1",
+      "date": "2026-06-24",
+      "type": "Microsoft operational disclosure"
+    },
+    {
+      "id": "factsheet_2026",
+      "title": "Microsoft 2026 Environmental Data Fact Sheet",
+      "url": "https://aka.ms/SustainabilityFactsheet2026",
+      "locator": "Table 15 p25; definitions and boundaries p26",
+      "date": "2026",
+      "type": "Microsoft FY25 primary environmental data",
+      "local_file": "sources/microsoft/factsheet-2026.pdf"
+    },
+    {
+      "id": "vertiv",
+      "title": "Vertiv expands liquid cooling portfolio with scalable solutions for AI and HPC applications",
+      "url": "https://www.vertiv.com/en-emea/about/news-and-events/news-releases/vertiv-expands-liquid-cooling-portfolio-with-scalable-solutions-for-ai-and-hpc-applications/",
+      "locator": "June 3 2025 release, commercial availability and retrofit products",
+      "date": "2025-06-03",
+      "type": "Manufacturer commercial availability evidence, not measured Microsoft outcome"
+    },
+    {
+      "id": "timber",
+      "title": "Microsoft builds first datacenters with wood to slash carbon emissions",
+      "url": "https://news.microsoft.com/source/features/sustainability/microsoft-builds-first-datacenters-with-wood-to-slash-carbon-emissions/",
+      "locator": "Opening estimate; Leveraging scale; Cost-benefit analysis",
+      "date": "2024-10-31",
+      "type": "Microsoft project estimate; no disclosed public comparative LCA/BOM"
+    },
+    {
+      "id": "timber_built",
+      "title": "Building new markets to advance sustainability",
+      "url": "https://news.microsoft.com/on-the-issues/2025/05/26/building-new-markets-to-advance-sustainability/",
+      "locator": "Building with low-carbon materials",
+      "date": "2025-05-26",
+      "type": "Microsoft deployment follow-up"
+    },
+    {
+      "id": "energy_2026",
+      "title": "A milestone achievement in our journey to carbon negative",
+      "url": "https://blogs.microsoft.com/blog/2026/02/18/a-milestone-achievement-in-our-journey-to-carbon-negative/",
+      "locator": "40 GW section; footnotes 2 and 4; Scaling partnerships",
+      "date": "2026-02-18",
+      "type": "Microsoft procurement disclosure"
+    },
+    {
+      "id": "powerex",
+      "title": "Powerex announces agreement with Microsoft for 24x7 carbon-free energy",
+      "url": "https://powerex.com/powerex-announces-agreement-microsoft-24x7-carbon-free-energy-0",
+      "locator": "Agreement summary and independent verification",
+      "date": "2023-06",
+      "type": "Supplier contract evidence, not proof of marginal grid abatement"
+    }
+  ],
+  "missing_data": [
+    "Eligible site/server cohort and actual equivalent computing output",
+    "Cooling-only water versus total withdrawals, electrical penalty and site capital costs",
+    "Eligible replacement construction BOM/EPDs and by-2031 schedule",
+    "Project-hour marginal power displacement and extra renewable projects beyond existing commitments",
+    "Signed repayment cashflows and evidence of financing bottleneck attributable to a new fund"
+  ],
+  "fund_principal_rule": "One-billion-dollar nominal principal recovery is a cashflow constraint, not permission to equate environmental damages avoided with revenue. No principal guarantee or fund deployment capacity established."
+}

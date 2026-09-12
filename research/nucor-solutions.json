@@ -1,0 +1,95 @@
+{
+  "company": "Nucor",
+  "as_of": "2026-09-12",
+  "assessment": "Applicable commercial interventions exist; public data do not establish a remaining, fund-additional, bankable companywide abatement total.",
+  "baseline": {"year": 2025, "intensity_kgCO2e_per_metric_tonne_hot_rolled": 1051, "boundary": "GSCC hot-rolled steel, Scopes 1, 2, 3; not corporate enterprise or SASB cast steel", "source": "S1", "page": 38, "matching_production_denominator": null},
+  "scenario": {
+    "kind": "normalized target-achievement scenario, not independent engineering forecast",
+    "fixed_output_tonnes_hot_rolled_per_year": 1000000,
+    "output_status": "analyst normalization, not actual facility production or uptake percentage",
+    "hold_mix_year": 2025,
+    "rollout": "company 2030 target achieved and maintained in 2031, conditional on implementation",
+    "target_kgCO2e_per_tonne": 975,
+    "baseline_tCO2e_per_year": 1051000,
+    "target_tCO2e_per_year": 975000,
+    "target_gap_tCO2e_per_year": 76000,
+    "target_gap_percent": 7.231208372978116,
+    "physical_avoided_tCO2e_per_year": null,
+    "fund_additional_tCO2e_per_year": null,
+    "credited_fund_savings_pending_evidence": 0,
+    "remaining_technology_component_split": null,
+    "historic_roadmap_reference": {"baseline_year": 2023, "baseline_kgCO2e_per_tonne": 1091, "total_reduction_kgCO2e_per_tonne": 116, "warning": "Do not treat historic waterfall as remaining 2025 gap or add it to current reductions."}
+  },
+  "interventions": [
+    {
+      "name": "Furnace efficiency: reheat optimization and EAF carbon delivery",
+      "commercial_status": "demonstrated at Nucor Seattle; commercial controls and injectors; further site eligibility unknown",
+      "historic_roadmap_kgCO2e_per_tonne_hot_rolled": 41,
+      "historic_components": [{"name":"reheat optimization","value":26,"scope":"1"},{"name":"charge/injection carbon","value":15,"scope":"1 and 3"}],
+      "roadmap_source": "S1 p41",
+      "measured_evidence": [
+        {"source":"S2","site":"Seattle","period":"post April 2016 commissioning, reported September 2017","electricity_reduction_percent":5,"gas_reduction_percent":11.5,"combined_energy_cost_reduction_percent_lower_bound":6,"boundary":"furnace consumption and energy cost per source-defined ton","baseline_kWh_per_tonne":null,"evidence_quality":"supplier reported"},
+        {"source":"S3 pp4-9 Figures6-10 Table2","site":"Seattle","period":"Jan2019-Feb2021 baseline; post March2021 installation","baseline_carbon_lb_per_cast_ton":25.35,"after_carbon_lb_per_cast_ton":13.60,"material_saving_lb_per_cast_ton":11.75,"electricity_reduction_percent_HEP":3.3,"evidence_quality":"supplier/Nucor coauthored before-after; operating-program confounding","unit_note":"source cast ton convention not normalized to metric tonne"}
+      ],
+      "bounded_energy_example":{"baseline_EAF_MWh":1000,"saved_MWh_if_5_percent_replicates":50,"is_company_annual_estimate":false},
+      "alternative":"Scrap preheat: S4 Charter comparator reports17%energy saving and nearly USD4m/year savings; not transferable to Nucor and not additive to controls.",
+      "rollout_by_2031":"Only named unoptimized assets passing metallurgical and net-savings trials; no numerical uptake assumed.",
+      "cashflow":"Avoided electricity, gas and carbon purchases less maintenance/compressed-air/outage costs.",
+      "capex":null,
+      "bankable_repayment":null,
+      "constraints":["existing Seattle installations excluded from new additionality","compressed-air availability","grade/yield compliance","controls/injectors/preheat overlap","retrofit downtime"]
+    },
+    {
+      "name":"Additional cleaner electricity",
+      "historic_roadmap_kgCO2e_per_tonne_hot_rolled":25,
+      "scope":"2",
+      "source":"S1 pp41-43",
+      "existing_commitments":[{"project":"Sebree solar VPPA","MW":250,"status":"generation began September2025"},{"project":"Western Trail wind VPPA","MW":100,"status":"operating2021"},{"project":"Kingman battery","MW":50,"status":"operating late2025; energy duration undisclosed"},{"project":"Kingman solar","MW":25,"status":"2026 construction planned"},{"project":"Sedalia wind","MW":75,"status":"sleeved PPA"}],
+      "rollout_by_2031":"Further interconnectable renewables/onsite projects and utility arrangements, after residual-load and contract review; fusion excluded.",
+      "physical_reduction_factor":null,
+      "accounting":"REC-based market inventory changes distinct from marginal physical emissions. Use hourly relevant geography and forward grid scenarios, S7.",
+      "cashflow":"Power sales to project owner or verified delivered tariff savings; VPPA settlement risk can be negative.",
+      "capex":null,"bankable_repayment":null,
+      "constraints":["continuous EAF reliability","grid interconnection","hourly dispatch","REC ownership","storage losses and charging mix","already executed projects not additional"]
+    },
+    {
+      "name":"Low-copper scrap and qualified lower-carbon iron feedstock",
+      "historic_roadmap_kgCO2e_per_tonne_hot_rolled":15,
+      "scope":"3",
+      "source":"S1 pp41-42; S5",
+      "factor_status":"combined company projection; individual scrap-versus-pig-iron share not disclosed",
+      "deployment":"Nucor Berkeley low-copper shred; Bushnell nonferrous recovery separately demonstrated",
+      "measured_steel_GHG_factor":null,
+      "rollout_by_2031":"Only quality-qualified, traceable additional throughput that displaces measured virgin metallic inputs.",
+      "cashflow":"Avoided metallics cost plus saleable copper net processing/yield/logistics costs; data unavailable.",
+      "capex":null,"bankable_repayment":null,
+      "constraints":["copper and tramp-element limits differ by grade","scrap supply","material balance and yield","virgin substitution ratio not1:1 by default","land-use/regrowth impacts of charcoal iron","already planned Berkeley activity"]
+    },
+    {
+      "name":"Louisiana natural-gas DRI capture",
+      "historic_roadmap_kgCO2e_per_tonne_hot_rolled":35,
+      "roadmap_scope":"3 in steel-product boundary",
+      "source":"S1 pp41-42; S6",
+      "gross_capture_ceiling_tCO2_per_year":800000,
+      "measured_annual_capture_tCO2":null,
+      "status":"contract signed2023; startup expected2026 in latest retrieved status; annual operation not established",
+      "rollout_by_2031":"Deliver and verify existing project, not a new unspecified expansion.",
+      "physical_net_avoidance":null,
+      "cashflow":"Needs contracted payments, verified eligible incentives or enforceable premium; no assumed cash savings or tax-credit amounts.",
+      "capex":null,"bankable_repayment":null,
+      "investor_additionality":"No credit for already contracted capacity unless financing demonstrably changes timing/scope.",
+      "constraints":["capture uptime","energy penalty","transport/storage verification","upstream natural-gas emissions","plant capture and steel-product roadmap factors cannot be added"]
+    }
+  ],
+  "sources": [
+    {"id":"S1","title":"Nucor2025CorporateSustainabilityReport","url":"https://indd.adobe.com/view/publication/cc4a577c-36f1-4ae0-a823-7e9f3f547ca5/4a1d/publication-web-resources/pdf/2025_Sustainability_Report.pdf","pages":[38,41,42,43],"local":"sources/nucor/csr2025.pdf","verification":"downloaded by footprint researcher; text read and p41 chart visually checked"},
+    {"id":"S2","title":"Tenova Nucor Seattle controls results","date":"2017-09-18","url":"https://tenova.com/newsroom/press-releases/tenovas-nextgenr-i-eafr-and-water-detection-technologies-significantly"},
+    {"id":"S3","title":"Decarbonization at Nucor Seattle using Tallman Supersonic Carbon Injectors","url":"https://tallmantechnologies.ca/pdf/Decarbonization%20at%20Nucor%20Seattle%20Using%20Tallman%20Supersonic%20Carbon%20Injectors%20%28TSCi%29.pdf","pages":[4,5,6,7,8,9],"period":"2019-2021"},
+    {"id":"S4","title":"DOE Better Plants Charter Steel Sustainable Scrap Preheat","url":"https://betterbuildingssolutioncenter.energy.gov/showcase-projects/charter-steel-sustainable-scrap-preheat-system","evidence":"partner supplied original case"},
+    {"id":"S5","title":"Nucor Advanced Material Recovery Case Study","date":"2025-05-16","url":"https://nucor.com/2025/05/16/advanced-material-recovery-case-study/"},
+    {"id":"S6","title":"Nucor ExxonMobil capture agreement and2026status","urls":["https://investors.nucor.com/news/news-details/2023/Nucor-Enters-Into-Carbon-Capture-Storage-Agreement-with-ExxonMobil-06-01-2023/default.aspx","https://corporate.exxonmobil.com/news/viewpoints/2025-taking-carbon-capture-and-storage-from-momentum-to-impact"]},
+    {"id":"S7","title":"EPA AVERT Questions and Answers","sections":["5 emission rates","6 future resource impacts"],"url":"https://www.epa.gov/avert/avert-questions-and-answers"}
+  ],
+  "missing_data":["matching actual hot-rolled production denominator","remaining eligible mill assets and existing installations","latest measure-specific progress against2023waterfall","metered electricity/gas/carbon intensity by asset and steel grade","project bids and commissioning schedules","current marginal tariffs and consumable prices","incremental maintenance/compressed-air/outage costs","scrap chemistry mass balance and virgin substitution","supplier lifecycle evidence","hourly electricity generation/load and forward marginal emissions","REC and contract ownership","capture achieved uptime and energy penalty","incentive recipient and eligibility","enforceable repayment terms","evidence fund changes financing counterfactual"],
+  "fund_note":"Principal preservation cannot be proven from social damage avoided. No capital allocation or profit-free loan size supported yet. Fund credited savings zero pending evidence is an attribution convention, not zero technical potential."
+}

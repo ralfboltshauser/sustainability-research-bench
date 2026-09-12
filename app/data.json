@@ -1,0 +1,1734 @@
+{
+  "valuation": 255.12,
+  "valuationYear": 2024,
+  "technologyCutoff": "12 September 2026",
+  "horizon": 2031,
+  "valuationSource": "https://capitalscoalition.org/wp-content/uploads/2026/07/Global-Value-Factors-Database-V4-2026-External.xlsx",
+  "companies": [
+    {
+      "slug": "walmart",
+      "name": "Walmart",
+      "ticker": "WMT",
+      "sector": "Retail",
+      "period": "FY2026",
+      "scope1": 8160000,
+      "activity": "Refrigerant leaks",
+      "status": "Direct-emissions sensitivity; net gap unknown",
+      "kind": "scenario",
+      "baseline": 4080000,
+      "reductionRate": 0.9994764397905759,
+      "defaultCoverage": 0.5,
+      "unit": "tCO₂e / year",
+      "boundary": "Global onsite refrigerant leakage, including refrigeration and HVAC; energy and lifecycle effects excluded",
+      "technology": "Lower-impact CO₂ refrigeration",
+      "summary": "Walmart reports 4.08 million tonnes from onsite refrigerants and a 20.7% year-over-year decline. Low-impact systems are already deployed, but the remaining emissions-weighted conversion opportunity is undisclosed.",
+      "formula": "4,080,000 × assumed converted emissions share × (1 − 0.1 ÷ 191)",
+      "opsBaseline": 14400000,
+      "opportunity": "Finance refrigeration replacement and installation capacity.",
+      "constraints": [
+        "The deployment percentages, including zero, are assumptions. Eligible extent and new funding impact are not measured.",
+        "619 U.S. facilities use ultra-low-GWP systems partly or fully. This is not 619 full conversions or a share of global refrigerant emissions.",
+        "About 80% reductions reported for some projects concern installed legacy refrigerant footprint, not annual leakage or whole-store emissions.",
+        "The external 191 versus 0.1 tonne comparison is only an equal-leaked-mass direct sensitivity. Walmart’s current gas mix, HVAC share and site suitability remain unknown.",
+        "The older DOE study’s whole-store propane row has an unresolved unit/conversion discrepancy. Its reported net result is not used as a validated net reduction factor.",
+        "Walmart already funds end-of-life replacements and specifies CO₂ refrigeration for new stores and clubs. Count only extra or earlier improvements beyond this baseline."
+      ],
+      "sources": [
+        [
+          "Inventory · Walmart ESG report, p. 31",
+          "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2026/FY2026-Walmart-ESG-Report.pdf"
+        ],
+        [
+          "Technology · DOE/Navigant supermarket comparison, pp. 19–20",
+          "https://www.energy.gov/sites/prod/files/2015/02/f19/Hannaford%20Study%20Report%201-22-2015_CLEAN.pdf"
+        ],
+        [
+          "Walmart FY2025 ESG Report",
+          "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2025/FY2025-Walmart-ESG-Report.pdf"
+        ],
+        [
+          "Walmart 2024 CDP response",
+          "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2025/2024-Walmart-CDP-Response.pdf?cid=esgreport"
+        ],
+        [
+          "Integrated supermarket refrigeration for very high ambient temperature",
+          "https://www.ornl.gov/publication/integrated-supermarket-refrigeration-very-high-ambient-temperature"
+        ],
+        [
+          "EPA GreenChill Commercial Refrigeration Leak Prevention and Repair, May 2011",
+          "https://www.epa.gov/sites/production/files/documents/leakpreventionrepairguidelines.pdf"
+        ],
+        [
+          "EPA GHG Emission Factors Hub, June 2024",
+          "https://www.epa.gov/system/files/documents/2024-02/ghg-emission-factors-hub-2024.pdf"
+        ],
+        [
+          "EPA GreenChill store certification criteria",
+          "https://www.epa.gov/greenchill/about-store-certification"
+        ]
+      ],
+      "steps": [
+        "Walmart reports 4.08 million tonnes CO₂e of onsite refrigerant emissions in FY2026.",
+        "An external paired-store comparison reports 191 versus 0.1 tonnes of direct refrigerant impact at equal leaked mass; the factor is not a measured Walmart result.",
+        "Apply that factor only to the explicitly assumed emissions share. Net energy and lifecycle effects and eligible coverage remain unknown.",
+        "Keep the direct sensitivity separate from already achieved inventory reductions and funded replacements. No fund-caused savings are established."
+      ],
+      "evidenceRecords": [
+        {
+          "claim": "Global onsite refrigerant emissions",
+          "value": "4,080,000",
+          "unit": "tCO2e/year",
+          "period": "FY2026",
+          "source": "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2026/FY2026-Walmart-ESG-Report.pdf",
+          "locator": "p.31 emissions table",
+          "type": "company reported inventory",
+          "note": ""
+        },
+        {
+          "claim": "Onsite refrigerant emissions change",
+          "value": "-20.7",
+          "unit": "percent year over year",
+          "period": "FY2026",
+          "source": "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2026/FY2026-Walmart-ESG-Report.pdf",
+          "locator": "p.31",
+          "type": "achieved inventory change; not intervention causal estimate",
+          "note": ""
+        },
+        {
+          "claim": "U.S. facilities partly or fully using ultra-low-GWP systems",
+          "value": "619",
+          "unit": "facilities",
+          "period": "2025-12-31",
+          "source": "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2026/FY2026-Walmart-ESG-Report.pdf",
+          "locator": "p.31 Using Lower-GWP Refrigeration Systems",
+          "type": "installed deployment",
+          "note": "Not full conversions; includes varied facility types, HVAC and multiple fluids. No emissions/capacity denominator."
+        },
+        {
+          "claim": "Earlier U.S. facilities partly or fully using ultra-low-GWP systems",
+          "value": "408",
+          "unit": "facilities",
+          "period": "2024",
+          "source": "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2025/FY2025-Walmart-ESG-Report.pdf",
+          "locator": "Onsite Refrigerants section",
+          "type": "installed deployment",
+          "note": ""
+        },
+        {
+          "claim": "Change in reported partial/full facility count",
+          "value": "211",
+          "unit": "facilities",
+          "period": "2024 to 2025",
+          "source": "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2026/FY2026-Walmart-ESG-Report.pdf",
+          "locator": "619 minus W25 408",
+          "type": "calculated disclosure-count difference",
+          "note": "Not a verified count of 211 completed full-store conversions."
+        },
+        {
+          "claim": "Some replacement projects reduce installed legacy refrigerant footprint",
+          "value": "80",
+          "unit": "percent, approximately",
+          "period": "FY2026 disclosure",
+          "source": "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2026/FY2026-Walmart-ESG-Report.pdf",
+          "locator": "p.31",
+          "type": "company claim; stock footprint",
+          "note": "Source does not define mass versus GWP-weighted stock precisely. Not annual leakage or whole-store reduction; no representative site average."
+        },
+        {
+          "claim": "New Walmart stores and Sams Clubs install transcritical CO2 refrigeration",
+          "value": "100",
+          "unit": "percent system designation in new installations",
+          "period": "FY2026 disclosure",
+          "source": "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2026/FY2026-Walmart-ESG-Report.pdf",
+          "locator": "p.31",
+          "type": "existing company policy",
+          "note": "No future new-build emissions credit additional to this policy; not global installed-share statistic."
+        },
+        {
+          "claim": "In-house refrigeration/HVAC technician workforce",
+          "value": "600",
+          "unit": "technicians, more than",
+          "period": "FY2026",
+          "source": "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2026/FY2026-Walmart-ESG-Report.pdf",
+          "locator": "p.31",
+          "type": "operational capacity disclosure",
+          "note": ""
+        },
+        {
+          "claim": "Historical HFC Scope 1 emissions",
+          "value": "4,432,447",
+          "unit": "tCO2e",
+          "period": "CY2023 in CDP2024",
+          "source": "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2025/2024-Walmart-CDP-Response.pdf?cid=esgreport",
+          "locator": "p.154 question7.15.1 row4",
+          "type": "historical gas-family inventory",
+          "note": "Not current onsite-only refrigerant inventory or gas blend shares; includes broader Scope1 boundary."
+        },
+        {
+          "claim": "Historical HCFC Scope 1 emissions",
+          "value": "106,468",
+          "unit": "tCO2e",
+          "period": "CY2023 in CDP2024",
+          "source": "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2025/2024-Walmart-CDP-Response.pdf?cid=esgreport",
+          "locator": "p.155 question7.15.1 row6",
+          "type": "historical gas-family inventory",
+          "note": ""
+        },
+        {
+          "claim": "Historical R-404A relevance",
+          "value": "Major driver of increased refrigerant leaks",
+          "unit": "qualitative",
+          "period": "CY2023 vs CY2022",
+          "source": "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2025/2024-Walmart-CDP-Response.pdf?cid=esgreport",
+          "locator": "p.151 question7.10.1",
+          "type": "company attribution",
+          "note": "Establishes R-404A use, not its current share."
+        },
+        {
+          "claim": "Whole-store electricity",
+          "value": "1,414,683 / 1,415,920",
+          "unit": "kWh",
+          "period": "Table V.2 September 2013–July 2014",
+          "source": "https://www.energy.gov/sites/prod/files/2015/02/f19/Hannaford%20Study%20Report%201-22-2015_CLEAN.pdf",
+          "locator": "p.20 Table V.2; Bradford then Turner",
+          "type": "external study reported",
+          "note": "Not annualized. Refrigerant paragraph describes year-long leak data while table is labelled September–July."
+        },
+        {
+          "claim": "Whole-store propane",
+          "value": "766 / 1,543",
+          "unit": "MMBtu",
+          "period": "Table V.2 September 2013–July 2014",
+          "source": "https://www.energy.gov/sites/prod/files/2015/02/f19/Hannaford%20Study%20Report%201-22-2015_CLEAN.pdf",
+          "locator": "p.20 Table V.2; Bradford then Turner",
+          "type": "external study reported",
+          "note": "Not annualized. Refrigerant paragraph describes year-long leak data while table is labelled September–July."
+        },
+        {
+          "claim": "Reported propane emissions",
+          "value": "13.18 / 26.56",
+          "unit": "tCO2e",
+          "period": "Table V.2 September 2013–July 2014",
+          "source": "https://www.energy.gov/sites/prod/files/2015/02/f19/Hannaford%20Study%20Report%201-22-2015_CLEAN.pdf",
+          "locator": "p.20 Table V.2; Bradford then Turner",
+          "type": "external study reported",
+          "note": "Not annualized. Refrigerant paragraph describes year-long leak data while table is labelled September–July."
+        },
+        {
+          "claim": "Direct refrigerant impact",
+          "value": "191 / 0.1",
+          "unit": "tCO2e",
+          "period": "Table V.2 September 2013–July 2014",
+          "source": "https://www.energy.gov/sites/prod/files/2015/02/f19/Hannaford%20Study%20Report%201-22-2015_CLEAN.pdf",
+          "locator": "p.20 Table V.2; Bradford then Turner",
+          "type": "external study reported",
+          "note": "Not annualized. Refrigerant paragraph describes year-long leak data while table is labelled September–July."
+        },
+        {
+          "claim": "Reported net impact",
+          "value": "1,179 / 1,003",
+          "unit": "tCO2e",
+          "period": "Table V.2 September 2013–July 2014",
+          "source": "https://www.energy.gov/sites/prod/files/2015/02/f19/Hannaford%20Study%20Report%201-22-2015_CLEAN.pdf",
+          "locator": "p.20 Table V.2; Bradford then Turner",
+          "type": "external study reported",
+          "note": "Not annualized. Refrigerant paragraph describes year-long leak data while table is labelled September–July."
+        },
+        {
+          "claim": "Measured leaked refrigerant mass, each store",
+          "value": "200",
+          "unit": "lb",
+          "period": "Study described year-long leakage",
+          "source": "https://www.energy.gov/sites/prod/files/2015/02/f19/Hannaford%20Study%20Report%201-22-2015_CLEAN.pdf",
+          "locator": "p.19 and p.20",
+          "type": "external measurement",
+          "note": ""
+        },
+        {
+          "claim": "Direct reduction computed from rounded study values",
+          "value": "99.9476",
+          "unit": "percent",
+          "period": "study comparison",
+          "source": "https://www.energy.gov/sites/prod/files/2015/02/f19/Hannaford%20Study%20Report%201-22-2015_CLEAN.pdf",
+          "locator": "Table V.2",
+          "type": "calculated external sensitivity; not Walmart factor",
+          "note": ""
+        },
+        {
+          "claim": "Refrigeration equipment incremental cost",
+          "value": "40",
+          "unit": "percent approximate premium",
+          "period": "2013 installation; report2015",
+          "source": "https://www.energy.gov/sites/prod/files/2015/02/f19/Hannaford%20Study%20Report%201-22-2015_CLEAN.pdf",
+          "locator": "p.6",
+          "type": "historical external case cost",
+          "note": "Not current Walmart capex; separate from piping/cases cost denominator."
+        },
+        {
+          "claim": "Piping and display case incremental cost",
+          "value": "10 / 15",
+          "unit": "percent premium",
+          "period": "2013 installation; report2015",
+          "source": "https://www.energy.gov/sites/prod/files/2015/02/f19/Hannaford%20Study%20Report%201-22-2015_CLEAN.pdf",
+          "locator": "p.6",
+          "type": "historical external case cost",
+          "note": ""
+        },
+        {
+          "claim": "Propane gas combustion CO2 factor",
+          "value": "61.46",
+          "unit": "kgCO2/MMBtu",
+          "period": "EPA2024 factors",
+          "source": "https://www.epa.gov/system/files/documents/2024-02/ghg-emission-factors-hub-2024.pdf",
+          "locator": "p.1 Table1 Propane Gas",
+          "type": "inventory conversion factor",
+          "note": ""
+        },
+        {
+          "claim": "Liquid propane combustion CO2 factor",
+          "value": "62.87",
+          "unit": "kgCO2/MMBtu",
+          "period": "EPA2024 factors",
+          "source": "https://www.epa.gov/system/files/documents/2024-02/ghg-emission-factors-hub-2024.pdf",
+          "locator": "p.1 Table1 Petroleum Products Propane",
+          "type": "inventory conversion factor",
+          "note": ""
+        },
+        {
+          "claim": "Stores can sustain annual leak rates below",
+          "value": "5",
+          "unit": "percent charge/year",
+          "period": "historical EPA2011",
+          "source": "https://www.epa.gov/sites/production/files/documents/leakpreventionrepairguidelines.pdf",
+          "locator": "p.2",
+          "type": "external achieved feasibility; not Walmart baseline",
+          "note": ""
+        },
+        {
+          "claim": "R-404A direct warming factor",
+          "value": "3,922",
+          "unit": "kgCO2e/kg emitted",
+          "period": "EPA2011 table; source GWP convention",
+          "source": "https://www.epa.gov/sites/production/files/documents/leakpreventionrepairguidelines.pdf",
+          "locator": "p.2 Table1",
+          "type": "physical factor; align GWP vintage before inventory comparison",
+          "note": ""
+        },
+        {
+          "claim": "Highest modeled efficiency advantage NH3/CO2 versus all-CO2",
+          "value": "12.23",
+          "unit": "percent",
+          "period": "2018 modeled extreme warm climates",
+          "source": "https://www.ornl.gov/publication/integrated-supermarket-refrigeration-very-high-ambient-temperature",
+          "locator": "abstract",
+          "type": "external model",
+          "note": "Comparison of two natural refrigerant architectures, not against Walmart baseline."
+        },
+        {
+          "claim": "Highest modeled total emissions advantage NH3/CO2 versus all-CO2",
+          "value": "11.2",
+          "unit": "percent",
+          "period": "2018 modeled extreme warm climates",
+          "source": "https://www.ornl.gov/publication/integrated-supermarket-refrigeration-very-high-ambient-temperature",
+          "locator": "abstract",
+          "type": "external model",
+          "note": ""
+        },
+        {
+          "claim": "Primary refrigerant GWP criterion for new certification category",
+          "value": "150",
+          "unit": "GWP upper threshold, strict less than",
+          "period": "2025 onward EPA program",
+          "source": "https://www.epa.gov/greenchill/about-store-certification",
+          "locator": "Category2",
+          "type": "voluntary criterion; not statutory conversion requirement",
+          "note": ""
+        }
+      ],
+      "researchUrl": "/research/deep-dive/walmart-deep.md",
+      "gapNote": "External equal-mass comparison; not a measured Walmart reduction",
+      "benchmarkPeriod": "2013–2014 paired-store study; published 2015",
+      "additionalMetrics": [
+        {
+          "label": "Partial or full low-GWP deployment",
+          "value": "619",
+          "unit": "U.S. facilities",
+          "note": "Reported at December 2025. Includes partial installations, varied facility types and HVAC; no emissions-weighted denominator.",
+          "source": "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2026/FY2026-Walmart-ESG-Report.pdf"
+        },
+        {
+          "label": "Refrigerant inventory change",
+          "value": "−20.7%",
+          "unit": "year over year",
+          "note": "FY2026 reported change. This is achieved inventory change, not a controlled causal estimate of a specific intervention.",
+          "source": "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2026/FY2026-Walmart-ESG-Report.pdf"
+        },
+        {
+          "label": "Verified R-404A leak avoided",
+          "value": "3.922",
+          "unit": "tCO₂e per kg of avoided leakage",
+          "note": "Physical unit calculation using the EPA 2011 GWP convention. Requires verified avoided R-404A mass and aligned GWP vintage; no Walmart eligible volume is established.",
+          "source": "https://www.epa.gov/sites/production/files/documents/leakpreventionrepairguidelines.pdf"
+        }
+      ],
+      "investmentEvidence": [
+        {
+          "label": "Current Walmart project economics",
+          "value": "Not established",
+          "note": "Asset-specific replacement bids, energy impacts, refrigerant savings and committed replacement dates are needed.",
+          "source": "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2026/FY2026-Walmart-ESG-Report.pdf"
+        },
+        {
+          "label": "Historical equipment premium",
+          "value": "≈40%",
+          "note": "2013 Hannaford case, reported in 2015. Piping and cases had a separate 10–15% premium. These percentages cannot be added and are not current Walmart quotes.",
+          "source": "https://www.energy.gov/sites/prod/files/2015/02/f19/Hannaford%20Study%20Report%201-22-2015_CLEAN.pdf"
+        },
+        {
+          "label": "Additionality test",
+          "value": "Earlier or extra adoption",
+          "note": "Compare each project with Walmart’s already funded end-of-life schedule. Societal damage dollars cannot repay a loan.",
+          "source": "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2026/FY2026-Walmart-ESG-Report.pdf"
+        }
+      ]
+    },
+    {
+      "slug": "exxon",
+      "name": "ExxonMobil",
+      "ticker": "XOM",
+      "sector": "Energy",
+      "period": "2025 · operated assets",
+      "scope1": 90000000,
+      "activity": "Upstream tank methane",
+      "status": "Conditional deployment scenario",
+      "kind": "scenario",
+      "baseline": 203116.80000000002,
+      "reductionRate": 0.8623322147651006,
+      "defaultCoverage": 0.5,
+      "unit": "tCO₂e / year",
+      "boundary": "Tank methane after recovered-gas combustion; other lifecycle effects excluded",
+      "technology": "Vapor recovery units",
+      "summary": "Methane escaping from storage can be captured at suitable sources. The climate benefit must count the CO₂ released when recovered methane is burned.",
+      "formula": "6,816 t CH₄ × assumed eligible untreated share × 95% × (29.8 − 2.75)",
+      "opportunity": "Finance eligible vapor recovery equipment with measured leak reduction.",
+      "constraints": [
+        "The source pool is inferred from rounded shares, not a list of untreated eligible tanks.",
+        "The 25%, 50% and 100% cases are assumptions, not a confidence interval.",
+        "Compression power, downstream leakage, other hydrocarbons and equipment impacts remain unquantified.",
+        "No displacement of other gas production is assumed. Fund additionality and repayment need project evidence.",
+        "Emission-factor updates increased some 2025 estimated fugitive emissions; monitoring coverage is not a fully reconciled measured inventory.",
+        "The company describes independent assurance of its 2025 inventory as underway. OGMP Gold Standard Pathway recognition must not be treated as completed verification.",
+        "Zero additional benefit is possible if suitable sources are already controlled or conversions would occur without this fund."
+      ],
+      "sources": [
+        [
+          "Inventory · ExxonMobil metrics and data",
+          "https://corporate.exxonmobil.com/publications/metrics-and-data"
+        ],
+        [
+          "Technology · EPA vapor recovery units",
+          "https://www.epa.gov/natural-gas-star-program/vapor-recovery-units"
+        ],
+        [
+          "Conversion · IPCC AR6 Table 7.15",
+          "https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_Chapter07.pdf"
+        ],
+        [
+          "ExxonMobil methane chapter",
+          "https://corporate.exxonmobil.com/Publications/Advancing-Climate-Solutions/driving-reductions-in-methane-emissions"
+        ],
+        [
+          "EPA historical Installing Vapor Recovery Units on Storage Tanks",
+          "https://19january2021snapshot.epa.gov/sites/static/files/2016-06/documents/ll_final_vap.pdf"
+        ],
+        [
+          "EPA earlier Installing Vapor Recovery Units on Crude Oil Storage Tanks",
+          "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1004FDH.TXT"
+        ],
+        [
+          "OGMP 2.0 official FAQ",
+          "https://www.ogmpartnership.org/frequently-asked-questions"
+        ]
+      ],
+      "steps": [
+        "Reported methane of 142,000 tonnes × 96% upstream × 5% tanks implies about 6,816 tonnes CH₄.",
+        "EPA gives 95% control for suitable vapor recovery sources.",
+        "Convert fossil methane at GWP100 29.8 and subtract 2.75 tonnes CO₂ per tonne of recovered methane burned.",
+        "Apply an explicit eligible untreated share; subtract other lifecycle effects when data becomes available."
+      ],
+      "evidenceRecords": [
+        {
+          "claim": "Operated methane",
+          "value": "142,000",
+          "unit": "t CH4/year",
+          "period": "2025",
+          "source": "https://corporate.exxonmobil.com/Publications/Advancing-Climate-Solutions/driving-reductions-in-methane-emissions",
+          "locator": "Methane at ExxonMobil; source chart footnote 8; Measurement and reporting; mitigation paragraphs",
+          "type": "reported",
+          "note": ""
+        },
+        {
+          "claim": "Upstream share",
+          "value": "96",
+          "unit": "%",
+          "period": "2025",
+          "source": "https://corporate.exxonmobil.com/Publications/Advancing-Climate-Solutions/driving-reductions-in-methane-emissions",
+          "locator": "Methane at ExxonMobil; source chart footnote 8; Measurement and reporting; mitigation paragraphs",
+          "type": "reported",
+          "note": ""
+        },
+        {
+          "claim": "Tank/storage upstream share",
+          "value": "5",
+          "unit": "% rounded",
+          "period": "2025",
+          "source": "https://corporate.exxonmobil.com/Publications/Advancing-Climate-Solutions/driving-reductions-in-methane-emissions",
+          "locator": "Methane at ExxonMobil; source chart footnote 8; Measurement and reporting; mitigation paragraphs",
+          "type": "reported",
+          "note": ""
+        },
+        {
+          "claim": "Operated Scope 1",
+          "value": "90,000,000",
+          "unit": "t CO2e/year",
+          "period": "2025",
+          "source": "https://corporate.exxonmobil.com/publications/metrics-and-data",
+          "locator": "Operated GHG emissions table, 2025 column; assurance introductory paragraph",
+          "type": "reported",
+          "note": ""
+        },
+        {
+          "claim": "Operated Scope 1 + market-based Scope 2",
+          "value": "97,000,000",
+          "unit": "t CO2e/year",
+          "period": "2025",
+          "source": "https://corporate.exxonmobil.com/publications/metrics-and-data",
+          "locator": "Operated GHG emissions table, 2025 column; assurance introductory paragraph",
+          "type": "reported",
+          "note": ""
+        },
+        {
+          "claim": "Tank/storage proxy pool",
+          "value": "6,816",
+          "unit": "t CH4/year",
+          "period": "2025",
+          "source": "https://corporate.exxonmobil.com/Publications/Advancing-Climate-Solutions/driving-reductions-in-methane-emissions",
+          "locator": "Methane at ExxonMobil; source chart footnote 8; Measurement and reporting; mitigation paragraphs",
+          "type": "derived",
+          "note": ""
+        },
+        {
+          "claim": "Additional eligible untreated tank fraction",
+          "value": null,
+          "unit": "fraction",
+          "period": "as of 2026-09-12",
+          "source": "https://corporate.exxonmobil.com/Publications/Advancing-Climate-Solutions/driving-reductions-in-methane-emissions",
+          "locator": "Methane at ExxonMobil; source chart footnote 8; Measurement and reporting; mitigation paragraphs",
+          "type": "not established",
+          "note": ""
+        },
+        {
+          "claim": "Remaining untreated tank count",
+          "value": null,
+          "unit": "tanks",
+          "period": "as of 2026-09-12",
+          "source": "https://corporate.exxonmobil.com/Publications/Advancing-Climate-Solutions/driving-reductions-in-methane-emissions",
+          "locator": "Methane at ExxonMobil; source chart footnote 8; Measurement and reporting; mitigation paragraphs",
+          "type": "not established",
+          "note": ""
+        },
+        {
+          "claim": "Pneumatic replacements",
+          "value": "10,000",
+          "unit": "devices exceeded",
+          "period": "since 2023",
+          "source": "https://corporate.exxonmobil.com/Publications/Advancing-Climate-Solutions/driving-reductions-in-methane-emissions",
+          "locator": "Methane at ExxonMobil; source chart footnote 8; Measurement and reporting; mitigation paragraphs",
+          "type": "reported",
+          "note": ""
+        },
+        {
+          "claim": "Pioneer pneumatic replacements",
+          "value": "6,000",
+          "unit": "devices exceeded",
+          "period": "2025",
+          "source": "https://corporate.exxonmobil.com/Publications/Advancing-Climate-Solutions/driving-reductions-in-methane-emissions",
+          "locator": "Methane at ExxonMobil; source chart footnote 8; Measurement and reporting; mitigation paragraphs",
+          "type": "reported",
+          "note": ""
+        },
+        {
+          "claim": "Existing heritage Permian monitoring",
+          "value": "400",
+          "unit": "sites exceeded",
+          "period": "2025",
+          "source": "https://corporate.exxonmobil.com/Publications/Advancing-Climate-Solutions/driving-reductions-in-methane-emissions",
+          "locator": "Methane at ExxonMobil; source chart footnote 8; Measurement and reporting; mitigation paragraphs",
+          "type": "reported",
+          "note": ""
+        },
+        {
+          "claim": "Full key-site Permian monitoring plan",
+          "value": "2,026",
+          "unit": "year-end deadline",
+          "period": "announced 2026",
+          "source": "https://corporate.exxonmobil.com/Publications/Advancing-Climate-Solutions/driving-reductions-in-methane-emissions",
+          "locator": "Methane at ExxonMobil; source chart footnote 8; Measurement and reporting; mitigation paragraphs",
+          "type": "company plan",
+          "note": ""
+        },
+        {
+          "claim": "Key operated global upstream monitoring plan",
+          "value": "2,028",
+          "unit": "year deadline",
+          "period": "announced 2026",
+          "source": "https://corporate.exxonmobil.com/Publications/Advancing-Climate-Solutions/driving-reductions-in-methane-emissions",
+          "locator": "Methane at ExxonMobil; source chart footnote 8; Measurement and reporting; mitigation paragraphs",
+          "type": "company plan",
+          "note": ""
+        },
+        {
+          "claim": "EPA eligible-source annual methane reduction factor",
+          "value": "95",
+          "unit": "%",
+          "period": "methodology 2023, page 2026",
+          "source": "https://www.epa.gov/natural-gas-star-program/vapor-recovery-units",
+          "locator": "Description; Applicability; Methane Emissions Reductions (methodology as of August 1, 2023; page updated February 24, 2026)",
+          "type": "engineering guidance",
+          "note": ""
+        },
+        {
+          "claim": "2025 inventory independent assurance status",
+          "value": "underway",
+          "unit": "status",
+          "period": "page retrieved 2026-09-12",
+          "source": "https://corporate.exxonmobil.com/publications/metrics-and-data",
+          "locator": "Operated GHG emissions table, 2025 column; assurance introductory paragraph",
+          "type": "reported",
+          "note": ""
+        },
+        {
+          "claim": "Fossil CH4 GWP100",
+          "value": "29.8",
+          "unit": "t CO2e/t CH4",
+          "period": "AR6 2021",
+          "source": "https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_Chapter07.pdf",
+          "locator": "Table 7.15, printed p.1017; local original PDF and extracted text in sources",
+          "type": "scientific metric",
+          "note": ""
+        },
+        {
+          "claim": "Fossil CH4 GWP20",
+          "value": "82.5",
+          "unit": "t CO2e/t CH4",
+          "period": "AR6 2021",
+          "source": "https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_Chapter07.pdf",
+          "locator": "Table 7.15, printed p.1017; local original PDF and extracted text in sources",
+          "type": "scientific metric",
+          "note": ""
+        }
+      ],
+      "researchUrl": "/research/deep-dive/exxon-deep.md",
+      "gapNote": "Tank-source sensitivity; untreated eligible share unknown",
+      "benchmarkPeriod": "EPA method 2023; page updated 2026",
+      "additionalMetrics": [
+        {
+          "label": "Estimated tank/storage source pool",
+          "value": "≈6,800",
+          "unit": "tonnes CH₄ / year",
+          "note": "Derived from rounded 2025 source shares. This is not an inventory of untreated, suitable tanks.",
+          "source": "https://corporate.exxonmobil.com/Publications/Advancing-Climate-Solutions/driving-reductions-in-methane-emissions"
+        },
+        {
+          "label": "Additional eligible tank share",
+          "value": null,
+          "unit": "fraction of source",
+          "note": "Not disclosed. Physical feasibility, prior controls and existing commitments must be established before assigning a fund effect.",
+          "source": "https://corporate.exxonmobil.com/Publications/Advancing-Climate-Solutions/driving-reductions-in-methane-emissions"
+        },
+        {
+          "label": "Inventory assurance status",
+          "value": "Underway",
+          "unit": "2025 inventory",
+          "note": "As described on the company’s metrics page when researched. Monitoring does not imply every source is measured and reconciled.",
+          "source": "https://corporate.exxonmobil.com/publications/metrics-and-data"
+        }
+      ],
+      "investmentEvidence": [
+        {
+          "label": "Historical 100 Mcf/day VRU installation",
+          "value": "$55,524",
+          "note": "Archived EPA illustration, not a current Exxon quote. Underlying cost-dollar year is unverified; actual site and connection costs can be higher.",
+          "source": "https://19january2021snapshot.epa.gov/sites/static/files/2016-06/documents/ll_final_vap.pdf"
+        },
+        {
+          "label": "Historical annual operating cost",
+          "value": "$10,103 / year",
+          "note": "Same historical equipment case. Operating costs may already include electricity; do not count it twice.",
+          "source": "https://19january2021snapshot.epa.gov/sites/static/files/2016-06/documents/ll_final_vap.pdf"
+        },
+        {
+          "label": "Illustrative simple payback",
+          "value": "≈1.32 years at $3/Mcf",
+          "note": "Assumes 50 Mcf/day feed, 95% recovery and those historical costs. Excludes omitted site costs, taxes and finance. Not a prospective Exxon return.",
+          "source": "https://19january2021snapshot.epa.gov/sites/static/files/2016-06/documents/ll_final_vap.pdf"
+        }
+      ]
+    },
+    {
+      "slug": "microsoft",
+      "name": "Microsoft",
+      "ticker": "MSFT",
+      "sector": "Technology",
+      "period": "FY2025",
+      "scope1": 170887,
+      "activity": "Data-center cooling",
+      "status": "Matched process study",
+      "kind": "normalized",
+      "baseline": 1000,
+      "reductionRate": 0.15,
+      "defaultCoverage": 1,
+      "unit": "tCO₂e / 1,000 baseline lifecycle tonnes",
+      "boundary": "Study-matched annualized virtual-core service; no company-scale estimate",
+      "technology": "Direct-to-chip cold plates",
+      "summary": "A matched lifecycle study supports a 15% climate reduction. Actual Phoenix controls and Wisconsin closed-loop deployment strengthen feasibility evidence, but remaining eligible fleet and net site-level water savings are unquantified.",
+      "formula": "1,000 matched baseline lifecycle tonnes × 15% = 150 tonnes",
+      "opportunity": "Identify suitable unconverted compute cohorts, then assess retrofit finance.",
+      "constraints": [
+        "15% is a study-matched process comparison, not Microsoft’s company gap.",
+        "Study assumptions include 20% overclocking, 28% more virtual cores, a 2021 US grid and specified asset lives.",
+        "The 31% blue-water reduction is a separate lifecycle metric and cannot be applied to company onsite water.",
+        "Eligible unconverted fleet and its matching lifecycle baseline are missing.",
+        "Phoenix’s reported 23% WUE improvement is achieved intensity progress, not 23% of company water saved.",
+        "The greater-than-125,000 m³/site/year design claim concerns projected withdrawal avoidance. No matching measured annual consumption saving is established; dry cooling can increase power use."
+      ],
+      "sources": [
+        [
+          "Inventory · Microsoft 2026 environmental data, Table 1A",
+          "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf"
+        ],
+        [
+          "Technology · Nature lifecycle cooling study, Table 4",
+          "https://www.nature.com/articles/s41586-025-08832-3"
+        ],
+        [
+          "Zero-water cooling design announcement, December 2024",
+          "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/"
+        ],
+        [
+          "Water intensity and operational improvements, June 2026",
+          "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/"
+        ],
+        [
+          "Fairwater engineering description, September 2025",
+          "https://blogs.microsoft.com/blog/2025/09/18/inside-the-worlds-most-powerful-ai-datacenter/"
+        ],
+        [
+          "FY2026 third-quarter earnings call, April 29, 2026",
+          "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3"
+        ],
+        [
+          "Mount Pleasant cooling fan noise updates",
+          "https://local.microsoft.com/blog/testing-underway-to-understand-noise-at-our-mount-pleasant-datacenter/"
+        ]
+      ],
+      "steps": [
+        "Use the source’s annualized virtual-core functional unit to preserve equivalent service.",
+        "The study models 15% lower lifecycle climate impact for cold plates under its assumptions.",
+        "Normalize to 1,000 baseline lifecycle tonnes: 150 tonnes reduction.",
+        "Do not scale to the company until the matching eligible cohort is known."
+      ],
+      "evidenceRecords": [
+        {
+          "claim": "Company direct Scope 1 inventory",
+          "value": "170,887",
+          "unit": "tCO₂e",
+          "period": "FY2025",
+          "source": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+          "locator": "Company inventory; see original source",
+          "type": "reported",
+          "note": ""
+        },
+        {
+          "claim": "Global operational water withdrawal",
+          "value": "13,266,000",
+          "unit": "m3",
+          "period": "FY25",
+          "source": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+          "locator": "p7 Table 8",
+          "type": "reported inventory",
+          "note": ""
+        },
+        {
+          "claim": "Global operational water consumption",
+          "value": "8,170,000",
+          "unit": "m3",
+          "period": "FY25",
+          "source": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+          "locator": "p7 Table 8; p17 water methodology",
+          "type": "reported inventory",
+          "note": "Includes estimates; most sites lack discharge meters."
+        },
+        {
+          "claim": "Global operational water discharge",
+          "value": "5,096,000",
+          "unit": "m3",
+          "period": "FY25",
+          "source": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+          "locator": "p7 Table 8",
+          "type": "reported inventory",
+          "note": ""
+        },
+        {
+          "claim": "Consumption in high/extremely high baseline water stress",
+          "value": "3,926,000",
+          "unit": "m3",
+          "period": "FY25",
+          "source": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+          "locator": "p7 Table 8 footnote 2",
+          "type": "reported inventory",
+          "note": "Exposure classification, not avoidable volume or damage."
+        },
+        {
+          "claim": "High-stress share of consumption",
+          "value": "48.05",
+          "unit": "%",
+          "period": "FY25",
+          "source": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+          "locator": "Derived from p7 Table 8 footnote 2",
+          "type": "calculated ratio",
+          "note": ""
+        },
+        {
+          "claim": "Phoenix owned datacenter withdrawal",
+          "value": "981,000",
+          "unit": "m3",
+          "period": "FY25",
+          "source": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+          "locator": "p25 Table 15; p26 boundary",
+          "type": "reported inventory",
+          "note": "Metro cluster, not pilot building; unassured Section 2."
+        },
+        {
+          "claim": "Phoenix owned datacenter electricity",
+          "value": "954,206",
+          "unit": "MWh",
+          "period": "FY25",
+          "source": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+          "locator": "p25 Table 15; p26 boundary",
+          "type": "reported inventory",
+          "note": "Total site electricity, not IT load."
+        },
+        {
+          "claim": "Phoenix operational WUE improvement",
+          "value": "23",
+          "unit": "% year over year",
+          "period": "FY25",
+          "source": "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/",
+          "locator": "Modernizing cooling in existing datacenters with smarter controls",
+          "type": "company-reported achieved intensity improvement",
+          "note": "Already implemented; no absolute saved volume or controlled weather/load comparison disclosed."
+        },
+        {
+          "claim": "Average datacenter WUE",
+          "value": "0.27",
+          "unit": "L/kWh",
+          "period": "2025",
+          "source": "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/",
+          "locator": "Opening water-efficiency discussion",
+          "type": "company-reported intensity",
+          "note": ""
+        },
+        {
+          "claim": "Owned-fleet withdrawal intensity improvement",
+          "value": "25",
+          "unit": "% versus 2022",
+          "period": "2025",
+          "source": "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/",
+          "locator": "Opening; footnote 1",
+          "type": "company-reported intensity",
+          "note": "Withdrawals per MW; differs from WUE per kWh."
+        },
+        {
+          "claim": "Owned-fleet withdrawal intensity target",
+          "value": "40",
+          "unit": "% versus 2022",
+          "period": "2030 target",
+          "source": "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/",
+          "locator": "Opening; footnote 1",
+          "type": "target",
+          "note": ""
+        },
+        {
+          "claim": "Quincy recycled/reused/nonpotable share",
+          "value": "74",
+          "unit": "%",
+          "period": "FY25",
+          "source": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+          "locator": "p25 Table 15",
+          "type": "reported inventory",
+          "note": "Source substitution does not establish reduction in evaporation."
+        },
+        {
+          "claim": "San Antonio recycled/reused/nonpotable share",
+          "value": "79",
+          "unit": "%",
+          "period": "FY25",
+          "source": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+          "locator": "p25 Table 15",
+          "type": "reported inventory",
+          "note": ""
+        },
+        {
+          "claim": "Singapore recycled/reused/nonpotable share",
+          "value": "99",
+          "unit": "%",
+          "period": "FY25",
+          "source": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+          "locator": "p25 Table 15",
+          "type": "reported inventory",
+          "note": ""
+        },
+        {
+          "claim": "Design-based annual water avoidance",
+          "value": "125,000",
+          "unit": "m3 per datacenter per year; greater than",
+          "period": "2024 design announcement",
+          "source": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/",
+          "locator": "Opening paragraph and final footnote",
+          "type": "projected engineering claim",
+          "note": "Based on FY24 withdrawal WUE 0.30 L/kWh; not metered consumption savings."
+        },
+        {
+          "claim": "Energy tradeoff of eliminating evaporation",
+          "value": null,
+          "unit": "unquantified increase in annual electricity",
+          "period": "2024 design announcement",
+          "source": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/",
+          "locator": "Mitigating energy impacts",
+          "type": "company engineering claim",
+          "note": "Mechanical cooling raises PUE; warm coolant/economizing mitigates. No numerical penalty published."
+        },
+        {
+          "claim": "Original Phoenix and Mount Pleasant zero-evaporation pilots",
+          "value": "2,026",
+          "unit": "planned pilot year",
+          "period": "announced December 2024",
+          "source": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/",
+          "locator": "Pilot projects and implementation",
+          "type": "announced schedule",
+          "note": "Broader new-design sites were scheduled from late 2027; no Phoenix pilot commissioning verified."
+        },
+        {
+          "claim": "Fairwater Wisconsin entered operation",
+          "value": "April 2026",
+          "unit": "commissioning month",
+          "period": "April 29, 2026 statement",
+          "source": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3",
+          "locator": "Satya Nadella infrastructure remarks, paragraph beginning Our Fairwater",
+          "type": "company-reported operational status",
+          "note": ""
+        },
+        {
+          "claim": "Fairwater closed-loop coverage",
+          "value": "90",
+          "unit": "% capacity; greater than",
+          "period": "September 2025 engineering description",
+          "source": "https://blogs.microsoft.com/blog/2025/09/18/inside-the-worlds-most-powerful-ai-datacenter/",
+          "locator": "Addressing the environmental impact: closed loop liquid cooling at facility scale",
+          "type": "company design description",
+          "note": "Context is Fairwater architecture, not Microsoft global fleet; remaining traditional servers may use water on hot days."
+        },
+        {
+          "claim": "Mount Pleasant cooling fan noise",
+          "value": null,
+          "unit": "local noise impact; no quantified exposure",
+          "period": "April–July 2026",
+          "source": "https://local.microsoft.com/blog/testing-underway-to-understand-noise-at-our-mount-pleasant-datacenter/",
+          "locator": "April 15, June 18 and July 20 updates",
+          "type": "company-reported adverse effect and mitigation",
+          "note": "July update still discusses mitigation/evaluation; avoid declaring permanently resolved. No health-damage valuation."
+        },
+        {
+          "claim": "Water/wastewater infrastructure investment",
+          "value": "500,000,000",
+          "unit": "USD; greater than",
+          "period": "since 2020, reported June 2026",
+          "source": "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/",
+          "locator": "Advancing water stewardship through investment and community partnership",
+          "type": "company-reported investment",
+          "note": "Over 75 projects; not cooling retrofit unit cost or investor return."
+        },
+        {
+          "claim": "Cold-plate lifecycle climate reduction",
+          "value": "15",
+          "unit": "%",
+          "period": "2025 study",
+          "source": "https://www.nature.com/articles/s41586-025-08832-3",
+          "locator": "Table 4 p336; Figure 4 and p337",
+          "type": "peer-reviewed modeled comparison",
+          "note": ""
+        },
+        {
+          "claim": "Cold-plate lifecycle blue-water reduction",
+          "value": "31",
+          "unit": "%",
+          "period": "2025 study",
+          "source": "https://www.nature.com/articles/s41586-025-08832-3",
+          "locator": "Table 4 p336; Figure 4 and p337",
+          "type": "peer-reviewed modeled comparison",
+          "note": "Not a factor for corporate onsite water."
+        }
+      ],
+      "researchUrl": "/research/deep-dive/microsoft-deep.md",
+      "benchmarkPeriod": "2025 lifecycle study; 2021 U.S. grid assumptions",
+      "gapNote": "Study-matched service; eligible fleet unknown",
+      "additionalMetrics": [
+        {
+          "label": "Operational water consumed",
+          "value": "8,170,000",
+          "unit": "m3",
+          "note": "FY25 · Reported baseline. Global operations; includes estimates.",
+          "source": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf"
+        },
+        {
+          "label": "Consumed in water-stressed areas",
+          "value": "3,926,000",
+          "unit": "m3",
+          "note": "FY25 · Exposure, not avoidable harm. 48.1% of consumption; location-specific damage remains unquantified.",
+          "source": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf"
+        },
+        {
+          "label": "Phoenix water-efficiency improvement",
+          "value": "23",
+          "unit": "% year over year",
+          "note": "FY25 · Already achieved. Temperature/humidity controls and operational improvements; not an additional remaining gap.",
+          "source": "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/"
+        },
+        {
+          "label": "New-design water avoidance",
+          "value": "125,000",
+          "unit": "m3/site/year, greater than",
+          "note": "Design estimate · Projected withdrawal avoidance. No measured annual savings cohort; operational consumption savings not established.",
+          "source": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/"
+        },
+        {
+          "label": "Lifecycle blue-water opportunity",
+          "value": "31",
+          "unit": "%",
+          "note": "Study-matched service · Modeled process comparison. Separate normalization: 310 m3 per 1,000 baseline lifecycle m3; no corporate extrapolation.",
+          "source": "https://www.nature.com/articles/s41586-025-08832-3"
+        },
+        {
+          "label": "Water-saving electricity tradeoff",
+          "value": null,
+          "unit": "MWh",
+          "note": "Site-specific · Not quantified. Dry heat rejection can increase power demand; net water/climate result depends on the grid and climate.",
+          "source": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/"
+        },
+        {
+          "label": "Local cooling-fan noise",
+          "value": null,
+          "unit": "Exposure",
+          "note": "2026 · Reported impact; mitigation ongoing. Mount Pleasant reports confirm another local impact; no quantified damage estimate.",
+          "source": "https://local.microsoft.com/blog/testing-underway-to-understand-noise-at-our-mount-pleasant-datacenter/"
+        }
+      ],
+      "investmentEvidence": [
+        {
+          "label": "Existing deployment",
+          "value": "Fairwater operating since April 2026",
+          "note": "Company-reported commissioning strengthens availability evidence. Existing deployments and Phoenix efficiency gains are not remaining fund-additional opportunity.",
+          "source": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3"
+        },
+        {
+          "label": "Incremental cooling retrofit economics",
+          "value": "Not disclosed",
+          "note": "Need an eligible cohort, cooling-only water baseline, IT service, weather, extra power, tariffs, replacement dates and actual bids before underwriting.",
+          "source": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/"
+        }
+      ],
+      "rowNote": "150 t / 1,000 qualifying baseline t"
+    },
+    {
+      "slug": "nucor",
+      "name": "Nucor",
+      "ticker": "NUE",
+      "sector": "Steel",
+      "period": "2025",
+      "scope1": 6600000,
+      "activity": "Electric furnace controls",
+      "status": "Demonstrated process case",
+      "kind": "energy",
+      "baseline": 1000,
+      "reductionRate": 0.05,
+      "defaultCoverage": 1,
+      "unit": "MWh / 1,000 qualifying baseline MWh",
+      "boundary": "Comparable unoptimized furnace electricity; no climate-damage estimate",
+      "technology": "Advanced electric-arc furnace controls",
+      "summary": "Nucor already uses electric-arc furnaces. A demonstrated controls upgrade is a more relevant opportunity than pretending it could switch away from blast furnaces.",
+      "formula": "1,000 qualifying baseline MWh × 5% = 50 MWh",
+      "opportunity": "Find comparable unoptimized furnaces and verify metered savings.",
+      "constraints": [
+        "The supplier-reported Seattle improvement already happened; it is not remaining gap there.",
+        "Applicability to other unoptimized equipment is unverified.",
+        "Electricity savings cannot be translated into climate damage without an appropriate electricity emissions factor.",
+        "The separate 7.23% hot-rolled intensity target gap is a target scenario, not a validated technology frontier."
+      ],
+      "sources": [
+        [
+          "Inventory · Nucor sustainability report, pp. 37–41",
+          "https://indd.adobe.com/view/publication/cc4a577c-36f1-4ae0-a823-7e9f3f547ca5/4a1d/publication-web-resources/pdf/2025_Sustainability_Report.pdf"
+        ],
+        [
+          "Technology · Tenova Seattle controls case",
+          "https://tenova.com/newsroom/press-releases/tenovas-nextgenr-i-eafr-and-water-detection-technologies-significantly"
+        ]
+      ],
+      "steps": [
+        "Separate Nucor’s existing electric-arc process from hypothetical blast-furnace conversions.",
+        "A Seattle case reports 5% furnace electricity savings from controls.",
+        "Use 50 MWh per 1,000 qualifying baseline MWh as a conditional replication benchmark.",
+        "Identify still-unoptimized assets before assigning an enterprise total."
+      ],
+      "benchmarkPeriod": "Supplier-reported Seattle installation, 2017",
+      "gapNote": "Already achieved at Seattle; replication unverified",
+      "evidenceRecords": [
+        {
+          "claim": "Company direct emissions",
+          "value": "6,600,000",
+          "unit": "tCO₂e",
+          "period": "2025",
+          "source": "https://indd.adobe.com/view/publication/cc4a577c-36f1-4ae0-a823-7e9f3f547ca5/4a1d/publication-web-resources/pdf/2025_Sustainability_Report.pdf",
+          "locator": "p.37",
+          "type": "reported",
+          "note": ""
+        },
+        {
+          "claim": "Seattle furnace electricity reduction",
+          "value": "5",
+          "unit": "%",
+          "period": "2017 case",
+          "source": "https://tenova.com/newsroom/press-releases/tenovas-nextgenr-i-eafr-and-water-detection-technologies-significantly",
+          "locator": "Seattle installation case",
+          "type": "supplier-reported achieved process improvement",
+          "note": "Already achieved at this asset. No remaining unoptimized company cohort identified."
+        }
+      ],
+      "investmentEvidence": [
+        {
+          "label": "Remaining eligible furnace project economics",
+          "value": "Not established",
+          "note": "The demonstrated Seattle improvement is already implemented. Find comparable still-unoptimized assets and verify metered savings and capital cost.",
+          "source": "https://tenova.com/newsroom/press-releases/tenovas-nextgenr-i-eafr-and-water-detection-technologies-significantly"
+        }
+      ],
+      "additionalMetrics": []
+    },
+    {
+      "slug": "jpmorgan",
+      "name": "JPMorgan Chase",
+      "ticker": "JPM",
+      "sector": "Financial services",
+      "period": "2024",
+      "scope1": 100024,
+      "activity": "Borrower asset improvements",
+      "status": "Insufficient project evidence",
+      "kind": "missing",
+      "baseline": null,
+      "reductionRate": null,
+      "defaultCoverage": null,
+      "unit": null,
+      "boundary": "Borrower-level physical interventions not yet identified",
+      "technology": "Project-linked transition finance",
+      "summary": "A bank’s biggest opportunity may sit in the assets it finances. A lower portfolio footprint is not proof that physical emissions fell.",
+      "formula": "Not quantified: named borrower assets, intervention baselines and causal financing evidence required.",
+      "opportunity": "Originate asset-specific loans with measurable physical improvements and contracted repayment.",
+      "constraints": [
+        "Financed emissions overlap the emissions of borrowers. Do not add both to a portfolio harm total.",
+        "Selling a loan or changing attribution can lower reported financed emissions without physical reductions.",
+        "No defensible bank-wide preventable percentage has been established.",
+        "Modeled societal damage is not revenue available to return investment principal."
+      ],
+      "sources": [
+        [
+          "Inventory · JPMorgan operational emissions",
+          "https://www.jpmorganchase.com/content/dam/jpmorganchase/documents/2024-operational-ghg-emissions-and-electric-power-use.pdf"
+        ]
+      ],
+      "steps": [
+        "Keep operational and financed emissions separate.",
+        "Identify a named borrower asset and its physical baseline.",
+        "Model the available alternative and determine whether funding causes extra or earlier adoption.",
+        "Quantify only after project evidence and repayable cashflows are established."
+      ],
+      "evidenceRecords": [
+        {
+          "claim": "Operational Scope 1 emissions",
+          "value": "100,024",
+          "unit": "tCO₂e",
+          "period": "2024",
+          "source": "https://www.jpmorganchase.com/content/dam/jpmorganchase/documents/2024-operational-ghg-emissions-and-electric-power-use.pdf",
+          "locator": "Operational emissions inventory",
+          "type": "reported",
+          "note": ""
+        },
+        {
+          "claim": "Eligible borrower-asset reduction",
+          "value": null,
+          "unit": "tCO₂e",
+          "period": "Not established",
+          "source": "https://www.jpmorganchase.com/content/dam/jpmorganchase/documents/2024-operational-ghg-emissions-and-electric-power-use.pdf",
+          "locator": "Operational inventory does not identify borrower projects",
+          "type": "unknown",
+          "note": "Operational inventory is not financed emissions. Need named borrower assets, physical counterfactuals and additional financing effect."
+        }
+      ],
+      "additionalMetrics": [],
+      "investmentEvidence": [
+        {
+          "label": "Borrower-asset repayment",
+          "value": "Not established",
+          "note": "A lower portfolio footprint can arise from selling exposures without changing physical emissions. Underwrite project cashflows and causal improvements separately.",
+          "source": "https://www.jpmorganchase.com/content/dam/jpmorganchase/documents/2024-operational-ghg-emissions-and-electric-power-use.pdf"
+        }
+      ]
+    },
+    {
+      "slug": "ups",
+      "name": "UPS",
+      "ticker": "UPS",
+      "sector": "Logistics",
+      "period": "2025",
+      "scope1": 14898000,
+      "activity": "Urban delivery electrification",
+      "status": "Historical matched process benchmark",
+      "kind": "normalized",
+      "baseline": 1000,
+      "reductionRate": 0.46353529856600684,
+      "defaultCoverage": 1,
+      "unit": "tCO₂e / 1,000 matched baseline operating tonnes",
+      "boundary": "Historical diesel well-to-wheels versus electricity-generation-and-use benchmark; vehicle and battery manufacture excluded; no UPS total",
+      "technology": "Battery-electric delivery trucks and depot charging",
+      "summary": "Electric delivery vehicles already operate at UPS. An independent delivery-fleet study quantifies operating emissions savings under a specified grid and duty cycle; UPS’s remaining eligible routes are unknown.",
+      "formula": "1,000 × (1 − 759.06 ÷ 1,414.93) = 463.54 tCO₂e",
+      "opportunity": "Identify still-diesel routes with suitable payload, range and depot power, then assess vehicle and charging finance.",
+      "constraints": [
+        "The study concerns Frito-Lay Class 6 delivery trucks, not measured UPS vehicles. Match duty cycle and service before transfer.",
+        "Historical local-grid performance is not a universal reduction. Recalculate for present vehicle efficiency and electricity supply.",
+        "Calculation includes generation, transmission and charging losses and diesel well-to-wheels emissions; vehicle and battery production and disposal are excluded.",
+        "Eligible unconverted activity is unknown. Do not multiply this factor by company diesel or Scope 1 totals.",
+        "Existing routing and electric deployments are achieved improvements. Additionality and debt repayment remain unverified.",
+        "Main GRI inventory says 14.898 Mt while segment totals show 14.897 Mt; the 0.001 Mt discrepancy is unresolved."
+      ],
+      "sources": [
+        [
+          "Inventory · UPS 2025 GRI, printed pp. 38–39, 42–44, 52",
+          "https://about.ups.com/content/dam/upsstories/images/our-impact/reporting/2025-ups-gri.pdf"
+        ],
+        [
+          "Technology · NREL field evaluation, printed pp. 7–8, 14, 20–21",
+          "https://docs.nlr.gov/docs/fy17osti/66382.pdf"
+        ],
+        [
+          "Existing deployment and routing · UPS 2025 overview",
+          "https://about.ups.com/ca/en/our-impact/ups-sustainability-and-community-impact-report/delivering-for-our-planet.html"
+        ],
+        [
+          "Commercial deployment · UPS IVECO eDaily, June 2024",
+          "https://about.ups.com/gb/en/our-stories/innovation-driven/new-ups-electric-vehicles-hit-the-streets-of-europe.html"
+        ],
+        [
+          "Membership evidence · S&P 500-derived index",
+          "https://www.spglobal.com/spdji/en/indices/dividends-factors/sp-500-quality-fcf-high-dividend-index/"
+        ]
+      ],
+      "steps": [
+        "Separate company direct inventory from the delivery intervention.",
+        "NREL reports 1,414.93 diesel versus 759.06 electric gCO₂e/mile under its historical local-electricity assumptions.",
+        "Normalize their difference to 1,000 matched operating tonnes: about 464 tonnes avoided.",
+        "Obtain UPS route, fuel, power, payload, replacement and charging data before scaling; account for manufacturing and financing additionality."
+      ],
+      "evidenceRecords": [
+        {
+          "claim": "Direct emissions",
+          "value": "14,898,000",
+          "unit": "tCO₂e",
+          "period": "2025",
+          "source": "https://about.ups.com/content/dam/upsstories/images/our-impact/reporting/2025-ups-gri.pdf",
+          "locator": "printed p. 38, main Appendix B table",
+          "type": "reported inventory",
+          "note": ""
+        },
+        {
+          "claim": "Ground diesel emissions",
+          "value": "1,624,000",
+          "unit": "tCO₂e",
+          "period": "2025",
+          "source": "https://about.ups.com/content/dam/upsstories/images/our-impact/reporting/2025-ups-gri.pdf",
+          "locator": "printed p. 52",
+          "type": "inventory, not eligible delivery activity",
+          "note": ""
+        },
+        {
+          "claim": "Diesel benchmark",
+          "value": "1,414.93",
+          "unit": "gCO₂e/mile",
+          "period": "2014 operations, report 2016",
+          "source": "https://docs.nlr.gov/docs/fy17osti/66382.pdf",
+          "locator": "printed p. 20",
+          "type": "study modeled emissions",
+          "note": ""
+        },
+        {
+          "claim": "Local-electricity EV benchmark",
+          "value": "759.06",
+          "unit": "gCO₂e/mile",
+          "period": "2014 operations, report 2016",
+          "source": "https://docs.nlr.gov/docs/fy17osti/66382.pdf",
+          "locator": "printed p. 20",
+          "type": "study modeled emissions",
+          "note": ""
+        },
+        {
+          "claim": "Existing battery electric vehicles",
+          "value": "580",
+          "unit": "vehicles, more than",
+          "period": "2025 overview",
+          "source": "https://about.ups.com/ca/en/our-impact/ups-sustainability-and-community-impact-report/delivering-for-our-planet.html",
+          "locator": "Asset transition",
+          "type": "achieved deployment",
+          "note": ""
+        },
+        {
+          "claim": "Existing routing savings",
+          "value": "10 / 14",
+          "unit": "miles per driver per day",
+          "period": "2025 overview",
+          "source": "https://about.ups.com/ca/en/our-impact/ups-sustainability-and-community-impact-report/delivering-for-our-planet.html",
+          "locator": "Operational excellence",
+          "type": "company-reported achieved savings",
+          "note": ""
+        }
+      ],
+      "investmentEvidence": [
+        {
+          "label": "Historical incremental vehicle cost",
+          "value": "$86,791",
+          "note": "NREL 2016 report p.19, historical Smith Newton example. Not a current UPS quote; $60,000 New York voucher was a separate location-specific incentive.",
+          "source": "https://docs.nlr.gov/docs/fy17osti/66382.pdf"
+        },
+        {
+          "label": "Current project repayment",
+          "value": "Not established",
+          "note": "Measure diesel and maintenance savings against electricity, demand charges, charger cost, downtime and financing. Confirm payload, range and replacement schedule.",
+          "source": "https://docs.nlr.gov/docs/fy17osti/66382.pdf"
+        }
+      ],
+      "additionalMetrics": [
+        {
+          "label": "Grid sensitivity in the same study",
+          "value": "32.3%",
+          "unit": "operating GHG reduction",
+          "note": "Historical U.S. national electricity case versus the 46.4% local-grid case. Not a forecast range, UPS measurement or full vehicle lifecycle result.",
+          "source": "https://docs.nlr.gov/docs/fy17osti/66382.pdf"
+        },
+        {
+          "label": "Ground diesel emissions",
+          "value": "1.624 million",
+          "unit": "tCO₂e · 2025",
+          "note": "Reported inventory, not a baseline of eligible urban delivery routes.",
+          "source": "https://about.ups.com/content/dam/upsstories/images/our-impact/reporting/2025-ups-gri.pdf"
+        },
+        {
+          "label": "Existing electric vehicles",
+          "value": "More than 580",
+          "unit": "vehicles",
+          "note": "Company 2025 overview. These already deployed vehicles cannot be counted as new conversions.",
+          "source": "https://about.ups.com/ca/en/our-impact/ups-sustainability-and-community-impact-report/delivering-for-our-planet.html"
+        }
+      ],
+      "membershipEvidence": {
+        "status": "Supported by index-provider subset",
+        "source": "https://www.spglobal.com/spdji/en/indices/dividends-factors/sp-500-quality-fcf-high-dividend-index/",
+        "period": "31 August 2026 in indexed source",
+        "explanation": "Provider describes universe as S&P 500 companies; indexed constituents include UPS. Opened live page hides rows, so evidence is provider search-index content, not downloaded complete roster."
+      },
+      "scope1Note": "tCO₂e · main GRI total; segment table differs by 0.001 Mt",
+      "benchmarkPeriod": "2014 Frito-Lay operations; NREL report 2016",
+      "gapNote": "External delivery fleet; historical local electricity mix",
+      "researchUrl": "/research/deep-dive/ups.md",
+      "rowNote": "464 t / 1,000 qualifying baseline t",
+      "indexEvidence": {
+        "status": "Corroborated in S&P 500 tracker holdings, September 10, 2026",
+        "source": "https://www.ishares.com/us/products/239726/ishares-core-s-p-500-etf/latest-holdings.csv"
+      }
+    },
+    {
+      "slug": "delta",
+      "name": "Delta Air Lines",
+      "ticker": "DAL",
+      "sector": "Airlines",
+      "period": "2025 · airline operations; excludes refinery",
+      "scope1": 39301990,
+      "activity": "Aircraft gate power and cooling",
+      "status": "Normalized lifecycle study benchmark",
+      "kind": "normalized",
+      "baseline": 1000,
+      "reductionRate": 0.63,
+      "defaultCoverage": 1,
+      "unit": "tCO₂e / 1,000 matching gate lifecycle tonnes",
+      "boundary": "Equivalent gate service: 70% electric power + diesel cooling and 30% APU to 100% electric power + cooling; manufacturing and energy lifecycle included, end-of-life excluded",
+      "technology": "Electric ground power and preconditioned air",
+      "summary": "Aircraft can receive electricity and cooling at the gate instead of burning fuel. A lifecycle study supports large reductions at suitable gates; Delta’s remaining eligible gate activity is unmeasured.",
+      "formula": "1,000 matching baseline lifecycle tonnes × 63% = 630 tonnes; study range 630–970",
+      "opportunity": "Finance additional gate power, cooling and reliable connection where fuel savings cover electricity, upkeep and capital.",
+      "constraints": [
+        "63% is the low endpoint across study cases, not a guaranteed Delta performance floor or a whole-airline reduction.",
+        "Match actual baseline use, including existing electric gate equipment. Exclude already completed or committed improvements from any new-funding claim; remaining eligible throughput is unknown.",
+        "Electricity mix, aircraft type, turnaround duration, weather, equipment availability and actual APU shutdown determine the result.",
+        "Preserve power supply, cabin thermal comfort and safe turnaround service. Revalidate lifecycle assumptions and infrastructure impacts for each project.",
+        "Scope 1 excludes Monroe refinery and separately reported biogenic CO₂; climate score excludes contrails and other aviation warming effects, pollution, water and biodiversity.",
+        "The 63–97% comparison starts with 70% electric ground power plus diesel cooling and 30% APU; it does not start with 100% APU use. End-of-life is excluded.",
+        "The original author’s dissertation supplies the detailed methods. Study cost and operating assumptions still require current, asset-specific validation."
+      ],
+      "sources": [
+        [
+          "Inventory · Delta 2025 GHG table",
+          "https://esghub.delta.com/content/esg/en/2025/ghg-emissions-data.html"
+        ],
+        [
+          "Boundary · Delta climate disclosures",
+          "https://esghub.delta.com/content/esg/en/2025/climate-related-disclosures.html"
+        ],
+        [
+          "Technology · Greer, Rakas & Horvath (2021), author institution abstract",
+          "https://its.berkeley.edu/publications/reduce-aviation%E2%80%99s-greenhouse-gas-emissions-through-immediately-feasible-and-affordable"
+        ],
+        [
+          "Deployment · Delta 2025 progress",
+          "https://esghub.delta.com/content/esg/en/2025/advancing-progress.html"
+        ],
+        [
+          "Commercial funding precedent · FAA 2025 gate electrification guidance",
+          "https://www.faa.gov/airports/aip/guidance_letters/R-PGL-25-02-AIP-Discretionary-Set-Aside"
+        ],
+        [
+          "Methods · Greer dissertation ch. 3, Tables 7–8 p. 45; Fig. 10 p. 53",
+          "https://escholarship.org/content/qt08w701t9/qt08w701t9.pdf"
+        ]
+      ],
+      "steps": [
+        "Identify a gate cohort with equivalent power and thermal-comfort service and measure use of existing equipment.",
+        "Match scenario 2b: 70% turnaround using electric ground power and diesel PCA, 30% APU; compare scenario 3a: electric power and electric PCA throughout.",
+        "Use the study’s low endpoint only as a conditional benchmark: 630 tonnes avoided per 1,000 matching lifecycle tonnes.",
+        "Identify actual remaining eligible activity before scaling; value the difference at $255.12 per tonne separately from financial cashflows."
+      ],
+      "evidenceRecords": [
+        {
+          "claim": "Reported Scope 1",
+          "value": "39,301,990",
+          "unit": "tCO2e",
+          "period": "calendar 2025",
+          "source": "https://esghub.delta.com/content/esg/en/2025/ghg-emissions-data.html",
+          "locator": "TOTAL SCOPE 1; 2025 column",
+          "type": "reported inventory",
+          "note": ""
+        },
+        {
+          "claim": "Mainline jet fuel emissions",
+          "value": "37,134,782",
+          "unit": "tCO2e",
+          "period": "2025",
+          "source": "https://esghub.delta.com/content/esg/en/2025/ghg-emissions-data.html",
+          "locator": "Jet Fuel — Mainline Delta; 2025 column",
+          "type": "reported inventory",
+          "note": ""
+        },
+        {
+          "claim": "Gate electrification lifecycle reduction range",
+          "value": "63 / 97",
+          "unit": "% per gate operation",
+          "period": "2021 study",
+          "source": "https://its.berkeley.edu/publications/reduce-aviation%E2%80%99s-greenhouse-gas-emissions-through-immediately-feasible-and-affordable",
+          "locator": "Abstract; Environmental Research Letters 16(5), 054039; DOI 10.1088/1748-9326/abf7f1",
+          "type": "modeled process comparison",
+          "note": ""
+        },
+        {
+          "claim": "Operational fuel savings already achieved",
+          "value": "59,000,000",
+          "unit": "US gallons",
+          "period": "2025",
+          "source": "https://esghub.delta.com/content/esg/en/2025/advancing-progress.html",
+          "locator": "Efficient Aircraft Operations; excludes fleet renewal",
+          "type": "company counterfactual estimate, achieved",
+          "note": ""
+        },
+        {
+          "claim": "Atlanta first electrified maintenance pad projected fuel savings upper estimate",
+          "value": "7,000,000",
+          "unit": "US gallons/year",
+          "period": "installed 2025",
+          "source": "https://esghub.delta.com/content/esg/en/2025/advancing-progress.html",
+          "locator": "Efficient Aircraft Operations; maintenance pad bullet",
+          "type": "projection, already implemented asset",
+          "note": ""
+        },
+        {
+          "claim": "Neat SAF procurement including physical supply and certificates",
+          "value": "23,400,000",
+          "unit": "US gallons",
+          "period": "2025",
+          "source": "https://esghub.delta.com/content/esg/en/2025/advancing-progress.html",
+          "locator": "Cleaner Fuel; footnote 5",
+          "type": "reported procurement; not physical-only burn",
+          "note": ""
+        },
+        {
+          "claim": "Mainline plus Connection fuel pool",
+          "value": "4,269,000,000",
+          "unit": "US gallons",
+          "period": "2025",
+          "source": "https://esghub.delta.com/content/esg/en/2025/fuel-efficiency.html",
+          "locator": "Jet fuel (million gallons); 2025 column",
+          "type": "reported activity",
+          "note": ""
+        },
+        {
+          "claim": "Direct combustion CO2 factor",
+          "value": "9.75",
+          "unit": "kgCO2/US gallon",
+          "period": "EPA March 2020 factors",
+          "source": "https://www.epa.gov/sites/default/files/2021-04/documents/emission-factors_mar2020.pdf",
+          "locator": "Table 2, Kerosene-Type Jet Fuel",
+          "type": "conversion factor",
+          "note": ""
+        },
+        {
+          "claim": "Systemwide annual fuel associated with one APU runtime minute",
+          "value": "1,200,000",
+          "unit": "US gallons/year per systemwide minute",
+          "period": "April 2025",
+          "source": "https://news.delta.com/media/image/64251",
+          "locator": "APU run-time reduction",
+          "type": "company marginal sensitivity; not remaining minutes",
+          "note": ""
+        },
+        {
+          "claim": "Lifecycle reduction denominator and alternative",
+          "value": "Scenario 2b: 70% turnaround 400Hz electricity + diesel PCA, 30% APU; scenario 3a: 100% 400Hz electricity + electric PCA",
+          "unit": "gate operation service",
+          "period": "2021 study",
+          "source": "https://escholarship.org/content/qt08w701t9/qt08w701t9.pdf",
+          "locator": "Chapter 3, Table 7 p.45; §3.3.1 and Fig.10 p.53",
+          "type": "verified original-author methods",
+          "note": ""
+        }
+      ],
+      "investmentEvidence": [
+        {
+          "label": "Historical study average payback",
+          "value": "1–2 years",
+          "note": "Study payback is relative to 100% APU use, unlike the partly electrified baseline for the 63–97% emissions comparison. Historical study assumptions are not current Delta project economics.",
+          "source": "https://escholarship.org/content/qt08w701t9/qt08w701t9.pdf"
+        },
+        {
+          "label": "Airport–airline repayment structure",
+          "value": "Needs a contract",
+          "note": "Infrastructure owner and airline may differ. Assign fuel savings, electricity bills and maintenance costs explicitly; exclude already committed projects.",
+          "source": "https://www.faa.gov/airports/aip/guidance_letters/R-PGL-25-02-AIP-Discretionary-Set-Aside"
+        }
+      ],
+      "additionalMetrics": [
+        {
+          "label": "Study case range",
+          "value": "63–97%",
+          "unit": "gate lifecycle reduction",
+          "note": "Across study cases, not a confidence interval or guaranteed performance floor. Main card uses the low case.",
+          "source": "https://its.berkeley.edu/publications/reduce-aviation%E2%80%99s-greenhouse-gas-emissions-through-immediately-feasible-and-affordable"
+        },
+        {
+          "label": "Operational fuel savings already achieved",
+          "value": "59 million",
+          "unit": "US gallons · 2025",
+          "note": "Company counterfactual estimate, excluding fleet renewal. Do not relabel achieved savings as a new remaining opportunity.",
+          "source": "https://esghub.delta.com/content/esg/en/2025/advancing-progress.html"
+        },
+        {
+          "label": "SAF procurement",
+          "value": "23.4 million",
+          "unit": "US gallons · 2025",
+          "note": "Includes physical supply and certificates. It is not verified physical-only SAF burn. Compare carefully with the 4.269 billion gallon fuel pool.",
+          "source": "https://esghub.delta.com/content/esg/en/2025/advancing-progress.html"
+        },
+        {
+          "label": "APU runtime sensitivity",
+          "value": "11,700",
+          "unit": "tonnes direct CO₂ / systemwide minute / year",
+          "note": "Derived from Delta’s 1.2 million gallon sensitivity × EPA 9.75 kg CO₂/gallon. Remaining reducible minutes are unknown; replacement electricity and other effects must be subtracted. Not combined with the lifecycle percentage.",
+          "source": "https://news.delta.com/media/image/64251"
+        }
+      ],
+      "scope1Note": "tCO₂e · airline operational control; Monroe refinery excluded",
+      "benchmarkPeriod": "2021 gate-electrification lifecycle study",
+      "gapNote": "Low study case; not a guaranteed minimum",
+      "researchUrl": "/research/deep-dive/delta.md",
+      "rowNote": "630 t / 1,000 qualifying baseline t",
+      "indexEvidence": {
+        "status": "Corroborated in S&P 500 tracker holdings, September 10, 2026",
+        "source": "https://www.ishares.com/us/products/239726/ishares-core-s-p-500-etf/latest-holdings.csv"
+      }
+    },
+    {
+      "slug": "duke",
+      "name": "Duke Energy",
+      "ticker": "DUK",
+      "sector": "Utilities",
+      "period": "2025 · ownership-share / operational-control inventory",
+      "scope1": 80703000,
+      "scope1Precision": "Calculated sum of nine rounded Scope 1 components, not a separately reported exact total.",
+      "activity": "Pipeline maintenance methane",
+      "status": "Conditional normalized process comparison",
+      "kind": "normalized",
+      "baseline": 1000,
+      "reductionRate": 0.4538590604026846,
+      "defaultCoverage": 1,
+      "unit": "tCO₂e / 1,000 qualifying baseline methane tonnes CO₂e",
+      "boundary": "Qualifying vented pipeline methane, after recovered-methane combustion; compressor and other lifecycle effects excluded",
+      "technology": "Pipeline gas recovery before maintenance",
+      "summary": "Gas normally vented during suitable planned maintenance can be moved into another pipeline. Established recovery methods reduce methane loss while preserving safe maintenance and gas delivery. Duke’s remaining eligible events are not identified.",
+      "formula": "1,000 × 50% recovery × (29.8 − 2.75) / 29.8 = 453.86 tCO₂e; upper technical case at 90% recovery = 816.95 tCO₂e",
+      "opportunity": "Screen untreated scheduled blowdowns for recovery equipment and service contracts.",
+      "constraints": [
+        "The 50–90% recovery evidence is an EPA industry benchmark, not measured remaining Duke opportunity or a universal guarantee.",
+        "Duke’s 393,000 tCO₂e gas methane inventory includes other sources and cannot be used as the blowdown baseline.",
+        "Required pipeline connections, pressures, maintenance time and reliable service must match; emergency events may be unsuitable.",
+        "Recovered methane is assumed completely burned. Compressor energy, leakage, equipment impacts and other hydrocarbons remain unquantified; no displacement credit is taken.",
+        "Already recovered or flared events are excluded from an untreated venting baseline. Eligible extent and financing additionality are unknown.",
+        "The inventory uses company reporting factors; the separate normalized methane comparison uses AR6 fossil methane 29.8. Do not silently mix those factors."
+      ],
+      "sources": [
+        [
+          "Inventory · 2025 metrics, pp. 4 and 8",
+          "https://s201.q4cdn.com/583395453/files/doc_downloads/2026/2025-Sustainability-Metrics-Center.pdf"
+        ],
+        [
+          "Technology · EPA pump-down lessons, pp. 1–3 and 7",
+          "https://19january2017snapshot.epa.gov/sites/production/files/2016-06/documents/ll_pipeline.pdf"
+        ],
+        [
+          "Methane GWP · IPCC AR6 WGIII Annex II Table 11",
+          "https://www.ipcc.ch/report/ar6/wg3/downloads/report/IPCC_AR6_WGIII_Annex-II.pdf"
+        ],
+        [
+          "Operating context · Duke EEI/AGA gas template, p. 3 (2024 data)",
+          "https://s201.q4cdn.com/583395453/files/doc_downloads/esg-key-documents/2026/EEI_AGA_ESG_Template_Quantitative-2025_Final.pdf"
+        ]
+      ],
+      "steps": [
+        "Sum the nine rounded 2025 Scope 1 rows to obtain approximately 80.703 million tonnes CO₂e.",
+        "Identify still-vented maintenance events that can maintain required pipeline service using recovery. No eligible company total is established.",
+        "EPA gives 50–90% recovery in suitable circumstances. Normalize to 1,000 tonnes of otherwise vented methane climate burden.",
+        "Subtract complete combustion of the recovered methane: 2.75 tonnes CO₂ per tonne methane. The 50% case gives about 454 tonnes CO₂e before other lifecycle effects."
+      ],
+      "evidenceRecords": [
+        {
+          "claim": "Calculated Scope 1 sum",
+          "value": "80,703,000",
+          "unit": "tCO₂e",
+          "period": "2025",
+          "source": "https://s201.q4cdn.com/583395453/files/doc_downloads/2026/2025-Sustainability-Metrics-Center.pdf",
+          "locator": "p. 4 nine Scope 1 component rows; p. 8 footnote 10",
+          "type": "derived from rounded reported components",
+          "note": ""
+        },
+        {
+          "claim": "Gas distribution/transmission methane inventory, not eligible blowdowns",
+          "value": "393,000",
+          "unit": "tCO₂e",
+          "period": "2025",
+          "source": "https://s201.q4cdn.com/583395453/files/doc_downloads/2026/2025-Sustainability-Metrics-Center.pdf",
+          "locator": "p. 4 methane gas distribution/transmission; footnote 11",
+          "type": "reported",
+          "note": ""
+        },
+        {
+          "claim": "Qualifying planned-maintenance gas recovery range",
+          "value": "50 / 90",
+          "unit": "% recovered",
+          "period": "October 2006 technology publication",
+          "source": "https://19january2017snapshot.epa.gov/sites/production/files/2016-06/documents/ll_pipeline.pdf",
+          "locator": "p. 7 Lessons Learned",
+          "type": "industry technology benchmark",
+          "note": ""
+        },
+        {
+          "claim": "Fossil fugitive methane GWP100",
+          "value": "29.8",
+          "unit": "tCO₂e/tCH₄",
+          "period": "AR6",
+          "source": "https://www.ipcc.ch/report/ar6/wg3/downloads/report/IPCC_AR6_WGIII_Annex-II.pdf",
+          "locator": "Table 11",
+          "type": "assessment factor",
+          "note": ""
+        }
+      ],
+      "investmentEvidence": [
+        {
+          "label": "Historical recovery project cost",
+          "value": "$68,100",
+          "note": "Southern Natural Gas, not Duke. EPA describes 1998 activity on a 2006 cost basis. Historical illustration only.",
+          "source": "https://19january2017snapshot.epa.gov/sites/production/files/2016-06/documents/ll_pipeline.pdf"
+        },
+        {
+          "label": "Historical net savings",
+          "value": "$159,900",
+          "note": "Same case assumes 32,550 Mcf recovered and $7/Mcf gas. It does not establish current Duke project economics or ownership of retained gas value.",
+          "source": "https://19january2017snapshot.epa.gov/sites/production/files/2016-06/documents/ll_pipeline.pdf"
+        },
+        {
+          "label": "Current Duke repayment",
+          "value": "Not established",
+          "note": "Confirm specific events, recovery costs, gas ownership, tariff treatment and allocation of savings before lending.",
+          "source": "https://19january2017snapshot.epa.gov/sites/production/files/2016-06/documents/ll_pipeline.pdf"
+        }
+      ],
+      "additionalMetrics": [
+        {
+          "label": "Reported sulfur dioxide",
+          "value": "23,000",
+          "unit": "metric tonnes",
+          "note": "2025. Inventory only; no avoided fraction or damage monetization established.",
+          "source": "https://s201.q4cdn.com/583395453/files/doc_downloads/2026/2025-Sustainability-Metrics-Center.pdf"
+        },
+        {
+          "label": "Reported nitrogen oxides",
+          "value": "47,000",
+          "unit": "metric tonnes",
+          "note": "2025. Inventory only; no avoided fraction or damage monetization established.",
+          "source": "https://s201.q4cdn.com/583395453/files/doc_downloads/2026/2025-Sustainability-Metrics-Center.pdf"
+        },
+        {
+          "label": "Higher technical recovery case",
+          "value": "81.7%",
+          "unit": "of qualifying baseline methane climate burden",
+          "note": "90% recovery case, after burning recovered methane; compressor and other lifecycle effects excluded. Not a Duke fleet savings estimate.",
+          "source": "https://19january2017snapshot.epa.gov/sites/production/files/2016-06/documents/ll_pipeline.pdf"
+        }
+      ],
+      "indexEvidence": {
+        "status": "Corroborated in S&P 500 tracker holdings, September 10, 2026",
+        "source": "https://www.ishares.com/us/products/239726/ishares-core-s-p-500-etf/latest-holdings.csv"
+      },
+      "scope1Note": "tCO₂e · approximate sum of rounded Scope 1 rows",
+      "benchmarkPeriod": "EPA 2006 technical guidance; AR6 GWP",
+      "gapNote": "50% recovery case; other lifecycle effects excluded",
+      "researchUrl": "/research/deep-dive/duke.md",
+      "rowNote": "454 t / 1,000 qualifying baseline t"
+    }
+  ],
+  "researchVersion": "Expanded evidence audit · 12 September 2026",
+  "evidenceCount": 92,
+  "sourceCount": 40
+}

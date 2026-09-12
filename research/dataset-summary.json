@@ -1,0 +1,7 @@
+{
+  "companies": 5,
+  "observation_groups": 59,
+  "numeric_baseline_rows": 372,
+  "intervention_records": 18,
+  "note": "Mixed-unit groups retain full component labels. Consult original JSON before calculations. Rows are not additive."
+}

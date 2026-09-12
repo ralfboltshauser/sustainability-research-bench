@@ -1,0 +1,121 @@
+{
+  "company": "Walmart",
+  "as_of": "2026-09-12",
+  "scope": "conditional company-scale refrigerant scenarios at fixed FY2026 cooling service, adoption sensitivity through2031",
+  "sources": [
+    {
+      "id": "W26",
+      "title": "Walmart FY2026 ESG Report",
+      "url": "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2026/FY2026-Walmart-ESG-Report.pdf",
+      "page": "31",
+      "geography": "global Walmart",
+      "period": "FY2026",
+      "values": {
+        "onsite_refrigerants_mtco2e": 4.08,
+        "scope1_and_scope2_market_based_mtco2e": 14.4
+      },
+      "boundary": "annual corporate operational emissions; not lifecycle damage or financial loss"
+    },
+    {
+      "id": "DOE_HANNAFORD",
+      "title": "DOE/Navigant Transcritical Carbon Dioxide Supermarket Refrigeration Systems, January 2015",
+      "url": "https://www.energy.gov/sites/prod/files/2015/02/f19/Hannaford%20Study%20Report%201-22-2015_CLEAN.pdf",
+      "page": "printed 19-20 (PDF24-25), Table V.2; printed1 for comparison design",
+      "geography": "Hannaford Turner Maine versus Bradford Vermont, US",
+      "period": "Table V.2 caption September2013-July2014; surrounding prose calls year-long, inconsistency preserved",
+      "values": {
+        "bradford_refrigerant_leak_lb": 200,
+        "turner_refrigerant_leak_lb": 200,
+        "bradford_direct_tco2e": 191,
+        "turner_direct_tco2e": 0.1,
+        "direct_reduction_fraction_derived": 0.9994764397905759,
+        "bradford_whole_store_tco2e": 1179,
+        "turner_whole_store_tco2e": 1003,
+        "bradford_electricity_kwh": 1414683,
+        "turner_electricity_kwh": 1415920,
+        "bradford_propane_mmbtu": 766,
+        "turner_propane_mmbtu": 1543
+      },
+      "baseline": "HFC407A direct-expansion store versus transcriticalCO2 store with nearly identical layout/refrigeration loads and similar climate/vintage",
+      "boundary": "measured leakage mass with GWP-converted direct operational emissions; total table includes electricity/propane but not equipment embodied lifecycle; no randomized causal study",
+      "limitations": "Table values rounded; use approximately99.95%, not spurious precision. Executive summary has inconsistent191lb leak statement; use explicit TableV.2 mass rows and sectionV.F. Direct factor not a whole-store reduction factor. Different heat reclaim/heating performance; climate not fully normalized."
+    },
+    {
+      "id": "ORNL_DEPLOYMENT",
+      "title": "Refrigerating with carbon dioxide boosts performance",
+      "url": "https://www.ornl.gov/success-story/refrigerating-carbon-dioxide-boosts-performance?check_logged_in=1",
+      "date": "2025-07-29",
+      "page": "Real-world impact",
+      "geography": "North America",
+      "values": {
+        "supermarkets_installed_within_two_years_greater_than": 130
+      },
+      "boundary": "commercial deployment evidence; no energy efficacy used in this scenario"
+    }
+  ],
+  "observed_pressure": {
+    "onsite_refrigerant_mtco2e_per_year": 4.08,
+    "fraction_operational_inventory": 0.2833333333333333,
+    "interpretation": "climate-pressure inventory metric, not monetized harm or proof emissions are unnecessary"
+  },
+  "model": {
+    "formula": "A_direct = 4.08 * q * r million tCO2e/year",
+    "q_definition": "Share of baseline onsite-refrigerant CO2e arising from systems eligible AND replaced by2031; not share of stores, gas mass or cooling load",
+    "r_definition": "Transferred direct leakage CO2e efficacy; 1-0.1/191 from DOE paired-store data, about99.95%",
+    "net_formula": "A_net = A_direct - delta_electricity_MWh * matched_grid_tCO2e_per_MWh / 1e6 - delta_other_fuels_tCO2e/1e6 - incremental_lifecycle_tCO2e/1e6",
+    "service_constraint": "Same food volumes, temperatures, cooling service and duty; adjust gas charge/leakage for actual installed equipment. No credit for cooling less.",
+    "gas_mix_caveat": "Walmart actual emitted gas mix/charge/GWP basis unknown. Transfer valid only if treated emissions have Hannaford-comparable high-GWP baseline and CO2 alternative; restate GWP consistently before audited calculation. General r=1-(new emitted kg/old emitted kg)*(new GWP/old GWP).",
+    "horizon": "Annual run-rate after conversion by2031; no cumulative five-year sum without installation schedule"
+  },
+  "scenarios": [
+    {
+      "name": "CONDITIONAL: 25% of FY2026 onsite-refrigerant emissions eligible and converted by 2031; Hannaford-like direct effect",
+      "eligible_emissions_fraction_assumption_q": 0.25,
+      "efficacy_r": 0.9994764397905759,
+      "direct_avoided_mtco2e_per_year": 1.0194659685863874,
+      "percent_of_onsite_refrigerant_source": 24.986910994764397,
+      "percent_of_scope1_scope2_market_based_inventory": 7.079624781849912,
+      "remaining_onsite_refrigerant_mtco2e_per_year": 3.0605340314136127,
+      "net_lifecycle_avoided_mtco2e_per_year": null,
+      "feasibility_status": "q is a sensitivity, not demonstrated feasible adoption; r transfer requires matching system characteristics and GWP accounting"
+    },
+    {
+      "name": "CONDITIONAL: 50% of FY2026 onsite-refrigerant emissions eligible and converted by 2031; Hannaford-like direct effect",
+      "eligible_emissions_fraction_assumption_q": 0.5,
+      "efficacy_r": 0.9994764397905759,
+      "direct_avoided_mtco2e_per_year": 2.0389319371727748,
+      "percent_of_onsite_refrigerant_source": 49.973821989528794,
+      "percent_of_scope1_scope2_market_based_inventory": 14.159249563699824,
+      "remaining_onsite_refrigerant_mtco2e_per_year": 2.0410680628272253,
+      "net_lifecycle_avoided_mtco2e_per_year": null,
+      "feasibility_status": "q is a sensitivity, not demonstrated feasible adoption; r transfer requires matching system characteristics and GWP accounting"
+    },
+    {
+      "name": "CONDITIONAL: 100% of FY2026 onsite-refrigerant emissions eligible and converted by 2031; Hannaford-like direct effect",
+      "eligible_emissions_fraction_assumption_q": 1,
+      "efficacy_r": 0.9994764397905759,
+      "direct_avoided_mtco2e_per_year": 4.0778638743455495,
+      "percent_of_onsite_refrigerant_source": 99.94764397905759,
+      "percent_of_scope1_scope2_market_based_inventory": 28.318499127399647,
+      "remaining_onsite_refrigerant_mtco2e_per_year": 0.002136125654450538,
+      "net_lifecycle_avoided_mtco2e_per_year": null,
+      "feasibility_status": "q is a sensitivity, not demonstrated feasible adoption; r transfer requires matching system characteristics and GWP accounting"
+    }
+  ],
+  "elimination_ceiling": {
+    "name": "THEORETICAL ONLY: eliminate100% onsite refrigerant emissions at fixed service, no secondary penalty",
+    "direct_avoided_mtco2e_per_year": 4.08,
+    "percent_own_source": 100,
+    "percent_operational_inventory": 28.333333333333332,
+    "status": "Arithmetic ceiling, not demonstrated feasible process or adoption estimate; even CO2 can leak"
+  },
+  "pitch": "Walmart reports4.08million tonnesCO2e yearly from onsite refrigerants. A real supermarket comparison shows that availableCO2 cooling can nearly eliminate direct refrigerant climate impact. If systems responsible for half that Walmart source could be converted with comparable performance, the gross opportunity would be about2.04million tonnes per year\u201414.2% of operational emissions\u2014before energy/lifecycle effects and beyond-baseline additionality are checked.",
+  "finance": "Technical opportunity is not investor additionality or repayable cashflow. Deduct committed upgrades; underwrite actual avoided operating costs and signed payments. No damage valuation assumed to be revenue.",
+  "missing_data": [
+    "emissions-weighted eligible q and feasible2031 installation schedule",
+    "gas-specific baseline and consistent GWP version",
+    "site electricity/heating changes and lifecycle impacts",
+    "committed replacements without outside financing",
+    "cashflow, capex and repayment contracts"
+  ]
+}

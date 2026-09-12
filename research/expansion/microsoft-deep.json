@@ -1,0 +1,683 @@
+{
+  "company": "Microsoft",
+  "asOf": "2026-09-12",
+  "complete": true,
+  "climateCase": "Unchanged: 15% matched lifecycle climate reduction; no corporate multiplier.",
+  "appRecordUpdates": {
+    "summary": "A matched lifecycle study supports a 15% climate reduction. Actual Phoenix controls and Wisconsin closed-loop deployment strengthen feasibility evidence, but remaining eligible fleet and net site-level water savings are unquantified.",
+    "additionalMetrics": [
+      {
+        "label": "Operational water consumed",
+        "value": 8170000,
+        "unit": "m3",
+        "period": "FY25",
+        "status": "Reported baseline",
+        "detail": "Global operations; includes estimates."
+      },
+      {
+        "label": "Consumed in water-stressed areas",
+        "value": 3926000,
+        "unit": "m3",
+        "period": "FY25",
+        "status": "Exposure, not avoidable harm",
+        "detail": "48.1% of consumption; location-specific damage remains unquantified."
+      },
+      {
+        "label": "Phoenix water-efficiency improvement",
+        "value": 23,
+        "unit": "% year over year",
+        "period": "FY25",
+        "status": "Already achieved",
+        "detail": "Temperature/humidity controls and operational improvements; not an additional remaining gap."
+      },
+      {
+        "label": "New-design water avoidance",
+        "value": 125000,
+        "unit": "m3/site/year, greater than",
+        "period": "Design estimate",
+        "status": "Projected withdrawal avoidance",
+        "detail": "No measured annual savings cohort; operational consumption savings not established."
+      },
+      {
+        "label": "Lifecycle blue-water opportunity",
+        "value": 31,
+        "unit": "%",
+        "period": "Study-matched service",
+        "status": "Modeled process comparison",
+        "detail": "Separate normalization: 310 m3 per 1,000 baseline lifecycle m3; no corporate extrapolation."
+      },
+      {
+        "label": "Water-saving electricity tradeoff",
+        "value": null,
+        "unit": "MWh",
+        "period": "Site-specific",
+        "status": "Not quantified",
+        "detail": "Dry heat rejection can increase power demand; net water/climate result depends on the grid and climate."
+      },
+      {
+        "label": "Local cooling-fan noise",
+        "value": null,
+        "unit": "Exposure",
+        "period": "2026",
+        "status": "Reported impact; mitigation ongoing",
+        "detail": "Mount Pleasant reports confirm another local impact; no quantified damage estimate."
+      }
+    ],
+    "investmentEvidence": {
+      "status": "Technology/deployment evidence; no quantified financing-additional gap",
+      "existingInvestment": "Microsoft reports over $500 million across over 75 water/wastewater infrastructure projects since 2020. This is not the cost of the cooling intervention.",
+      "availableNow": "Operational control improvements and built direct-to-chip/closed-loop systems have actual deployment evidence.",
+      "alreadyCommitted": "Phoenix FY25 efficiency improvement and Fairwater deployment belong in the existing-measures baseline.",
+      "cashflow": null,
+      "incrementalCapex": null,
+      "requiredData": [
+        "Unconverted eligible site/building cohort and approved investment plans",
+        "Cooling-only withdrawal and consumption, IT service/load and weather-normalized baseline",
+        "Incremental pumps/fans/chiller electricity and grid water/emissions",
+        "Retrofit quotes, downtime/reliability constraints, tariffs and contracted repayment"
+      ],
+      "rule": "Do not equate avoided externality dollars with repayment cash flow."
+    },
+    "evidenceRecords": [
+      {
+        "claim": "Global operational water withdrawal",
+        "value": 13266000,
+        "unit": "m3",
+        "period": "FY25",
+        "source": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+        "locator": "p7 Table 8",
+        "type": "reported inventory"
+      },
+      {
+        "claim": "Global operational water consumption",
+        "value": 8170000,
+        "unit": "m3",
+        "period": "FY25",
+        "source": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+        "locator": "p7 Table 8; p17 water methodology",
+        "type": "reported inventory",
+        "caveat": "Includes estimates; most sites lack discharge meters."
+      },
+      {
+        "claim": "Global operational water discharge",
+        "value": 5096000,
+        "unit": "m3",
+        "period": "FY25",
+        "source": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+        "locator": "p7 Table 8",
+        "type": "reported inventory"
+      },
+      {
+        "claim": "Consumption in high/extremely high baseline water stress",
+        "value": 3926000,
+        "unit": "m3",
+        "period": "FY25",
+        "source": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+        "locator": "p7 Table 8 footnote 2",
+        "type": "reported inventory",
+        "caveat": "Exposure classification, not avoidable volume or damage."
+      },
+      {
+        "claim": "High-stress share of consumption",
+        "value": 48.05,
+        "unit": "%",
+        "period": "FY25",
+        "source": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+        "locator": "Derived from p7 Table 8 footnote 2",
+        "type": "calculated ratio"
+      },
+      {
+        "claim": "Phoenix owned datacenter withdrawal",
+        "value": 981000,
+        "unit": "m3",
+        "period": "FY25",
+        "source": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+        "locator": "p25 Table 15; p26 boundary",
+        "type": "reported inventory",
+        "caveat": "Metro cluster, not pilot building; unassured Section 2."
+      },
+      {
+        "claim": "Phoenix owned datacenter electricity",
+        "value": 954206,
+        "unit": "MWh",
+        "period": "FY25",
+        "source": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+        "locator": "p25 Table 15; p26 boundary",
+        "type": "reported inventory",
+        "caveat": "Total site electricity, not IT load."
+      },
+      {
+        "claim": "Phoenix operational WUE improvement",
+        "value": 23,
+        "unit": "% year over year",
+        "period": "FY25",
+        "source": "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/",
+        "locator": "Modernizing cooling in existing datacenters with smarter controls",
+        "type": "company-reported achieved intensity improvement",
+        "caveat": "Already implemented; no absolute saved volume or controlled weather/load comparison disclosed."
+      },
+      {
+        "claim": "Average datacenter WUE",
+        "value": 0.27,
+        "unit": "L/kWh",
+        "period": "2025",
+        "source": "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/",
+        "locator": "Opening water-efficiency discussion",
+        "type": "company-reported intensity"
+      },
+      {
+        "claim": "Owned-fleet withdrawal intensity improvement",
+        "value": 25,
+        "unit": "% versus 2022",
+        "period": "2025",
+        "source": "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/",
+        "locator": "Opening; footnote 1",
+        "type": "company-reported intensity",
+        "caveat": "Withdrawals per MW; differs from WUE per kWh."
+      },
+      {
+        "claim": "Owned-fleet withdrawal intensity target",
+        "value": 40,
+        "unit": "% versus 2022",
+        "period": "2030 target",
+        "source": "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/",
+        "locator": "Opening; footnote 1",
+        "type": "target"
+      },
+      {
+        "claim": "Quincy recycled/reused/nonpotable share",
+        "value": 74,
+        "unit": "%",
+        "period": "FY25",
+        "source": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+        "locator": "p25 Table 15",
+        "type": "reported inventory",
+        "caveat": "Source substitution does not establish reduction in evaporation."
+      },
+      {
+        "claim": "San Antonio recycled/reused/nonpotable share",
+        "value": 79,
+        "unit": "%",
+        "period": "FY25",
+        "source": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+        "locator": "p25 Table 15",
+        "type": "reported inventory"
+      },
+      {
+        "claim": "Singapore recycled/reused/nonpotable share",
+        "value": 99,
+        "unit": "%",
+        "period": "FY25",
+        "source": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+        "locator": "p25 Table 15",
+        "type": "reported inventory"
+      },
+      {
+        "claim": "Design-based annual water avoidance",
+        "value": 125000,
+        "unit": "m3 per datacenter per year; greater than",
+        "period": "2024 design announcement",
+        "source": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/",
+        "locator": "Opening paragraph and final footnote",
+        "type": "projected engineering claim",
+        "caveat": "Based on FY24 withdrawal WUE 0.30 L/kWh; not metered consumption savings."
+      },
+      {
+        "claim": "Energy tradeoff of eliminating evaporation",
+        "value": null,
+        "unit": "unquantified increase in annual electricity",
+        "period": "2024 design announcement",
+        "source": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/",
+        "locator": "Mitigating energy impacts",
+        "type": "company engineering claim",
+        "caveat": "Mechanical cooling raises PUE; warm coolant/economizing mitigates. No numerical penalty published."
+      },
+      {
+        "claim": "Original Phoenix and Mount Pleasant zero-evaporation pilots",
+        "value": 2026,
+        "unit": "planned pilot year",
+        "period": "announced December 2024",
+        "source": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/",
+        "locator": "Pilot projects and implementation",
+        "type": "announced schedule",
+        "caveat": "Broader new-design sites were scheduled from late 2027; no Phoenix pilot commissioning verified."
+      },
+      {
+        "claim": "Fairwater Wisconsin entered operation",
+        "value": "April 2026",
+        "unit": "commissioning month",
+        "period": "April 29, 2026 statement",
+        "source": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3",
+        "locator": "Satya Nadella infrastructure remarks, paragraph beginning Our Fairwater",
+        "type": "company-reported operational status"
+      },
+      {
+        "claim": "Fairwater closed-loop coverage",
+        "value": 90,
+        "unit": "% capacity; greater than",
+        "period": "September 2025 engineering description",
+        "source": "https://blogs.microsoft.com/blog/2025/09/18/inside-the-worlds-most-powerful-ai-datacenter/",
+        "locator": "Addressing the environmental impact: closed loop liquid cooling at facility scale",
+        "type": "company design description",
+        "caveat": "Context is Fairwater architecture, not Microsoft global fleet; remaining traditional servers may use water on hot days."
+      },
+      {
+        "claim": "Mount Pleasant cooling fan noise",
+        "value": null,
+        "unit": "local noise impact; no quantified exposure",
+        "period": "April\u2013July 2026",
+        "source": "https://local.microsoft.com/blog/testing-underway-to-understand-noise-at-our-mount-pleasant-datacenter/",
+        "locator": "April 15, June 18 and July 20 updates",
+        "type": "company-reported adverse effect and mitigation",
+        "caveat": "July update still discusses mitigation/evaluation; avoid declaring permanently resolved. No health-damage valuation."
+      },
+      {
+        "claim": "Water/wastewater infrastructure investment",
+        "value": 500000000,
+        "unit": "USD; greater than",
+        "period": "since 2020, reported June 2026",
+        "source": "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/",
+        "locator": "Advancing water stewardship through investment and community partnership",
+        "type": "company-reported investment",
+        "caveat": "Over 75 projects; not cooling retrofit unit cost or investor return."
+      },
+      {
+        "claim": "Cold-plate lifecycle climate reduction",
+        "value": 15,
+        "unit": "%",
+        "period": "2025 study",
+        "source": "https://www.nature.com/articles/s41586-025-08832-3",
+        "locator": "Table 4 p336; Figure 4 and p337",
+        "type": "peer-reviewed modeled comparison"
+      },
+      {
+        "claim": "Cold-plate lifecycle blue-water reduction",
+        "value": 31,
+        "unit": "%",
+        "period": "2025 study",
+        "source": "https://www.nature.com/articles/s41586-025-08832-3",
+        "locator": "Table 4 p336; Figure 4 and p337",
+        "type": "peer-reviewed modeled comparison",
+        "caveat": "Not a factor for corporate onsite water."
+      }
+    ],
+    "sources": [
+      [
+        "2026 Environmental Data Fact Sheet",
+        "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf"
+      ],
+      [
+        "Zero-water cooling design announcement, December 2024",
+        "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/"
+      ],
+      [
+        "Water intensity and operational improvements, June 2026",
+        "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/"
+      ],
+      [
+        "Fairwater engineering description, September 2025",
+        "https://blogs.microsoft.com/blog/2025/09/18/inside-the-worlds-most-powerful-ai-datacenter/"
+      ],
+      [
+        "FY2026 third-quarter earnings call, April 29, 2026",
+        "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3"
+      ],
+      [
+        "Mount Pleasant cooling fan noise updates",
+        "https://local.microsoft.com/blog/testing-underway-to-understand-noise-at-our-mount-pleasant-datacenter/"
+      ],
+      [
+        "Alissa et al., Nature 641, 331\u2013338 (2025)",
+        "https://www.nature.com/articles/s41586-025-08832-3"
+      ]
+    ]
+  },
+  "evidenceRecords": [
+    {
+      "claim": "Global operational water withdrawal",
+      "value": 13266000,
+      "unit": "m3",
+      "period": "FY25",
+      "source": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+      "locator": "p7 Table 8",
+      "type": "reported inventory"
+    },
+    {
+      "claim": "Global operational water consumption",
+      "value": 8170000,
+      "unit": "m3",
+      "period": "FY25",
+      "source": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+      "locator": "p7 Table 8; p17 water methodology",
+      "type": "reported inventory",
+      "caveat": "Includes estimates; most sites lack discharge meters."
+    },
+    {
+      "claim": "Global operational water discharge",
+      "value": 5096000,
+      "unit": "m3",
+      "period": "FY25",
+      "source": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+      "locator": "p7 Table 8",
+      "type": "reported inventory"
+    },
+    {
+      "claim": "Consumption in high/extremely high baseline water stress",
+      "value": 3926000,
+      "unit": "m3",
+      "period": "FY25",
+      "source": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+      "locator": "p7 Table 8 footnote 2",
+      "type": "reported inventory",
+      "caveat": "Exposure classification, not avoidable volume or damage."
+    },
+    {
+      "claim": "High-stress share of consumption",
+      "value": 48.05,
+      "unit": "%",
+      "period": "FY25",
+      "source": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+      "locator": "Derived from p7 Table 8 footnote 2",
+      "type": "calculated ratio"
+    },
+    {
+      "claim": "Phoenix owned datacenter withdrawal",
+      "value": 981000,
+      "unit": "m3",
+      "period": "FY25",
+      "source": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+      "locator": "p25 Table 15; p26 boundary",
+      "type": "reported inventory",
+      "caveat": "Metro cluster, not pilot building; unassured Section 2."
+    },
+    {
+      "claim": "Phoenix owned datacenter electricity",
+      "value": 954206,
+      "unit": "MWh",
+      "period": "FY25",
+      "source": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+      "locator": "p25 Table 15; p26 boundary",
+      "type": "reported inventory",
+      "caveat": "Total site electricity, not IT load."
+    },
+    {
+      "claim": "Phoenix operational WUE improvement",
+      "value": 23,
+      "unit": "% year over year",
+      "period": "FY25",
+      "source": "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/",
+      "locator": "Modernizing cooling in existing datacenters with smarter controls",
+      "type": "company-reported achieved intensity improvement",
+      "caveat": "Already implemented; no absolute saved volume or controlled weather/load comparison disclosed."
+    },
+    {
+      "claim": "Average datacenter WUE",
+      "value": 0.27,
+      "unit": "L/kWh",
+      "period": "2025",
+      "source": "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/",
+      "locator": "Opening water-efficiency discussion",
+      "type": "company-reported intensity"
+    },
+    {
+      "claim": "Owned-fleet withdrawal intensity improvement",
+      "value": 25,
+      "unit": "% versus 2022",
+      "period": "2025",
+      "source": "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/",
+      "locator": "Opening; footnote 1",
+      "type": "company-reported intensity",
+      "caveat": "Withdrawals per MW; differs from WUE per kWh."
+    },
+    {
+      "claim": "Owned-fleet withdrawal intensity target",
+      "value": 40,
+      "unit": "% versus 2022",
+      "period": "2030 target",
+      "source": "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/",
+      "locator": "Opening; footnote 1",
+      "type": "target"
+    },
+    {
+      "claim": "Quincy recycled/reused/nonpotable share",
+      "value": 74,
+      "unit": "%",
+      "period": "FY25",
+      "source": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+      "locator": "p25 Table 15",
+      "type": "reported inventory",
+      "caveat": "Source substitution does not establish reduction in evaporation."
+    },
+    {
+      "claim": "San Antonio recycled/reused/nonpotable share",
+      "value": 79,
+      "unit": "%",
+      "period": "FY25",
+      "source": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+      "locator": "p25 Table 15",
+      "type": "reported inventory"
+    },
+    {
+      "claim": "Singapore recycled/reused/nonpotable share",
+      "value": 99,
+      "unit": "%",
+      "period": "FY25",
+      "source": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+      "locator": "p25 Table 15",
+      "type": "reported inventory"
+    },
+    {
+      "claim": "Design-based annual water avoidance",
+      "value": 125000,
+      "unit": "m3 per datacenter per year; greater than",
+      "period": "2024 design announcement",
+      "source": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/",
+      "locator": "Opening paragraph and final footnote",
+      "type": "projected engineering claim",
+      "caveat": "Based on FY24 withdrawal WUE 0.30 L/kWh; not metered consumption savings."
+    },
+    {
+      "claim": "Energy tradeoff of eliminating evaporation",
+      "value": null,
+      "unit": "unquantified increase in annual electricity",
+      "period": "2024 design announcement",
+      "source": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/",
+      "locator": "Mitigating energy impacts",
+      "type": "company engineering claim",
+      "caveat": "Mechanical cooling raises PUE; warm coolant/economizing mitigates. No numerical penalty published."
+    },
+    {
+      "claim": "Original Phoenix and Mount Pleasant zero-evaporation pilots",
+      "value": 2026,
+      "unit": "planned pilot year",
+      "period": "announced December 2024",
+      "source": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/",
+      "locator": "Pilot projects and implementation",
+      "type": "announced schedule",
+      "caveat": "Broader new-design sites were scheduled from late 2027; no Phoenix pilot commissioning verified."
+    },
+    {
+      "claim": "Fairwater Wisconsin entered operation",
+      "value": "April 2026",
+      "unit": "commissioning month",
+      "period": "April 29, 2026 statement",
+      "source": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3",
+      "locator": "Satya Nadella infrastructure remarks, paragraph beginning Our Fairwater",
+      "type": "company-reported operational status"
+    },
+    {
+      "claim": "Fairwater closed-loop coverage",
+      "value": 90,
+      "unit": "% capacity; greater than",
+      "period": "September 2025 engineering description",
+      "source": "https://blogs.microsoft.com/blog/2025/09/18/inside-the-worlds-most-powerful-ai-datacenter/",
+      "locator": "Addressing the environmental impact: closed loop liquid cooling at facility scale",
+      "type": "company design description",
+      "caveat": "Context is Fairwater architecture, not Microsoft global fleet; remaining traditional servers may use water on hot days."
+    },
+    {
+      "claim": "Mount Pleasant cooling fan noise",
+      "value": null,
+      "unit": "local noise impact; no quantified exposure",
+      "period": "April\u2013July 2026",
+      "source": "https://local.microsoft.com/blog/testing-underway-to-understand-noise-at-our-mount-pleasant-datacenter/",
+      "locator": "April 15, June 18 and July 20 updates",
+      "type": "company-reported adverse effect and mitigation",
+      "caveat": "July update still discusses mitigation/evaluation; avoid declaring permanently resolved. No health-damage valuation."
+    },
+    {
+      "claim": "Water/wastewater infrastructure investment",
+      "value": 500000000,
+      "unit": "USD; greater than",
+      "period": "since 2020, reported June 2026",
+      "source": "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/",
+      "locator": "Advancing water stewardship through investment and community partnership",
+      "type": "company-reported investment",
+      "caveat": "Over 75 projects; not cooling retrofit unit cost or investor return."
+    },
+    {
+      "claim": "Cold-plate lifecycle climate reduction",
+      "value": 15,
+      "unit": "%",
+      "period": "2025 study",
+      "source": "https://www.nature.com/articles/s41586-025-08832-3",
+      "locator": "Table 4 p336; Figure 4 and p337",
+      "type": "peer-reviewed modeled comparison"
+    },
+    {
+      "claim": "Cold-plate lifecycle blue-water reduction",
+      "value": 31,
+      "unit": "%",
+      "period": "2025 study",
+      "source": "https://www.nature.com/articles/s41586-025-08832-3",
+      "locator": "Table 4 p336; Figure 4 and p337",
+      "type": "peer-reviewed modeled comparison",
+      "caveat": "Not a factor for corporate onsite water."
+    }
+  ],
+  "additionalMetrics": [
+    {
+      "label": "Operational water consumed",
+      "value": 8170000,
+      "unit": "m3",
+      "period": "FY25",
+      "status": "Reported baseline",
+      "detail": "Global operations; includes estimates."
+    },
+    {
+      "label": "Consumed in water-stressed areas",
+      "value": 3926000,
+      "unit": "m3",
+      "period": "FY25",
+      "status": "Exposure, not avoidable harm",
+      "detail": "48.1% of consumption; location-specific damage remains unquantified."
+    },
+    {
+      "label": "Phoenix water-efficiency improvement",
+      "value": 23,
+      "unit": "% year over year",
+      "period": "FY25",
+      "status": "Already achieved",
+      "detail": "Temperature/humidity controls and operational improvements; not an additional remaining gap."
+    },
+    {
+      "label": "New-design water avoidance",
+      "value": 125000,
+      "unit": "m3/site/year, greater than",
+      "period": "Design estimate",
+      "status": "Projected withdrawal avoidance",
+      "detail": "No measured annual savings cohort; operational consumption savings not established."
+    },
+    {
+      "label": "Lifecycle blue-water opportunity",
+      "value": 31,
+      "unit": "%",
+      "period": "Study-matched service",
+      "status": "Modeled process comparison",
+      "detail": "Separate normalization: 310 m3 per 1,000 baseline lifecycle m3; no corporate extrapolation."
+    },
+    {
+      "label": "Water-saving electricity tradeoff",
+      "value": null,
+      "unit": "MWh",
+      "period": "Site-specific",
+      "status": "Not quantified",
+      "detail": "Dry heat rejection can increase power demand; net water/climate result depends on the grid and climate."
+    },
+    {
+      "label": "Local cooling-fan noise",
+      "value": null,
+      "unit": "Exposure",
+      "period": "2026",
+      "status": "Reported impact; mitigation ongoing",
+      "detail": "Mount Pleasant reports confirm another local impact; no quantified damage estimate."
+    }
+  ],
+  "investmentEvidence": {
+    "status": "Technology/deployment evidence; no quantified financing-additional gap",
+    "existingInvestment": "Microsoft reports over $500 million across over 75 water/wastewater infrastructure projects since 2020. This is not the cost of the cooling intervention.",
+    "availableNow": "Operational control improvements and built direct-to-chip/closed-loop systems have actual deployment evidence.",
+    "alreadyCommitted": "Phoenix FY25 efficiency improvement and Fairwater deployment belong in the existing-measures baseline.",
+    "cashflow": null,
+    "incrementalCapex": null,
+    "requiredData": [
+      "Unconverted eligible site/building cohort and approved investment plans",
+      "Cooling-only withdrawal and consumption, IT service/load and weather-normalized baseline",
+      "Incremental pumps/fans/chiller electricity and grid water/emissions",
+      "Retrofit quotes, downtime/reliability constraints, tariffs and contracted repayment"
+    ],
+    "rule": "Do not equate avoided externality dollars with repayment cash flow."
+  },
+  "sources": [
+    {
+      "id": "inventory",
+      "title": "2026 Environmental Data Fact Sheet",
+      "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf"
+    },
+    {
+      "id": "design",
+      "title": "Zero-water cooling design announcement, December 2024",
+      "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/09/sustainable-by-design-next-generation-datacenters-consume-zero-water-for-cooling/"
+    },
+    {
+      "id": "operations",
+      "title": "Water intensity and operational improvements, June 2026",
+      "url": "https://blogs.microsoft.com/blog/2026/06/24/inside-microsofts-two-decade-push-to-cut-water-intensity-while-scaling-for-growth/"
+    },
+    {
+      "id": "fairwater",
+      "title": "Fairwater engineering description, September 2025",
+      "url": "https://blogs.microsoft.com/blog/2025/09/18/inside-the-worlds-most-powerful-ai-datacenter/"
+    },
+    {
+      "id": "earnings",
+      "title": "FY2026 third-quarter earnings call, April 29, 2026",
+      "url": "https://www.microsoft.com/en-us/investor/events/fy-2026/earnings-fy-2026-q3"
+    },
+    {
+      "id": "noise",
+      "title": "Mount Pleasant cooling fan noise updates",
+      "url": "https://local.microsoft.com/blog/testing-underway-to-understand-noise-at-our-mount-pleasant-datacenter/"
+    },
+    {
+      "id": "lca",
+      "title": "Alissa et al., Nature 641, 331\u2013338 (2025)",
+      "url": "https://www.nature.com/articles/s41586-025-08832-3"
+    }
+  ],
+  "interpretationRules": [
+    "Withdrawal is water entering a facility; consumption is withdrawal minus discharge, including evaporation. Neither is automatically ecological damage.",
+    "A closed coolant loop at the chip does not alone establish zero evaporative heat rejection; trace heat through chillers and final outdoor rejection.",
+    "Fairwater operation in April 2026 supersedes treating every Wisconsin liquid-cooling project as a future pilot, but does not verify the Phoenix pilot or every new-build design.",
+    "Do not apply 23% WUE change to FY25 total withdrawal: IT load, time baseline, weather and cooling-only boundaries differ.",
+    "Do not turn 40% target minus 25% achieved into an avoidable-water estimate; target is withdrawal per MW and achievement is already realized.",
+    "Recycled water reduces potable sourcing dependence but can still evaporate; total basin consumption and marginal displaced use matter.",
+    "Do not subtract global replenishment from high-stress consumption to assert zero local damage.",
+    "No additional company-scale water prevention percentage is supportable from these disclosures."
+  ],
+  "uncertainties": [
+    "No public matched before/after annual metered saving for the 125-million-liter design claim found.",
+    "No numerical electrical penalty for zero-evaporation design found.",
+    "No site-level ecological damage valuation, public eligible retrofit inventory or cooling investment payback found."
+  ]
+}

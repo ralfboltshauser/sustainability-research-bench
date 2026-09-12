@@ -1,0 +1,133 @@
+{
+  "slug": "duke",
+  "name": "Duke Energy",
+  "ticker": "DUK",
+  "sector": "Utilities",
+  "period": "2025 · ownership-share / operational-control inventory",
+  "scope1": 80703000,
+  "scope1Precision": "Calculated sum of nine rounded Scope 1 components, not a separately reported exact total.",
+  "activity": "Pipeline maintenance methane",
+  "status": "Conditional normalized process comparison",
+  "kind": "normalized",
+  "baseline": 1000,
+  "reductionRate": 0.4538590604026846,
+  "defaultCoverage": 1,
+  "unit": "tCO₂e / 1,000 qualifying baseline methane tonnes CO₂e",
+  "boundary": "Qualifying vented pipeline methane, after recovered-methane combustion; compressor and other lifecycle effects excluded",
+  "technology": "Pipeline gas recovery before maintenance",
+  "summary": "Gas normally vented during suitable planned maintenance can be moved into another pipeline. Established recovery methods reduce methane loss while preserving safe maintenance and gas delivery. Duke’s remaining eligible events are not identified.",
+  "formula": "1,000 × 50% recovery × (29.8 − 2.75) / 29.8 = 453.86 tCO₂e; upper technical case at 90% recovery = 816.95 tCO₂e",
+  "opportunity": "Screen untreated scheduled blowdowns for recovery equipment and service contracts.",
+  "constraints": [
+    "The 50–90% recovery evidence is an EPA industry benchmark, not measured remaining Duke opportunity or a universal guarantee.",
+    "Duke’s 393,000 tCO₂e gas methane inventory includes other sources and cannot be used as the blowdown baseline.",
+    "Required pipeline connections, pressures, maintenance time and reliable service must match; emergency events may be unsuitable.",
+    "Recovered methane is assumed completely burned. Compressor energy, leakage, equipment impacts and other hydrocarbons remain unquantified; no displacement credit is taken.",
+    "Already recovered or flared events are excluded from an untreated venting baseline. Eligible extent and financing additionality are unknown.",
+    "The inventory uses company reporting factors; the separate normalized methane comparison uses AR6 fossil methane 29.8. Do not silently mix those factors."
+  ],
+  "sources": [
+    [
+      "Inventory · 2025 metrics, pp. 4 and 8",
+      "https://s201.q4cdn.com/583395453/files/doc_downloads/2026/2025-Sustainability-Metrics-Center.pdf"
+    ],
+    [
+      "Technology · EPA pump-down lessons, pp. 1–3 and 7",
+      "https://19january2017snapshot.epa.gov/sites/production/files/2016-06/documents/ll_pipeline.pdf"
+    ],
+    [
+      "Methane GWP · IPCC AR6 WGIII Annex II Table 11",
+      "https://www.ipcc.ch/report/ar6/wg3/downloads/report/IPCC_AR6_WGIII_Annex-II.pdf"
+    ],
+    [
+      "Operating context · Duke EEI/AGA gas template, p. 3 (2024 data)",
+      "https://s201.q4cdn.com/583395453/files/doc_downloads/esg-key-documents/2026/EEI_AGA_ESG_Template_Quantitative-2025_Final.pdf"
+    ]
+  ],
+  "steps": [
+    "Sum the nine rounded 2025 Scope 1 rows to obtain approximately 80.703 million tonnes CO₂e.",
+    "Identify still-vented maintenance events that can maintain required pipeline service using recovery. No eligible company total is established.",
+    "EPA gives 50–90% recovery in suitable circumstances. Normalize to 1,000 tonnes of otherwise vented methane climate burden.",
+    "Subtract complete combustion of the recovered methane: 2.75 tonnes CO₂ per tonne methane. The 50% case gives about 454 tonnes CO₂e before other lifecycle effects."
+  ],
+  "evidenceRecords": [
+    {
+      "claim": "Calculated Scope 1 sum",
+      "value": 80703000,
+      "unit": "tCO₂e",
+      "period": "2025",
+      "source": "https://s201.q4cdn.com/583395453/files/doc_downloads/2026/2025-Sustainability-Metrics-Center.pdf",
+      "locator": "p. 4 nine Scope 1 component rows; p. 8 footnote 10",
+      "type": "derived from rounded reported components"
+    },
+    {
+      "claim": "Gas distribution/transmission methane inventory, not eligible blowdowns",
+      "value": 393000,
+      "unit": "tCO₂e",
+      "period": "2025",
+      "source": "https://s201.q4cdn.com/583395453/files/doc_downloads/2026/2025-Sustainability-Metrics-Center.pdf",
+      "locator": "p. 4 methane gas distribution/transmission; footnote 11",
+      "type": "reported"
+    },
+    {
+      "claim": "Qualifying planned-maintenance gas recovery range",
+      "value": [
+        0.5,
+        0.9
+      ],
+      "unit": "fraction recovered",
+      "period": "October 2006 technology publication",
+      "source": "https://19january2017snapshot.epa.gov/sites/production/files/2016-06/documents/ll_pipeline.pdf",
+      "locator": "p. 7 Lessons Learned",
+      "type": "industry technology benchmark"
+    },
+    {
+      "claim": "Fossil fugitive methane GWP100",
+      "value": 29.8,
+      "unit": "tCO₂e/tCH₄",
+      "period": "AR6",
+      "source": "https://www.ipcc.ch/report/ar6/wg3/downloads/report/IPCC_AR6_WGIII_Annex-II.pdf",
+      "locator": "Table 11",
+      "type": "assessment factor"
+    }
+  ],
+  "investmentEvidence": {
+    "status": "No Duke project cost or repayable cash flow established",
+    "repaymentMechanism": "Potential retained gas value less recovery operating costs; ownership, tariff treatment and contract allocation require verification.",
+    "historicalExample": {
+      "company": "Southern Natural Gas, not Duke",
+      "period": "1998 activity, EPA values costs at 2006 basis",
+      "gasRecoveredMcf": 32550,
+      "costUSD": 68100,
+      "netSavingsUSD": 159900,
+      "gasPriceUSDPerMcf": 7,
+      "source": "https://19january2017snapshot.epa.gov/sites/production/files/2016-06/documents/ll_pipeline.pdf",
+      "locator": "p. 7 case study",
+      "limitation": "Historical illustrative economics, not a contemporary quote, Duke savings or fund return."
+    }
+  },
+  "additionalMetrics": [
+    {
+      "name": "Reported sulfur dioxide",
+      "value": 23000,
+      "unit": "metric tonnes",
+      "period": "2025",
+      "source": "https://s201.q4cdn.com/583395453/files/doc_downloads/2026/2025-Sustainability-Metrics-Center.pdf",
+      "locator": "p. 4",
+      "interpretation": "Inventory only; no avoided fraction or damage monetization established."
+    },
+    {
+      "name": "Reported nitrogen oxides",
+      "value": 47000,
+      "unit": "metric tonnes",
+      "period": "2025",
+      "source": "https://s201.q4cdn.com/583395453/files/doc_downloads/2026/2025-Sustainability-Metrics-Center.pdf",
+      "locator": "p. 4",
+      "interpretation": "Inventory only; no avoided fraction or damage monetization established."
+    }
+  ],
+  "indexEvidence": {
+    "status": "Historical S&P primary confirmation; exact September 2026 membership not independently verified",
+    "source": "https://press.spglobal.com/2016-03-11-Danaher-Duke-Energy-and-NextEra-Energy-Set-to-Join-the-S-P-100"
+  }
+}

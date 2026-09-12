@@ -1,0 +1,422 @@
+{
+  "company": "Microsoft Corporation",
+  "baseline_period": {
+    "label": "FY25",
+    "start": "2024-07-01",
+    "end": "2025-06-30",
+    "latest_official_environmental_dataset_found_as_of": "2026-09-12"
+  },
+  "sp500_membership": {
+    "verified": true,
+    "as_of": "2026-08-31",
+    "basis": "Index-provider constituent snapshot; no intraday membership claim",
+    "source_id": "SP500"
+  },
+  "observations": [
+    {
+      "id": "MSFT-01",
+      "metric": "Scope 1 and HFC component",
+      "value": {
+        "scope1": 170887,
+        "HFC_component": 70131
+      },
+      "unit": "tCO2e",
+      "period": "FY25: 2024-07-01 to 2025-06-30",
+      "boundary": "Global operational control, including wholly/partially owned controlled subsidiaries, owned and leased real estate/datacenters; includes relevant Activision Blizzard King activity.",
+      "control": "Direct control",
+      "geographic_coverage": "Global",
+      "source_url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf#page=3",
+      "source_table": "Table 1A; HFC component Table 2 p4",
+      "reported_vs_modeled": "Company-reported inventory; includes measurement and company estimation, not researcher-modeled reduction",
+      "assurance": "Deloitte limited assurance review of FY25 Section 1 specified information; report dated July 9, 2026, p23. Not reasonable assurance; estimates retain inherent uncertainty.",
+      "caveat": "HFC is contained in Scope 1, not additive. Includes backup/site fuel, owned transport and executive air travel, refrigerants and SF6."
+    },
+    {
+      "id": "MSFT-02",
+      "metric": "Scope 2 location-based",
+      "value": 12030556,
+      "unit": "tCO2e",
+      "period": "FY25: 2024-07-01 to 2025-06-30",
+      "boundary": "Global operational control, including wholly/partially owned controlled subsidiaries, owned and leased real estate/datacenters; includes relevant Activision Blizzard King activity.",
+      "control": "Direct control / electricity procurement",
+      "geographic_coverage": "Global",
+      "source_url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf#page=3",
+      "source_table": "Table 1A",
+      "reported_vs_modeled": "Company-reported inventory; includes measurement and company estimation, not researcher-modeled reduction",
+      "assurance": "Deloitte limited assurance review of FY25 Section 1 specified information; report dated July 9, 2026, p23. Not reasonable assurance; estimates retain inherent uncertainty.",
+      "caveat": "Grid-average accounting; not marginal emissions or a measured causal damage estimate. Alternative to market-based Scope 2, never add both."
+    },
+    {
+      "id": "MSFT-03",
+      "metric": "Scope 2 market-based",
+      "value": 2707428,
+      "unit": "tCO2e",
+      "period": "FY25: 2024-07-01 to 2025-06-30",
+      "boundary": "Global operational control, including wholly/partially owned controlled subsidiaries, owned and leased real estate/datacenters; includes relevant Activision Blizzard King activity.",
+      "control": "Direct control / electricity procurement",
+      "geographic_coverage": "Global",
+      "source_url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf#page=3",
+      "source_table": "Table 1A",
+      "reported_vs_modeled": "Company-reported inventory; includes measurement and company estimation, not researcher-modeled reduction",
+      "assurance": "Deloitte limited assurance review of FY25 Section 1 specified information; report dated July 9, 2026, p23. Not reasonable assurance; estimates retain inherent uncertainty.",
+      "caveat": "Spot unbundled EAC purchases discontinued February 2025 and impact excluded in FY25. Increase over FY24 is partly accounting/procurement change, not solely energy growth."
+    },
+    {
+      "id": "MSFT-04",
+      "metric": "Scope 3 GHGP category inventory",
+      "value": {
+        "total": 18243000,
+        "categories": {
+          "1_purchased_goods_services": 5129000,
+          "2_capital_goods": 9044000,
+          "3_fuel_energy_related": 1075000,
+          "4_upstream_transport_distribution": 823000,
+          "5_operational_waste": 14000,
+          "6_business_travel": 239000,
+          "7_employee_commuting": 284000,
+          "9_downstream_transport_distribution": 86000,
+          "11_use_sold_products": 1540000,
+          "12_end_of_life_sold_products": 3000,
+          "13_downstream_leased_assets": 6000
+        }
+      },
+      "unit": "tCO2e",
+      "period": "FY25: 2024-07-01 to 2025-06-30",
+      "boundary": "Global operational control, including wholly/partially owned controlled subsidiaries, owned and leased real estate/datacenters; includes relevant Activision Blizzard King activity.",
+      "control": "Supply-chain influence and products (category-specific)",
+      "geographic_coverage": "Global",
+      "source_url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf#page=3",
+      "source_table": "Table 1A; methodology pp12\u201317",
+      "reported_vs_modeled": "Company-reported inventory; includes measurement and company estimation, not researcher-modeled reduction",
+      "assurance": "Deloitte limited assurance review of FY25 Section 1 specified information; report dated July 9, 2026, p23. Not reasonable assurance; estimates retain inherent uncertainty.",
+      "caveat": "Nearest 1,000 tonnes. Category 8 included in Scope1/2; 10/14/15 considered not relevant. Categories 1/2 include LCA and supplier/spend estimates. Cat11 is lifetime use of products sold in year, not necessarily one year of operation. Rounded components sum to reported total."
+    },
+    {
+      "id": "MSFT-05",
+      "metric": "Alternative reported totals",
+      "value": {
+        "GHGP_scope1_2MB_3": 21121000,
+        "management_criteria_scope1_2MB_3": 20290000,
+        "management_scope3": 17412000,
+        "management_cat4": 743000,
+        "management_cat6": 202000,
+        "management_cat11": 826000
+      },
+      "unit": "tCO2e",
+      "period": "FY25: 2024-07-01 to 2025-06-30",
+      "boundary": "Global operational control, including wholly/partially owned controlled subsidiaries, owned and leased real estate/datacenters; includes relevant Activision Blizzard King activity.",
+      "control": "Mixed",
+      "geographic_coverage": "Global",
+      "source_url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf#page=4",
+      "source_table": "Tables 1A p3 and 1B p4",
+      "reported_vs_modeled": "Company-reported inventory; includes measurement and company estimation, not researcher-modeled reduction",
+      "assurance": "Deloitte limited assurance review of FY25 Section 1 specified information; report dated July 9, 2026, p23. Not reasonable assurance; estimates retain inherent uncertainty.",
+      "caveat": "Use GHGP table1A as primary baseline. Management criteria have distinct treatment for fuel certificates, aviation effects and downstream renewable electricity. Difference 831,000 tonnes is not an additional physical reduction opportunity. Cat6 gross under management criteria is 276,000, versus GHGP 239,000; do not treat every difference as a certificate subtraction. Crucially p16: management Category11 uses all active Surface/Xbox devices during FY25 (annual telemetry and extrapolation), while GHGP Category11 estimates lifetime use of devices sold in FY25. Third-party devices running Microsoft software are excluded in both. Thus totals differ in service cohort/time boundary, not just renewable procurement."
+    },
+    {
+      "id": "MSFT-06",
+      "metric": "Energy consumption",
+      "value": {
+        "total": 37461476,
+        "electricity": 37026353,
+        "nonrenewable_fuel": 422103,
+        "natural_gas": 73445,
+        "diesel": 253236,
+        "LPG_propane_jet_fuel": 59970,
+        "gasoline": 35452,
+        "chilled_water": 2313,
+        "hot_water_steam": 10707,
+        "matched_renewable_electricity": 34534392
+      },
+      "unit": "MWh",
+      "period": "FY25: 2024-07-01 to 2025-06-30",
+      "boundary": "Global operational control, including wholly/partially owned controlled subsidiaries, owned and leased real estate/datacenters; includes relevant Activision Blizzard King activity.",
+      "control": "Direct control",
+      "geographic_coverage": "Global",
+      "source_url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf#page=6",
+      "source_table": "Table 5",
+      "reported_vs_modeled": "Company-reported inventory; includes measurement and company estimation, not researcher-modeled reduction",
+      "assurance": "Deloitte limited assurance review of FY25 Section 1 specified information; report dated July 9, 2026, p23. Not reasonable assurance; estimates retain inherent uncertainty.",
+      "caveat": "Total = fuels + electricity + chilled water + steam. Subcategories overlap parent totals. Renewable matching excludes grid renewable share and differs from 100% direct renewable target metric. Annual matching is not hourly zero-carbon electricity."
+    },
+    {
+      "id": "MSFT-07",
+      "metric": "Water balance",
+      "value": {
+        "withdrawal": 13266,
+        "consumption": 8170,
+        "discharge": 5096,
+        "withdrawal_third_party": 13192,
+        "withdrawal_surface": 45,
+        "withdrawal_ground": 29
+      },
+      "unit": "ML",
+      "period": "FY25: 2024-07-01 to 2025-06-30",
+      "boundary": "Global operational control, including wholly/partially owned controlled subsidiaries, owned and leased real estate/datacenters; includes relevant Activision Blizzard King activity.",
+      "control": "Direct control",
+      "geographic_coverage": "Global",
+      "source_url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf#page=7",
+      "source_table": "Table 8",
+      "reported_vs_modeled": "Company-reported inventory; includes measurement and company estimation, not researcher-modeled reduction",
+      "assurance": "Deloitte limited assurance review of FY25 Section 1 specified information; report dated July 9, 2026, p23. Not reasonable assurance; estimates retain inherent uncertainty.",
+      "caveat": "1 ML = 1,000 m3. Most sites lack discharge meters; consumption and discharge partly modeled. Global withdrawals minus discharge equals consumption. Does not include supply-chain water. Third-party freshwater/nonfreshwater breakdown unavailable."
+    },
+    {
+      "id": "MSFT-08",
+      "metric": "Water in high or extremely high baseline stress areas",
+      "value": {
+        "withdrawal": 6659,
+        "consumption": 3926,
+        "discharge": 2733
+      },
+      "unit": "ML",
+      "period": "FY25: 2024-07-01 to 2025-06-30",
+      "boundary": "Global operational control, including wholly/partially owned controlled subsidiaries, owned and leased real estate/datacenters; includes relevant Activision Blizzard King activity.",
+      "control": "Direct control",
+      "geographic_coverage": "Global subset classified high/extremely high by WRI Aqueduct",
+      "source_url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf#page=7",
+      "source_table": "Table 8 footnote 2",
+      "reported_vs_modeled": "Company-reported inventory; includes measurement and company estimation, not researcher-modeled reduction",
+      "assurance": "Deloitte limited assurance review of FY25 Section 1 specified information; report dated July 9, 2026, p23. Not reasonable assurance; estimates retain inherent uncertainty.",
+      "caveat": "WRI Aqueduct classification, approximately 50% withdrawals and 48% consumption. A risk screen, not measured ecological damage. Replenishment elsewhere is not subtracted from these physical site volumes."
+    },
+    {
+      "id": "MSFT-09",
+      "metric": "Operational waste",
+      "value": {
+        "generated": 58868,
+        "nonhazardous": 58126,
+        "hazardous": 742,
+        "diverted": 36149,
+        "disposed": 22719,
+        "nonhazardous_landfilled": 21540,
+        "nonhazardous_incinerated": 1110,
+        "nonhazardous_reused_offsite": 9200,
+        "nonhazardous_recycled": 18479,
+        "nonhazardous_composted": 7797,
+        "hazardous_recycled": 672,
+        "hazardous_reused": 1,
+        "hazardous_disposed": 69
+      },
+      "unit": "metric tonnes",
+      "period": "FY25: 2024-07-01 to 2025-06-30",
+      "boundary": "Global operational control, including wholly/partially owned controlled subsidiaries, owned and leased real estate/datacenters; includes relevant Activision Blizzard King activity.",
+      "control": "Direct control",
+      "geographic_coverage": "Global",
+      "source_url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf#page=7",
+      "source_table": "Table 9",
+      "reported_vs_modeled": "Company-reported inventory; includes measurement and company estimation, not researcher-modeled reduction",
+      "assurance": "Deloitte limited assurance review of FY25 Section 1 specified information; report dated July 9, 2026, p23. Not reasonable assurance; estimates retain inherent uncertainty.",
+      "caveat": "Excludes construction/deconstruction waste. FY25 adds cloud hardware packaging; prior years not adjusted. Includes modeled waste; diversion mass is not a lifecycle avoided-impact estimate."
+    },
+    {
+      "id": "MSFT-10",
+      "metric": "Electricity by region",
+      "value": {
+        "Asia": 5487634,
+        "Europe_Middle_East_Africa": 9975755,
+        "Latin_America": 661556,
+        "North_America": 20901408
+      },
+      "unit": "MWh",
+      "period": "FY25: 2024-07-01 to 2025-06-30",
+      "boundary": "Global operational control, including wholly/partially owned controlled subsidiaries, owned and leased real estate/datacenters; includes relevant Activision Blizzard King activity.",
+      "control": "Direct control",
+      "geographic_coverage": "Four reporting regions",
+      "source_url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf#page=24",
+      "source_table": "Table 13",
+      "reported_vs_modeled": "Company-reported inventory; includes measurement and company estimation, not researcher-modeled reduction",
+      "assurance": "Section 2: explicitly outside Deloitte review",
+      "caveat": "Adds to 37,026,353 MWh. Broad regions insufficient for hourly marginal grid factors."
+    },
+    {
+      "id": "MSFT-11",
+      "metric": "Owned datacenter selected location paired physical inputs",
+      "value": {
+        "Phoenix": {
+          "electricity_MWh": 954206,
+          "withdrawal_ML": 981
+        },
+        "Quincy": {
+          "electricity_MWh": 1381569,
+          "withdrawal_ML": 1292,
+          "nonpotable_percent": 74
+        },
+        "San_Antonio": {
+          "electricity_MWh": 1440710,
+          "withdrawal_ML": 420,
+          "nonpotable_percent": 79
+        },
+        "Singapore": {
+          "electricity_MWh": 338845,
+          "withdrawal_ML": 423,
+          "nonpotable_percent": 99
+        },
+        "Boydton": {
+          "electricity_MWh": 3113847,
+          "withdrawal_ML": 362
+        }
+      },
+      "unit": "Units identified in each field",
+      "period": "FY25: 2024-07-01 to 2025-06-30",
+      "boundary": "Microsoft-owned operational datacenters only; site figures selected from full table",
+      "control": "Direct control",
+      "geographic_coverage": "Named metropolitan clusters: USA and Singapore",
+      "source_url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf#page=25",
+      "source_table": "Table 15 and boundary/estimation footnotes p26",
+      "reported_vs_modeled": "Company-reported inventory; includes measurement and company estimation, not researcher-modeled reduction",
+      "assurance": "Section 2: explicitly outside Deloitte review",
+      "caveat": "Selected locations only. Full table covers owned operational datacenters, excludes commissioning and locations collectively under 1% of owned DC water/electricity. Excludes leased DC fleet. Water is withdrawal, not consumption. Electricity is site total, not IT electricity; ratio is not WUE."
+    },
+    {
+      "id": "MSFT-12",
+      "metric": "Supplier-data share of category emissions",
+      "value": {
+        "category1": 60,
+        "category2": 78
+      },
+      "unit": "percent of category emissions",
+      "period": "FY25: 2024-07-01 to 2025-06-30",
+      "boundary": "Global operational control, including wholly/partially owned controlled subsidiaries, owned and leased real estate/datacenters; includes relevant Activision Blizzard King activity.",
+      "control": "Supply-chain influence",
+      "geographic_coverage": "Global",
+      "source_url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf#page=12",
+      "source_table": "Section 1.9 Scope 3 methodology",
+      "reported_vs_modeled": "Company-reported inventory; includes measurement and company estimation, not researcher-modeled reduction",
+      "assurance": "Deloitte limited assurance review of FY25 Section 1 specified information; report dated July 9, 2026, p23. Not reasonable assurance; estimates retain inherent uncertainty.",
+      "caveat": "Supplier data can still be supplier emission-per-revenue times Microsoft spend; does not mean direct physical measurements or confidence percentages."
+    }
+  ],
+  "candidate_intervention_inputs": [
+    {
+      "intervention": "Cooling efficiency / low-water retrofit",
+      "available": [
+        "Regional electricity",
+        "Owned-site electricity/withdrawal pairs",
+        "Global stress-class consumption"
+      ],
+      "needed": [
+        "site IT load and useful service",
+        "cooling-only withdrawals and consumption",
+        "retrofit eligibility",
+        "climate-specific energy/water tradeoffs"
+      ],
+      "boundary": "Direct control; maintain FY25 service and reliability",
+      "overlap": "Energy saving changes Scope2 and Scope3 fuel/energy; same avoided electricity cannot also be credited to renewable procurement."
+    },
+    {
+      "intervention": "Physical clean electricity supply and electricity efficiency",
+      "available": [
+        "37,026,353 MWh electricity",
+        "Scope2 LB and MB separate",
+        "Regional electricity"
+      ],
+      "needed": [
+        "hourly geography and dispatch",
+        "additional delivery capacity by 2031",
+        "existing measures already in FY25"
+      ],
+      "boundary": "Direct operations / electricity procurement",
+      "overlap": "Reduce demand first, then apply alternative clean-supply factor only to remaining load. Do not count both Scope2 accounting alternatives."
+    },
+    {
+      "intervention": "Lower embodied hardware and construction emissions",
+      "available": [
+        "9,044,000 tCO2e capital goods",
+        "supplier-data share 78%"
+      ],
+      "needed": [
+        "server versus building share",
+        "tonnes concrete/steel and number/chip type servers",
+        "replacement required to maintain baseline service",
+        "component LCAs and supplier retrofit feasibility"
+      ],
+      "boundary": "Supply-chain influence",
+      "overlap": "Capital expenditure in growth year is not the replacement capital needed for fixed 2031 service; no blanket percent reduction to entire category."
+    },
+    {
+      "intervention": "Equipment refrigerant management",
+      "available": [
+        "70,131 tCO2e HFCs"
+      ],
+      "needed": [
+        "refrigerant equipment inventory",
+        "leak versus disposal losses",
+        "compatible lower-GWP alternatives"
+      ],
+      "boundary": "Direct control",
+      "overlap": "Cooling retrofit and refrigerant replacement can affect same emissions and energy."
+    },
+    {
+      "intervention": "Product energy and circularity",
+      "available": [
+        "1,540,000 tCO2e GHGP sold-product use",
+        "operational waste streams"
+      ],
+      "needed": [
+        "product sales cohorts and service/lifetimes",
+        "energy telemetry",
+        "recovery destinations"
+      ],
+      "boundary": "Products; separate from operational assets",
+      "overlap": "Product use inventory is lifetime cohort estimate; do not compare directly with annual cloud electricity or subtract renewable certificates twice."
+    }
+  ],
+  "missing_data": [
+    "Public fleet service denominator: delivered compute, storage, inference/training and network service volume by hardware and site, rather than revenue.",
+    "Site IT energy, PUE, cooling process consumption/withdrawal, hourly utilization and weather, temperatures and retrofit compatibility; owned-versus-leased split.",
+    "Supplier/site product volumes and bill of materials; disaggregate capital goods into servers, semiconductors, buildings/concrete/steel; embodied emissions, replacement ages and useful lives.",
+    "Hourly geographic energy demand/generation matching, marginal emission factors and grid/connection constraints, existing contracted supply and retirement plans.",
+    "Basin and monthly water consumption, actual municipal source mix, discharge quality/temperature and ecological response factors; primary-meter coverage and uncertainty intervals.",
+    "Waste construction/deconstruction mass, composition, treatment destinations and actual displacement from reuse/recycling.",
+    "Species of refrigerants, equipment charge/leak rates and service/retrofit constraints; diesel generator duty hours and standby reliability constraints.",
+    "Physical sold-product units by model, lifetime, use patterns and regional grids to separate real use-efficiency improvement from downstream certificate accounting."
+  ],
+  "sources": [
+    {
+      "id": "MSFT2026",
+      "title": "2026 Environmental Data Fact Sheet",
+      "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+      "retrieved": "2026-09-12",
+      "access": "Downloaded official PDF through aka.ms/SustainabilityFactsheet2026; extracted local text, visually inspected Table1A. Web PDF reader failed, local original retrieved successfully.",
+      "publication_evidence": "Accountant review July 9, 2026 p23; hub identifies 2026 report."
+    },
+    {
+      "id": "MSFTHUB",
+      "title": "Microsoft Reports Hub",
+      "url": "https://www.microsoft.com/en-us/corporate-responsibility/reports-hub",
+      "retrieved": "2026-09-12"
+    },
+    {
+      "id": "SP500",
+      "title": "S&P Dow Jones Indices S&P 500 constituent table",
+      "url": "https://www.spglobal.com/spdji/en/indices/equity/sp-500/?_hsmi=2",
+      "retrieved": "2026-09-12",
+      "as_of": "2026-08-31",
+      "caveat": "Index provider search-indexed constituent table shows Microsoft; dynamic table absent in plain-text live open. Thus verifies latest provider snapshot, not intraday September12 membership."
+    },
+    {
+      "id": "WRI",
+      "title": "Aqueduct FAQ",
+      "url": "https://www.wri.org/aqueduct/faq",
+      "retrieved": "2026-09-12",
+      "use": "External methodological context: Aqueduct baseline uses historical modeled conditions, not real-time water supply; no independent site-impact numbers derived."
+    }
+  ],
+  "checks": {
+    "scope3_category_sum": 18243000,
+    "scope1_plus_scope2MB": 2878315,
+    "scope1_plus_scope2MB_plus_scope3_before_rounding": 21121315,
+    "energy_sum": 37461476,
+    "water_balance_ML": 8170,
+    "waste_balance_t": 58868,
+    "regional_electricity_sum": 37026353
+  },
+  "valuation_rules": [
+    "No overall company score computed.",
+    "GHG inventory is not synonymous with marginal causal emissions or monetized damages.",
+    "Carbon/water/waste remain separate; any dollar damage aggregation requires explicit valuation and uncertainty.",
+    "No credit for disclosure quality; missing data is an estimation limit, not evidence of high or low damage.",
+    "Financial savings and environmental damage valuations must remain separate."
+  ]
+}

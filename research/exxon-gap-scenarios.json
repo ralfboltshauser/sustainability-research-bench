@@ -1,0 +1,111 @@
+{
+  "company": "ExxonMobil",
+  "as_of": "2026-09-12",
+  "purpose": "Conditional avoidable climate burden sensitivity, not verified avoidable damage or adoption forecast",
+  "baseline": {
+    "tank_storage_tCH4_year": 6816,
+    "formula": "142000*0.96*0.05",
+    "global_source_pool": true,
+    "rounded_company_estimates": true,
+    "gross_tank_burden_tCO2e100_year": 203116.80000000002,
+    "source": "exxon"
+  },
+  "constants": {
+    "VRU_reduction": 0.95,
+    "fossil_CH4_GWP100": 29.8,
+    "combustion_CO2_per_CH4_mass": 2.75,
+    "combustion_derivation": "CH4+2O2 -> CO2+2H2O; approximate molecular mass ratio44/16",
+    "net_factor_before_other_lifecycle": 27.05,
+    "operated_context_tCO2e": 97000000
+  },
+  "scenarios": [
+    {
+      "analyst_eligible_share": 0.25,
+      "eligible_baseline_tCH4_year": 1704.0,
+      "avoided_tCH4_year": 1618.8,
+      "gross_avoided_tCO2e100_year": 48240.24,
+      "CO2_from_complete_combustion_t_year": 4451.7,
+      "net_avoided_tCO2e100_year_before_other_lifecycle": 43788.54,
+      "gross_context_percent_of_97Mt": 0.049732206185567014,
+      "net_context_percent_of_97Mt": 0.045142824742268044
+    },
+    {
+      "analyst_eligible_share": 0.5,
+      "eligible_baseline_tCH4_year": 3408.0,
+      "avoided_tCH4_year": 3237.6,
+      "gross_avoided_tCO2e100_year": 96480.48,
+      "CO2_from_complete_combustion_t_year": 8903.4,
+      "net_avoided_tCO2e100_year_before_other_lifecycle": 87577.08,
+      "gross_context_percent_of_97Mt": 0.09946441237113403,
+      "net_context_percent_of_97Mt": 0.09028564948453609
+    },
+    {
+      "analyst_eligible_share": 1.0,
+      "eligible_baseline_tCH4_year": 6816.0,
+      "avoided_tCH4_year": 6475.2,
+      "gross_avoided_tCO2e100_year": 192960.96,
+      "CO2_from_complete_combustion_t_year": 17806.8,
+      "net_avoided_tCO2e100_year_before_other_lifecycle": 175154.16,
+      "gross_context_percent_of_97Mt": 0.19892882474226806,
+      "net_context_percent_of_97Mt": 0.18057129896907217
+    }
+  ],
+  "scenario_interpretation": "25/50/100% eligibility are analyst-selected sensitivities, not sourced adoption estimates, confidence intervals or promised rollout",
+  "nonzero_verified_lower_bound": null,
+  "corporate_feasible_2031_abatement": null,
+  "fund_attributable_abatement": null,
+  "lifecycle": {
+    "recovered_methane_fully_combusted": true,
+    "gas_displacement_assumed": false,
+    "other_hydrocarbon_carbon_included": false,
+    "upstream_power_compression_transport_construction_included": false,
+    "method": "Avoided fossil methane GWP already includes oxidation contribution; subtract new complete combustion CO2 once; do not add baseline oxidation CO2 again."
+  },
+  "context_ratio_caution": "Approximate scale comparison only. Numerator is explicit AR6 fossil-methaneGWP100; company denominator cites IPCC2021 but full species-level harmonization not reconstructed. Net includes customer combustion whereas denominator covers company operatedS1S2; not a reported corporate inventory reduction.",
+  "additionality": "Company already deploys VRUs; eligible untreated cohort and without-fund timing unknown. Existing control failures require incremental repair accounting, not blanket95%.",
+  "missing_data": [
+    "untreated technically eligible residual share",
+    "site methane measurements and uncertainty",
+    "already funded/mandatory retrofit schedule",
+    "VRU power/compression and downstream leakage",
+    "gas composition other hydrocarbons and disposition",
+    "fund counterfactual and implementation timing"
+  ],
+  "sources": [
+    {
+      "id": "exxon",
+      "url": "https://corporate.exxonmobil.com/Publications/Advancing-Climate-Solutions/driving-reductions-in-methane-emissions",
+      "locator": "2025 methane total; upstream share; upstream source chart footnote8; existing VRU retrofits",
+      "verified": "chart visually inspected; 142000t*96%*5%"
+    },
+    {
+      "id": "epa",
+      "url": "https://www.epa.gov/natural-gas-star-program/vapor-recovery-units",
+      "locator": "Description, Applicability, Methane Emissions Reductions",
+      "factor": 0.95,
+      "factor_unit": "fraction of eligible source methane controlled annually"
+    },
+    {
+      "id": "ipcc",
+      "url": "https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_Chapter07.pdf",
+      "locator": "Table7.15, printed page1017, PDF page95",
+      "factor": 29.8,
+      "factor_unit": "tCO2e100 per tonne fossil CH4",
+      "reported_uncertainty_plus_minus": 11,
+      "verified": "Official PDF downloaded and text table checked; web PDF fetch initially403; local download succeeded."
+    },
+    {
+      "id": "ipcc_annex",
+      "url": "https://www.ipcc.ch/report/ar6/wg3/downloads/report/IPCC_AR6_WGIII_Annex-II.pdf",
+      "locator": "Table11; explanation of fossil fugitive/process methane and oxidation CO2",
+      "verified": "official indexed search extract"
+    },
+    {
+      "id": "metrics",
+      "url": "https://corporate.exxonmobil.com/publications/metrics-and-data",
+      "locator": "2025 operated combined Scope1+market Scope2; footnote2 cites IPCC2021",
+      "value": 97,
+      "unit": "MtCO2e"
+    }
+  ]
+}

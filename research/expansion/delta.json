@@ -1,0 +1,180 @@
+{
+  "slug": "delta",
+  "name": "Delta Air Lines",
+  "ticker": "DAL",
+  "sector": "Airlines",
+  "period": "2025 · airline operations; excludes refinery",
+  "scope1": 39301990,
+  "activity": "Aircraft gate power and cooling",
+  "status": "Normalized lifecycle study benchmark",
+  "kind": "normalized",
+  "baseline": 1000,
+  "reductionRate": 0.63,
+  "defaultCoverage": 1,
+  "unit": "tCO₂e / 1,000 matching gate lifecycle tonnes",
+  "boundary": "Equivalent gate service: 70% electric power + diesel cooling and 30% APU to 100% electric power + cooling; manufacturing and energy lifecycle included, end-of-life excluded",
+  "technology": "Electric ground power and preconditioned air",
+  "summary": "Aircraft can receive electricity and cooling at the gate instead of burning fuel. A lifecycle study supports large reductions at suitable gates; Delta’s remaining eligible gate activity is unmeasured.",
+  "formula": "1,000 matching baseline lifecycle tonnes × 63% = 630 tonnes; study range 630–970",
+  "opportunity": "Finance additional gate power, cooling and reliable connection where fuel savings cover electricity, upkeep and capital.",
+  "constraints": [
+    "63% is the low endpoint across study cases, not a guaranteed Delta performance floor or a whole-airline reduction.",
+    "Match actual baseline use, including existing electric gate equipment. Exclude already completed or committed improvements from any new-funding claim; remaining eligible throughput is unknown.",
+    "Electricity mix, aircraft type, turnaround duration, weather, equipment availability and actual APU shutdown determine the result.",
+    "Preserve power supply, cabin thermal comfort and safe turnaround service. Revalidate lifecycle assumptions and infrastructure impacts for each project.",
+    "Scope 1 excludes Monroe refinery and separately reported biogenic CO₂; climate score excludes contrails and other aviation warming effects, pollution, water and biodiversity.",
+    "The 63–97% comparison starts with 70% electric ground power plus diesel cooling and 30% APU; it does not start with 100% APU use. End-of-life is excluded."
+  ],
+  "sources": [
+    [
+      "Inventory · Delta 2025 GHG table",
+      "https://esghub.delta.com/content/esg/en/2025/ghg-emissions-data.html"
+    ],
+    [
+      "Boundary · Delta climate disclosures",
+      "https://esghub.delta.com/content/esg/en/2025/climate-related-disclosures.html"
+    ],
+    [
+      "Technology · Greer, Rakas & Horvath (2021), author institution abstract",
+      "https://its.berkeley.edu/publications/reduce-aviation%E2%80%99s-greenhouse-gas-emissions-through-immediately-feasible-and-affordable"
+    ],
+    [
+      "Deployment · Delta 2025 progress",
+      "https://esghub.delta.com/content/esg/en/2025/advancing-progress.html"
+    ],
+    [
+      "Commercial funding precedent · FAA 2025 gate electrification guidance",
+      "https://www.faa.gov/airports/aip/guidance_letters/R-PGL-25-02-AIP-Discretionary-Set-Aside"
+    ],
+    [
+      "Methods · Greer dissertation ch. 3, Tables 7–8 p. 45; Fig. 10 p. 53",
+      "https://escholarship.org/content/qt08w701t9/qt08w701t9.pdf"
+    ]
+  ],
+  "steps": [
+    "Identify a gate cohort with equivalent power and thermal-comfort service and measure use of existing equipment.",
+    "Match scenario 2b: 70% turnaround using electric ground power and diesel PCA, 30% APU; compare scenario 3a: electric power and electric PCA throughout.",
+    "Use the study’s low endpoint only as a conditional benchmark: 630 tonnes avoided per 1,000 matching lifecycle tonnes.",
+    "Identify actual remaining eligible activity before scaling; value the difference at $255.12 per tonne separately from financial cashflows."
+  ],
+  "evidenceRecords": [
+    {
+      "claim": "Reported Scope 1",
+      "value": 39301990,
+      "unit": "tCO2e",
+      "period": "calendar 2025",
+      "source": "https://esghub.delta.com/content/esg/en/2025/ghg-emissions-data.html",
+      "locator": "TOTAL SCOPE 1; 2025 column",
+      "type": "reported inventory"
+    },
+    {
+      "claim": "Mainline jet fuel emissions",
+      "value": 37134782,
+      "unit": "tCO2e",
+      "period": "2025",
+      "source": "https://esghub.delta.com/content/esg/en/2025/ghg-emissions-data.html",
+      "locator": "Jet Fuel — Mainline Delta; 2025 column",
+      "type": "reported inventory"
+    },
+    {
+      "claim": "Gate electrification lifecycle reduction range",
+      "value": [
+        0.63,
+        0.97
+      ],
+      "unit": "fraction per gate operation",
+      "period": "2021 study",
+      "source": "https://its.berkeley.edu/publications/reduce-aviation%E2%80%99s-greenhouse-gas-emissions-through-immediately-feasible-and-affordable",
+      "locator": "Abstract; Environmental Research Letters 16(5), 054039; DOI 10.1088/1748-9326/abf7f1",
+      "type": "modeled process comparison"
+    },
+    {
+      "claim": "Operational fuel savings already achieved",
+      "value": 59000000,
+      "unit": "US gallons",
+      "period": "2025",
+      "source": "https://esghub.delta.com/content/esg/en/2025/advancing-progress.html",
+      "locator": "Efficient Aircraft Operations; excludes fleet renewal",
+      "type": "company counterfactual estimate, achieved"
+    },
+    {
+      "claim": "Atlanta first electrified maintenance pad projected fuel savings upper estimate",
+      "value": 7000000,
+      "unit": "US gallons/year",
+      "period": "installed 2025",
+      "source": "https://esghub.delta.com/content/esg/en/2025/advancing-progress.html",
+      "locator": "Efficient Aircraft Operations; maintenance pad bullet",
+      "type": "projection, already implemented asset"
+    },
+    {
+      "claim": "Neat SAF procurement including physical supply and certificates",
+      "value": 23400000,
+      "unit": "US gallons",
+      "period": "2025",
+      "source": "https://esghub.delta.com/content/esg/en/2025/advancing-progress.html",
+      "locator": "Cleaner Fuel; footnote 5",
+      "type": "reported procurement; not physical-only burn"
+    },
+    {
+      "claim": "Mainline plus Connection fuel pool",
+      "value": 4269000000,
+      "unit": "US gallons",
+      "period": "2025",
+      "source": "https://esghub.delta.com/content/esg/en/2025/fuel-efficiency.html",
+      "locator": "Jet fuel (million gallons); 2025 column",
+      "type": "reported activity"
+    },
+    {
+      "claim": "Direct combustion CO2 factor",
+      "value": 9.75,
+      "unit": "kgCO2/US gallon",
+      "period": "EPA March 2020 factors",
+      "source": "https://www.epa.gov/sites/default/files/2021-04/documents/emission-factors_mar2020.pdf",
+      "locator": "Table 2, Kerosene-Type Jet Fuel",
+      "type": "conversion factor"
+    },
+    {
+      "claim": "Systemwide annual fuel associated with one APU runtime minute",
+      "value": 1200000,
+      "unit": "US gallons/year per systemwide minute",
+      "period": "April 2025",
+      "source": "https://news.delta.com/media/image/64251",
+      "locator": "APU run-time reduction",
+      "type": "company marginal sensitivity; not remaining minutes"
+    },
+    {
+      "claim": "Lifecycle reduction denominator and alternative",
+      "value": "Scenario 2b: 70% turnaround 400Hz electricity + diesel PCA, 30% APU; scenario 3a: 100% 400Hz electricity + electric PCA",
+      "unit": "gate operation service",
+      "period": "2021 study",
+      "source": "https://escholarship.org/content/qt08w701t9/qt08w701t9.pdf",
+      "locator": "Chapter 3, Table 7 p.45; §3.3.1 and Fig.10 p.53",
+      "type": "verified original-author methods"
+    }
+  ],
+  "investmentEvidence": {
+    "technologyAvailable": true,
+    "basis": "Delta deployment and FAA gate-electrification funding guidance",
+    "repaymentMechanism": "Measured avoided jet fuel cost minus electricity, maintenance and financing costs; allocate savings between airport infrastructure owner and airline.",
+    "studyPayback": "Study average 1–2-year payback is relative to 100% APU baseline (scenario 1), unlike the 63–97% emissions comparison against partially electrified scenario 2b. It is not a Delta project quote.",
+    "missing": [
+      "Untreated eligible gates and APU minutes",
+      "Local electricity and fuel tariffs",
+      "Installed project capital cost, grid capacity and downtime",
+      "Airport-airline savings contract",
+      "Additionality beyond existing commitments"
+    ],
+    "societalValuationIsCashflow": false
+  },
+  "additionalMetrics": {
+    "studyReductionHigh": 0.97,
+    "normalizedAvoidedDamageLowUSD2024": 160725.6,
+    "normalizedAvoidedDamageHighUSD2024": 247466.4,
+    "scope1ModeledDamageUSD2024": 10026723688.8,
+    "SAFProcurementEquivalentFuelPoolRatio": 0.005481377371749824,
+    "SAFRatioBoundary": "Procurement includes certificates; mainline-plus-Connection denominator. Scale comparison only, not verified physical SAF burn share.",
+    "APUOneMinuteGrossDirectCO2SensitivityTonnes": 11700.0,
+    "APUSensitivityCaution": "Subtract replacement electricity and other lifecycle burdens; remaining reducible minutes unknown. Do not multiply this direct-only sensitivity by lifecycle-study factor.",
+    "sp500Evidence": "Official S&P announcement establishes entry September 2013; exact September 2026 current membership was not independently reverified."
+  }
+}

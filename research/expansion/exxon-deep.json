@@ -1,0 +1,338 @@
+{
+  "company": "ExxonMobil",
+  "asOf": "2026-09-12",
+  "strongestFinding": "No public evidence establishes the untreated, suitable, uncommitted tank cohort. The case remains a source-envelope sensitivity, with zero additional benefit possible. Monitoring coverage and Pathway recognition must not be described as complete measured emissions verification.",
+  "evidenceRecords": [
+    {
+      "claim": "Operated methane",
+      "value": 142000,
+      "unit": "t CH4/year",
+      "period": "2025",
+      "source": "https://corporate.exxonmobil.com/Publications/Advancing-Climate-Solutions/driving-reductions-in-methane-emissions",
+      "locator": "Methane at ExxonMobil; source chart footnote 8; Measurement and reporting; mitigation paragraphs",
+      "type": "reported"
+    },
+    {
+      "claim": "Upstream share",
+      "value": 96,
+      "unit": "%",
+      "period": "2025",
+      "source": "https://corporate.exxonmobil.com/Publications/Advancing-Climate-Solutions/driving-reductions-in-methane-emissions",
+      "locator": "Methane at ExxonMobil; source chart footnote 8; Measurement and reporting; mitigation paragraphs",
+      "type": "reported"
+    },
+    {
+      "claim": "Tank/storage upstream share",
+      "value": 5,
+      "unit": "% rounded",
+      "period": "2025",
+      "source": "https://corporate.exxonmobil.com/Publications/Advancing-Climate-Solutions/driving-reductions-in-methane-emissions",
+      "locator": "Methane at ExxonMobil; source chart footnote 8; Measurement and reporting; mitigation paragraphs",
+      "type": "reported"
+    },
+    {
+      "claim": "Operated Scope 1",
+      "value": 90000000,
+      "unit": "t CO2e/year",
+      "period": "2025",
+      "source": "https://corporate.exxonmobil.com/publications/metrics-and-data",
+      "locator": "Operated GHG emissions table, 2025 column; assurance introductory paragraph",
+      "type": "reported"
+    },
+    {
+      "claim": "Operated Scope 1 + market-based Scope 2",
+      "value": 97000000,
+      "unit": "t CO2e/year",
+      "period": "2025",
+      "source": "https://corporate.exxonmobil.com/publications/metrics-and-data",
+      "locator": "Operated GHG emissions table, 2025 column; assurance introductory paragraph",
+      "type": "reported"
+    },
+    {
+      "claim": "Tank/storage proxy pool",
+      "value": 6816,
+      "unit": "t CH4/year",
+      "period": "2025",
+      "source": "https://corporate.exxonmobil.com/Publications/Advancing-Climate-Solutions/driving-reductions-in-methane-emissions",
+      "locator": "Methane at ExxonMobil; source chart footnote 8; Measurement and reporting; mitigation paragraphs",
+      "type": "derived"
+    },
+    {
+      "claim": "Additional eligible untreated tank fraction",
+      "value": null,
+      "unit": "fraction",
+      "period": "as of 2026-09-12",
+      "source": "https://corporate.exxonmobil.com/Publications/Advancing-Climate-Solutions/driving-reductions-in-methane-emissions",
+      "locator": "Methane at ExxonMobil; source chart footnote 8; Measurement and reporting; mitigation paragraphs",
+      "type": "not established"
+    },
+    {
+      "claim": "Remaining untreated tank count",
+      "value": null,
+      "unit": "tanks",
+      "period": "as of 2026-09-12",
+      "source": "https://corporate.exxonmobil.com/Publications/Advancing-Climate-Solutions/driving-reductions-in-methane-emissions",
+      "locator": "Methane at ExxonMobil; source chart footnote 8; Measurement and reporting; mitigation paragraphs",
+      "type": "not established"
+    },
+    {
+      "claim": "Pneumatic replacements",
+      "value": 10000,
+      "unit": "devices exceeded",
+      "period": "since 2023",
+      "source": "https://corporate.exxonmobil.com/Publications/Advancing-Climate-Solutions/driving-reductions-in-methane-emissions",
+      "locator": "Methane at ExxonMobil; source chart footnote 8; Measurement and reporting; mitigation paragraphs",
+      "type": "reported"
+    },
+    {
+      "claim": "Pioneer pneumatic replacements",
+      "value": 6000,
+      "unit": "devices exceeded",
+      "period": "2025",
+      "source": "https://corporate.exxonmobil.com/Publications/Advancing-Climate-Solutions/driving-reductions-in-methane-emissions",
+      "locator": "Methane at ExxonMobil; source chart footnote 8; Measurement and reporting; mitigation paragraphs",
+      "type": "reported"
+    },
+    {
+      "claim": "Existing heritage Permian monitoring",
+      "value": 400,
+      "unit": "sites exceeded",
+      "period": "2025",
+      "source": "https://corporate.exxonmobil.com/Publications/Advancing-Climate-Solutions/driving-reductions-in-methane-emissions",
+      "locator": "Methane at ExxonMobil; source chart footnote 8; Measurement and reporting; mitigation paragraphs",
+      "type": "reported"
+    },
+    {
+      "claim": "Full key-site Permian monitoring plan",
+      "value": 2026,
+      "unit": "year-end deadline",
+      "period": "announced 2026",
+      "source": "https://corporate.exxonmobil.com/Publications/Advancing-Climate-Solutions/driving-reductions-in-methane-emissions",
+      "locator": "Methane at ExxonMobil; source chart footnote 8; Measurement and reporting; mitigation paragraphs",
+      "type": "company plan"
+    },
+    {
+      "claim": "Key operated global upstream monitoring plan",
+      "value": 2028,
+      "unit": "year deadline",
+      "period": "announced 2026",
+      "source": "https://corporate.exxonmobil.com/Publications/Advancing-Climate-Solutions/driving-reductions-in-methane-emissions",
+      "locator": "Methane at ExxonMobil; source chart footnote 8; Measurement and reporting; mitigation paragraphs",
+      "type": "company plan"
+    },
+    {
+      "claim": "EPA eligible-source annual methane reduction factor",
+      "value": 0.95,
+      "unit": "fraction",
+      "period": "methodology 2023, page 2026",
+      "source": "https://www.epa.gov/natural-gas-star-program/vapor-recovery-units",
+      "locator": "Description; Applicability; Methane Emissions Reductions (methodology as of August 1, 2023; page updated February 24, 2026)",
+      "type": "engineering guidance"
+    },
+    {
+      "claim": "2025 inventory independent assurance status",
+      "value": "underway",
+      "unit": "status",
+      "period": "page retrieved 2026-09-12",
+      "source": "https://corporate.exxonmobil.com/publications/metrics-and-data",
+      "locator": "Operated GHG emissions table, 2025 column; assurance introductory paragraph",
+      "type": "reported"
+    },
+    {
+      "claim": "Fossil CH4 GWP100",
+      "value": 29.8,
+      "unit": "t CO2e/t CH4",
+      "period": "AR6 2021",
+      "source": "https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_Chapter07.pdf",
+      "locator": "Table 7.15, printed p.1017; local original PDF and extracted text in sources",
+      "type": "scientific metric"
+    },
+    {
+      "claim": "Fossil CH4 GWP20",
+      "value": 82.5,
+      "unit": "t CO2e/t CH4",
+      "period": "AR6 2021",
+      "source": "https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_Chapter07.pdf",
+      "locator": "Table 7.15, printed p.1017; local original PDF and extracted text in sources",
+      "type": "scientific metric"
+    }
+  ],
+  "investmentEvidence": {
+    "status": "Historical generic equipment illustration; current Exxon project investment and payback not established",
+    "designCapacityMcfDay": 100,
+    "averageFeedMcfDay": 50,
+    "annualRecoveredMcf": 17337.5,
+    "installedUSD": 55524,
+    "annualOMUSD": 10103,
+    "costVintage": "Pre-2021 EPA archived study; exact underlying cost dollar year unverified",
+    "source": "https://19january2021snapshot.epa.gov/sites/static/files/2016-06/documents/ll_final_vap.pdf",
+    "locator": "Exhibit 6 (costs), Exhibit 7 (price sensitivity)",
+    "simplePaybackYearsByGasPriceUSDPerMcf": {
+      "3": 1.3248547465371814,
+      "5": 0.7250031011497104,
+      "7": 0.4990495193668855
+    },
+    "omBreakEvenUSDPerMcf": 0.5827253064167267,
+    "fiveYearUndiscountedPrincipalRecoveryNetbackUSDPerMcf": 1.2232328767123288,
+    "excluded": "Site-specific pipeline connection and omitted shipping/site works; financing, taxes, current quotes. Electricity may already be within O&M; do not count it twice. Mcf is mixed vapor, not pure methane mass. Gas ownership and actual netback required.",
+    "earlierCostVersion": {
+      "installedUSD": 41125,
+      "annualOMUSD": 7200,
+      "source": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1004FDH.TXT",
+      "note": "Existing case used this older version; distinguish versions rather than asserting an inflation adjustment."
+    }
+  },
+  "additionalMetrics": {
+    "scenarios": [
+      {
+        "eligibleUntreatedAdditionalShare": 0,
+        "avoidedMethaneTonnesYear": 0.0,
+        "grossCO2e100TonnesYear": 0.0,
+        "capturedMethaneCombustionCO2TonnesYear": 0.0,
+        "netBeforeOtherLifecycleCO2e100TonnesYear": 0.0,
+        "netRelativeToOperatedScope1Percent": 0.0,
+        "status": "analyst sensitivity, not verified feasible reduction"
+      },
+      {
+        "eligibleUntreatedAdditionalShare": 0.25,
+        "avoidedMethaneTonnesYear": 1618.8,
+        "grossCO2e100TonnesYear": 48240.24,
+        "capturedMethaneCombustionCO2TonnesYear": 4451.7,
+        "netBeforeOtherLifecycleCO2e100TonnesYear": 43788.54,
+        "netRelativeToOperatedScope1Percent": 0.04865393333333334,
+        "status": "analyst sensitivity, not verified feasible reduction"
+      },
+      {
+        "eligibleUntreatedAdditionalShare": 0.5,
+        "avoidedMethaneTonnesYear": 3237.6,
+        "grossCO2e100TonnesYear": 96480.48,
+        "capturedMethaneCombustionCO2TonnesYear": 8903.4,
+        "netBeforeOtherLifecycleCO2e100TonnesYear": 87577.08,
+        "netRelativeToOperatedScope1Percent": 0.09730786666666667,
+        "status": "analyst sensitivity, not verified feasible reduction"
+      },
+      {
+        "eligibleUntreatedAdditionalShare": 1,
+        "avoidedMethaneTonnesYear": 6475.2,
+        "grossCO2e100TonnesYear": 192960.96,
+        "capturedMethaneCombustionCO2TonnesYear": 17806.8,
+        "netBeforeOtherLifecycleCO2e100TonnesYear": 175154.16,
+        "netRelativeToOperatedScope1Percent": 0.19461573333333335,
+        "status": "analyst sensitivity, not verified feasible reduction"
+      }
+    ],
+    "powerSensitivity": [
+      {
+        "electricityKWhPerTonneCapturedCH4": 100,
+        "electricityKgCO2ePerKWh": 0.05,
+        "netCO2e100TonnesPerTonneCapturedCH4": 27.045
+      },
+      {
+        "electricityKWhPerTonneCapturedCH4": 100,
+        "electricityKgCO2ePerKWh": 0.4,
+        "netCO2e100TonnesPerTonneCapturedCH4": 27.01
+      },
+      {
+        "electricityKWhPerTonneCapturedCH4": 100,
+        "electricityKgCO2ePerKWh": 0.8,
+        "netCO2e100TonnesPerTonneCapturedCH4": 26.970000000000002
+      },
+      {
+        "electricityKWhPerTonneCapturedCH4": 1000,
+        "electricityKgCO2ePerKWh": 0.05,
+        "netCO2e100TonnesPerTonneCapturedCH4": 27.0
+      },
+      {
+        "electricityKWhPerTonneCapturedCH4": 1000,
+        "electricityKgCO2ePerKWh": 0.4,
+        "netCO2e100TonnesPerTonneCapturedCH4": 26.650000000000002
+      },
+      {
+        "electricityKWhPerTonneCapturedCH4": 1000,
+        "electricityKgCO2ePerKWh": 0.8,
+        "netCO2e100TonnesPerTonneCapturedCH4": 26.25
+      },
+      {
+        "electricityKWhPerTonneCapturedCH4": 5000,
+        "electricityKgCO2ePerKWh": 0.05,
+        "netCO2e100TonnesPerTonneCapturedCH4": 26.8
+      },
+      {
+        "electricityKWhPerTonneCapturedCH4": 5000,
+        "electricityKgCO2ePerKWh": 0.4,
+        "netCO2e100TonnesPerTonneCapturedCH4": 25.05
+      },
+      {
+        "electricityKWhPerTonneCapturedCH4": 5000,
+        "electricityKgCO2ePerKWh": 0.8,
+        "netCO2e100TonnesPerTonneCapturedCH4": 23.05
+      }
+    ],
+    "powerSensitivityStatus": "Analyst assumptions, not measured Exxon electricity demand or grid factors",
+    "powerBreakEvenKWhPerTonneCH4At04kgCO2ePerKWh": 67625.0,
+    "measurement": "Emission-factor revisions increased estimated fugitive emissions in 2025; not evidence of equal physical growth. Company-wide measured-versus-reported correction factor not established.",
+    "otherDamage": "VOC/HAP co-benefit direction supported by EPA; avoided pollutant mass, exposure, health damage, and water/biodiversity changes not quantified.",
+    "sourceRounding": "5% is rounded; shares total 101%. 6816 has arithmetic precision only. Do not silently normalize categories."
+  },
+  "suggestedAppUpdates": [
+    "Headline: Additional feasible tank abatement not yet established.",
+    "Show 6.8 kt CH4/year reported tank-source proxy, not untreated emissions.",
+    "Move 25/50/100% cases into explicitly hypothetical sensitivity; display 0% and unknown eligibility prominently.",
+    "Use 90 MtCO2e/year operated Scope 1 for direct baseline; show 97 Mt Scope 1+2 separately. Net combustion-adjusted scenario is lifecycle-oriented and not a same-boundary inventory subtraction.",
+    "Add existing company programs and prevent double counting with LDAR, pneumatic replacement, and scheduled VRU work.",
+    "Show historical EPA economics separately from unknown current company investment/payback.",
+    "Use GWP as a climate metric; monetized damage requires an explicit damage model, preferably gas-specific rather than treating GWP equivalence as damage equivalence."
+  ],
+  "sources": [
+    {
+      "id": "methane",
+      "title": "ExxonMobil methane chapter",
+      "url": "https://corporate.exxonmobil.com/Publications/Advancing-Climate-Solutions/driving-reductions-in-methane-emissions",
+      "locator": "Methane at ExxonMobil; source chart footnote 8; Measurement and reporting; mitigation paragraphs",
+      "excerpt": "we use emission factors with observational and other data to estimate average methane emissions"
+    },
+    {
+      "id": "metrics",
+      "title": "ExxonMobil Metrics and Data",
+      "url": "https://corporate.exxonmobil.com/publications/metrics-and-data",
+      "locator": "Operated GHG emissions table, 2025 column; assurance introductory paragraph",
+      "excerpt": "2025 third-party assurance is underway."
+    },
+    {
+      "id": "epa",
+      "title": "EPA Vapor Recovery Units",
+      "url": "https://www.epa.gov/natural-gas-star-program/vapor-recovery-units",
+      "locator": "Description; Applicability; Methane Emissions Reductions (methodology as of August 1, 2023; page updated February 24, 2026)",
+      "excerpt": "VRUs are normally driven by an electric motor"
+    },
+    {
+      "id": "cost",
+      "title": "EPA historical Installing Vapor Recovery Units on Storage Tanks",
+      "url": "https://19january2021snapshot.epa.gov/sites/static/files/2016-06/documents/ll_final_vap.pdf",
+      "locator": "Exhibits 6\u20137, printed p.6; archived by January 2021; exact cost base year unverified",
+      "excerpt": "Actual costs might be greater depending on expenses for shipping, site preparation, supplemental equipment, etc."
+    },
+    {
+      "id": "oldcost",
+      "title": "EPA earlier Installing Vapor Recovery Units on Crude Oil Storage Tanks",
+      "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1004FDH.TXT",
+      "locator": "Exhibits 5\u20136, printed pp.7\u20138",
+      "excerpt": "Compressor Horsepower"
+    },
+    {
+      "id": "ogmp",
+      "title": "OGMP 2.0 official FAQ",
+      "url": "https://www.ogmpartnership.org/frequently-asked-questions",
+      "locator": "How does a company achieve Gold Standard?; reporting levels",
+      "excerpt": "reconcile their source-level (Level 4) emission inventories with measurements at the site level"
+    },
+    {
+      "id": "ipcc",
+      "title": "IPCC AR6 WGI Chapter 7",
+      "url": "https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_Chapter07.pdf",
+      "locator": "Table 7.15, printed p.1017; local original PDF and extracted text in sources",
+      "excerpt": "29.8 \u00b1 11"
+    }
+  ],
+  "archiveNotes": "Original IPCC and Exxon report already archived in parent sources directory. EPA and UNEP direct PDF downloads returned HTTP 403; failed response files retained clearly marked. Browser-accessed source locators and short excerpts archived in companion source register. No claim of a successful full PDF download."
+}

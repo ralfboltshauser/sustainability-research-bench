@@ -1,0 +1,220 @@
+{
+  "valuation": 255.12,
+  "valuationYear": 2024,
+  "technologyCutoff": "12 September 2026",
+  "horizon": 2031,
+  "valuationSource": "https://capitalscoalition.org/wp-content/uploads/2026/07/Global-Value-Factors-Database-V4-2026-External.xlsx",
+  "companies": [
+    {
+      "slug": "walmart",
+      "name": "Walmart",
+      "ticker": "WMT",
+      "sector": "Retail",
+      "period": "FY2026",
+      "scope1": 8160000,
+      "activity": "Refrigerant leaks",
+      "status": "Conditional deployment scenario",
+      "kind": "scenario",
+      "baseline": 4080000,
+      "reductionRate": 0.9994764397905759,
+      "defaultCoverage": 0.5,
+      "unit": "tCO\u2082e / year",
+      "boundary": "Direct refrigerant emissions; energy and lifecycle effects excluded",
+      "technology": "Lower-impact CO\u2082 refrigeration",
+      "summary": "A major source of warming sits inside the cooling systems that keep groceries fresh. Existing CO\u2082 systems can sharply reduce direct refrigerant impact in suitable stores.",
+      "formula": "4,080,000 \u00d7 assumed converted emissions share \u00d7 (1 \u2212 0.1 \u00f7 191)",
+      "opsBaseline": 14400000,
+      "opportunity": "Finance refrigeration replacement and installation capacity.",
+      "constraints": [
+        "Eligible share is assumed, not measured. It refers to emissions, not store count.",
+        "Study transfer needs validation for Walmart\u2019s gas mix, store climate, leakage and equipment age.",
+        "Additional electricity, fuel and embodied impacts must be deducted for net savings.",
+        "Existing and already committed conversions do not establish additional fund impact."
+      ],
+      "sources": [
+        [
+          "Inventory \u00b7 Walmart ESG report, p. 31",
+          "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2026/FY2026-Walmart-ESG-Report.pdf"
+        ],
+        [
+          "Technology \u00b7 DOE/Navigant supermarket comparison, pp. 19\u201320",
+          "https://www.energy.gov/sites/prod/files/2015/02/f19/Hannaford%20Study%20Report%201-22-2015_CLEAN.pdf"
+        ]
+      ],
+      "steps": [
+        "Walmart reports 4.08 million tonnes CO\u2082e from onsite refrigerants.",
+        "A paired supermarket study reported 191 versus 0.1 tonnes of direct refrigerant impact at equal leaked mass. Whole-store emissions differed by about 15%, not 99.95%.",
+        "Apply the direct reduction factor only to an explicitly assumed share of eligible converted emissions.",
+        "Value that physical difference at $255.12 per tonne, leaving unmeasured lifecycle effects visible."
+      ]
+    },
+    {
+      "slug": "exxon",
+      "name": "ExxonMobil",
+      "ticker": "XOM",
+      "sector": "Energy",
+      "period": "2025 \u00b7 operated assets",
+      "scope1": 90000000,
+      "activity": "Upstream tank methane",
+      "status": "Conditional deployment scenario",
+      "kind": "scenario",
+      "baseline": 203116.80000000002,
+      "reductionRate": 0.8623322147651006,
+      "defaultCoverage": 0.5,
+      "unit": "tCO\u2082e / year",
+      "boundary": "Tank methane after recovered-gas combustion; other lifecycle effects excluded",
+      "technology": "Vapor recovery units",
+      "summary": "Methane escaping from storage can be captured at suitable sources. The climate benefit must count the CO\u2082 released when recovered methane is burned.",
+      "formula": "6,816 t CH\u2084 \u00d7 assumed eligible untreated share \u00d7 95% \u00d7 (29.8 \u2212 2.75)",
+      "opportunity": "Finance eligible vapor recovery equipment with measured leak reduction.",
+      "constraints": [
+        "The source pool is inferred from rounded shares, not a list of untreated eligible tanks.",
+        "The 25%, 50% and 100% cases are assumptions, not a confidence interval.",
+        "Compression power, downstream leakage, other hydrocarbons and equipment impacts remain unquantified.",
+        "No displacement of other gas production is assumed. Fund additionality and repayment need project evidence."
+      ],
+      "sources": [
+        [
+          "Inventory \u00b7 ExxonMobil metrics and data",
+          "https://corporate.exxonmobil.com/publications/metrics-and-data"
+        ],
+        [
+          "Technology \u00b7 EPA vapor recovery units",
+          "https://www.epa.gov/natural-gas-star-program/vapor-recovery-units"
+        ],
+        [
+          "Conversion \u00b7 IPCC AR6 Table 7.15",
+          "https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_Chapter07.pdf"
+        ]
+      ],
+      "steps": [
+        "Reported methane of 142,000 tonnes \u00d7 96% upstream \u00d7 5% tanks implies about 6,816 tonnes CH\u2084.",
+        "EPA gives 95% control for suitable vapor recovery sources.",
+        "Convert fossil methane at GWP100 29.8 and subtract 2.75 tonnes CO\u2082 per tonne of recovered methane burned.",
+        "Apply an explicit eligible untreated share; subtract other lifecycle effects when data becomes available."
+      ]
+    },
+    {
+      "slug": "microsoft",
+      "name": "Microsoft",
+      "ticker": "MSFT",
+      "sector": "Technology",
+      "period": "FY2025",
+      "scope1": 170887,
+      "activity": "Data-center cooling",
+      "status": "Matched process study",
+      "kind": "normalized",
+      "baseline": 1000,
+      "reductionRate": 0.15,
+      "defaultCoverage": 1,
+      "unit": "tCO\u2082e / 1,000 baseline lifecycle tonnes",
+      "boundary": "Study-matched annualized virtual-core service; no company-scale estimate",
+      "technology": "Direct-to-chip cold plates",
+      "summary": "Cooling design can reduce the lifecycle footprint of equivalent compute service. Research supports a process improvement; the eligible Microsoft fleet is still unknown.",
+      "formula": "1,000 matched baseline lifecycle tonnes \u00d7 15% = 150 tonnes",
+      "opportunity": "Identify suitable unconverted compute cohorts, then assess retrofit finance.",
+      "constraints": [
+        "15% is a study-matched process comparison, not Microsoft\u2019s company gap.",
+        "Study assumptions include 20% overclocking, 28% more virtual cores, a 2021 US grid and specified asset lives.",
+        "The 31% blue-water reduction is a separate lifecycle metric and cannot be applied to company onsite water.",
+        "Eligible unconverted fleet and its matching lifecycle baseline are missing."
+      ],
+      "sources": [
+        [
+          "Inventory \u00b7 Microsoft 2026 environmental data, Table 1A",
+          "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2026-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf"
+        ],
+        [
+          "Technology \u00b7 Nature lifecycle cooling study, Table 4",
+          "https://www.nature.com/articles/s41586-025-08832-3"
+        ]
+      ],
+      "steps": [
+        "Use the source\u2019s annualized virtual-core functional unit to preserve equivalent service.",
+        "The study models 15% lower lifecycle climate impact for cold plates under its assumptions.",
+        "Normalize to 1,000 baseline lifecycle tonnes: 150 tonnes reduction.",
+        "Do not scale to the company until the matching eligible cohort is known."
+      ]
+    },
+    {
+      "slug": "nucor",
+      "name": "Nucor",
+      "ticker": "NUE",
+      "sector": "Steel",
+      "period": "2025",
+      "scope1": 6600000,
+      "activity": "Electric furnace controls",
+      "status": "Demonstrated process case",
+      "kind": "energy",
+      "baseline": 1000,
+      "reductionRate": 0.05,
+      "defaultCoverage": 1,
+      "unit": "MWh / 1,000 qualifying baseline MWh",
+      "boundary": "Comparable unoptimized furnace electricity; no climate-damage estimate",
+      "technology": "Advanced electric-arc furnace controls",
+      "summary": "Nucor already uses electric-arc furnaces. A demonstrated controls upgrade is a more relevant opportunity than pretending it could switch away from blast furnaces.",
+      "formula": "1,000 qualifying baseline MWh \u00d7 5% = 50 MWh",
+      "opportunity": "Find comparable unoptimized furnaces and verify metered savings.",
+      "constraints": [
+        "The supplier-reported Seattle improvement already happened; it is not remaining gap there.",
+        "Applicability to other unoptimized equipment is unverified.",
+        "Electricity savings cannot be translated into climate damage without an appropriate electricity emissions factor.",
+        "The separate 7.23% hot-rolled intensity target gap is a target scenario, not a validated technology frontier."
+      ],
+      "sources": [
+        [
+          "Inventory \u00b7 Nucor sustainability report, pp. 37\u201341",
+          "https://indd.adobe.com/view/publication/cc4a577c-36f1-4ae0-a823-7e9f3f547ca5/4a1d/publication-web-resources/pdf/2025_Sustainability_Report.pdf"
+        ],
+        [
+          "Technology \u00b7 Tenova Seattle controls case",
+          "https://tenova.com/newsroom/press-releases/tenovas-nextgenr-i-eafr-and-water-detection-technologies-significantly"
+        ]
+      ],
+      "steps": [
+        "Separate Nucor\u2019s existing electric-arc process from hypothetical blast-furnace conversions.",
+        "A Seattle case reports 5% furnace electricity savings from controls.",
+        "Use 50 MWh per 1,000 qualifying baseline MWh as a conditional replication benchmark.",
+        "Identify still-unoptimized assets before assigning an enterprise total."
+      ]
+    },
+    {
+      "slug": "jpmorgan",
+      "name": "JPMorgan Chase",
+      "ticker": "JPM",
+      "sector": "Financial services",
+      "period": "2024",
+      "scope1": 100024,
+      "activity": "Borrower asset improvements",
+      "status": "Insufficient project evidence",
+      "kind": "missing",
+      "baseline": null,
+      "reductionRate": null,
+      "defaultCoverage": null,
+      "unit": null,
+      "boundary": "Borrower-level physical interventions not yet identified",
+      "technology": "Project-linked transition finance",
+      "summary": "A bank\u2019s biggest opportunity may sit in the assets it finances. A lower portfolio footprint is not proof that physical emissions fell.",
+      "formula": "Not quantified: named borrower assets, intervention baselines and causal financing evidence required.",
+      "opportunity": "Originate asset-specific loans with measurable physical improvements and contracted repayment.",
+      "constraints": [
+        "Financed emissions overlap the emissions of borrowers. Do not add both to a portfolio harm total.",
+        "Selling a loan or changing attribution can lower reported financed emissions without physical reductions.",
+        "No defensible bank-wide preventable percentage has been established.",
+        "Modeled societal damage is not revenue available to return investment principal."
+      ],
+      "sources": [
+        [
+          "Inventory \u00b7 JPMorgan operational emissions",
+          "https://www.jpmorganchase.com/content/dam/jpmorganchase/documents/2024-operational-ghg-emissions-and-electric-power-use.pdf"
+        ]
+      ],
+      "steps": [
+        "Keep operational and financed emissions separate.",
+        "Identify a named borrower asset and its physical baseline.",
+        "Model the available alternative and determine whether funding causes extra or earlier adoption.",
+        "Quantify only after project evidence and repayable cashflows are established."
+      ]
+    }
+  ]
+}

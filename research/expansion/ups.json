@@ -1,0 +1,156 @@
+{
+  "slug": "ups",
+  "name": "UPS",
+  "ticker": "UPS",
+  "sector": "Logistics",
+  "period": "2025",
+  "scope1": 14898000,
+  "activity": "Urban delivery electrification",
+  "status": "Historical matched process benchmark",
+  "kind": "normalized",
+  "baseline": 1000,
+  "reductionRate": 0.46353529856600684,
+  "defaultCoverage": 1,
+  "unit": "tCO₂e / 1,000 matched baseline operating tonnes",
+  "boundary": "Historical diesel well-to-wheels versus electricity-generation-and-use benchmark; vehicle and battery manufacture excluded; no UPS total",
+  "technology": "Battery-electric delivery trucks and depot charging",
+  "summary": "Electric delivery vehicles already operate at UPS. An independent delivery-fleet study quantifies operating emissions savings under a specified grid and duty cycle; UPS’s remaining eligible routes are unknown.",
+  "formula": "1,000 × (1 − 759.06 ÷ 1,414.93) = 463.54 tCO₂e",
+  "opportunity": "Identify still-diesel routes with suitable payload, range and depot power, then assess vehicle and charging finance.",
+  "constraints": [
+    "The study concerns Frito-Lay Class 6 delivery trucks, not measured UPS vehicles. Match duty cycle and service before transfer.",
+    "Historical local-grid performance is not a universal reduction. Recalculate for present vehicle efficiency and electricity supply.",
+    "Calculation includes generation, transmission and charging losses and diesel well-to-wheels emissions; vehicle and battery production and disposal are excluded.",
+    "Eligible unconverted activity is unknown. Do not multiply this factor by company diesel or Scope 1 totals.",
+    "Existing routing and electric deployments are achieved improvements. Additionality and debt repayment remain unverified.",
+    "Main GRI inventory says 14.898 Mt while segment totals show 14.897 Mt; the 0.001 Mt discrepancy is unresolved."
+  ],
+  "sources": [
+    [
+      "Inventory · UPS 2025 GRI, printed pp. 38–39, 42–44, 52",
+      "https://about.ups.com/content/dam/upsstories/images/our-impact/reporting/2025-ups-gri.pdf"
+    ],
+    [
+      "Technology · NREL field evaluation, printed pp. 7–8, 14, 20–21",
+      "https://docs.nlr.gov/docs/fy17osti/66382.pdf"
+    ],
+    [
+      "Existing deployment and routing · UPS 2025 overview",
+      "https://about.ups.com/ca/en/our-impact/ups-sustainability-and-community-impact-report/delivering-for-our-planet.html"
+    ],
+    [
+      "Commercial deployment · UPS IVECO eDaily, June 2024",
+      "https://about.ups.com/gb/en/our-stories/innovation-driven/new-ups-electric-vehicles-hit-the-streets-of-europe.html"
+    ],
+    [
+      "Membership evidence · S&P 500-derived index",
+      "https://www.spglobal.com/spdji/en/indices/dividends-factors/sp-500-quality-fcf-high-dividend-index/"
+    ]
+  ],
+  "steps": [
+    "Separate company direct inventory from the delivery intervention.",
+    "NREL reports 1,414.93 diesel versus 759.06 electric gCO₂e/mile under its historical local-electricity assumptions.",
+    "Normalize their difference to 1,000 matched operating tonnes: about 464 tonnes avoided.",
+    "Obtain UPS route, fuel, power, payload, replacement and charging data before scaling; account for manufacturing and financing additionality."
+  ],
+  "evidenceRecords": [
+    {
+      "claim": "Direct emissions",
+      "value": 14898000,
+      "unit": "tCO₂e",
+      "period": "2025",
+      "source": "https://about.ups.com/content/dam/upsstories/images/our-impact/reporting/2025-ups-gri.pdf",
+      "locator": "printed p. 38, main Appendix B table",
+      "type": "reported inventory"
+    },
+    {
+      "claim": "Ground diesel emissions",
+      "value": 1624000,
+      "unit": "tCO₂e",
+      "period": "2025",
+      "source": "https://about.ups.com/content/dam/upsstories/images/our-impact/reporting/2025-ups-gri.pdf",
+      "locator": "printed p. 52",
+      "type": "inventory, not eligible delivery activity"
+    },
+    {
+      "claim": "Diesel benchmark",
+      "value": 1414.93,
+      "unit": "gCO₂e/mile",
+      "period": "2014 operations, report 2016",
+      "source": "https://docs.nlr.gov/docs/fy17osti/66382.pdf",
+      "locator": "printed p. 20",
+      "type": "study modeled emissions"
+    },
+    {
+      "claim": "Local-electricity EV benchmark",
+      "value": 759.06,
+      "unit": "gCO₂e/mile",
+      "period": "2014 operations, report 2016",
+      "source": "https://docs.nlr.gov/docs/fy17osti/66382.pdf",
+      "locator": "printed p. 20",
+      "type": "study modeled emissions"
+    },
+    {
+      "claim": "Existing battery electric vehicles",
+      "value": 580,
+      "unit": "vehicles, more than",
+      "period": "2025 overview",
+      "source": "https://about.ups.com/ca/en/our-impact/ups-sustainability-and-community-impact-report/delivering-for-our-planet.html",
+      "locator": "Asset transition",
+      "type": "achieved deployment"
+    },
+    {
+      "claim": "Existing routing savings",
+      "value": [
+        10,
+        14
+      ],
+      "unit": "miles per driver per day",
+      "period": "2025 overview",
+      "source": "https://about.ups.com/ca/en/our-impact/ups-sustainability-and-community-impact-report/delivering-for-our-planet.html",
+      "locator": "Operational excellence",
+      "type": "company-reported achieved savings"
+    }
+  ],
+  "investmentEvidence": {
+    "status": "Project economics missing",
+    "historicalEvidence": "NREL printed p. 19 records $86,791 incremental Smith Newton vehicle cost and $60,000 New York voucher; these are historical, not current UPS economics.",
+    "source": "https://docs.nlr.gov/docs/fy17osti/66382.pdf",
+    "locator": "printed p. 19",
+    "cashflowMechanism": "Avoided diesel and maintenance expenses less electricity, demand charges, charging, downtime and finance; quantify from project quotes.",
+    "principalRecovery": "Not established. Societal damage avoided is not borrower cashflow."
+  },
+  "additionalMetrics": [
+    {
+      "claim": "Historical national-electricity reduction",
+      "value": 0.32257426162424996,
+      "unit": "fraction of matched operating emissions",
+      "period": "2014-era assumptions",
+      "source": "https://docs.nlr.gov/docs/fy17osti/66382.pdf",
+      "locator": "printed pp. 20–21",
+      "type": "grid sensitivity, not forecast range"
+    },
+    {
+      "claim": "Ground vehicle direct emissions",
+      "value": 3608000,
+      "unit": "tCO₂e",
+      "period": "2025",
+      "source": "https://about.ups.com/content/dam/upsstories/images/our-impact/reporting/2025-ups-gri.pdf",
+      "locator": "printed p. 52",
+      "type": "inventory, not eligible fleet"
+    },
+    {
+      "claim": "Scope 1 modeled climate damage",
+      "value": 3800777760.0,
+      "unit": "2024 USD",
+      "period": "2025 emissions",
+      "type": "analyst fixed-factor calculation"
+    }
+  ],
+  "membershipEvidence": {
+    "status": "Supported by index-provider subset",
+    "source": "https://www.spglobal.com/spdji/en/indices/dividends-factors/sp-500-quality-fcf-high-dividend-index/",
+    "period": "31 August 2026 in indexed source",
+    "explanation": "Provider describes universe as S&P 500 companies; indexed constituents include UPS. Opened live page hides rows, so evidence is provider search-index content, not downloaded complete roster."
+  }
+}

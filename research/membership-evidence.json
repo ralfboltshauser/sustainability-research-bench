@@ -1,0 +1,42 @@
+{
+  "source": "https://www.ishares.com/us/products/239726/ishares-core-s-p-500-etf/latest-holdings.csv",
+  "metadata": [
+    "iShares Core S&P 500 ETF",
+    "Fund Holdings as of,\"Sep 10, 2026\"",
+    "Inception Date,\"May 15, 2000\"",
+    "Shares Outstanding,\"1,102,650,000.00\"",
+    "Stock,\"-\"",
+    "Bond,\"-\"",
+    "Cash,\"-\"",
+    "Other,\"-\"",
+    ""
+  ],
+  "matched_holdings": [
+    {
+      "ticker": "MSFT",
+      "name": "MICROSOFT",
+      "sector": "Information Technology"
+    },
+    {
+      "ticker": "JPM",
+      "name": "JPMORGAN CHASE & CO",
+      "sector": "Financials"
+    },
+    {
+      "ticker": "XOM",
+      "name": "EXXONMOBIL HOLDINGS CORP",
+      "sector": "Energy"
+    },
+    {
+      "ticker": "WMT",
+      "name": "WALMART INC",
+      "sector": "Consumer Staples"
+    },
+    {
+      "ticker": "NUE",
+      "name": "NUCOR",
+      "sector": "Materials"
+    }
+  ],
+  "interpretation": "S&P500 tracker holdings corroboration, not a direct index feed."
+}

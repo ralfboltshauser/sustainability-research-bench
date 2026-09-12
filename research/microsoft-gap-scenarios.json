@@ -1,0 +1,83 @@
+{
+  "company": "Microsoft",
+  "as_of": "2026-09-12",
+  "scenario_type": "Normalized source-matched engineering case, NOT Microsoft company total or forecast",
+  "comparison": "Same delivered annualized virtual-core service in air-cooled baseline versus source-model cold-plate design, using 2021 US average grid in both cases",
+  "commercial_technology": "Direct-to-chip cold plates and coolant distribution equipment; eligible implementation only",
+  "carbon_case": {
+    "normalization_basis": "Per 1000 tCO2e of baseline cradle-to-grave emissions in a validated source-matched cohort; denominator chosen for readability, not observed corporate cohort",
+    "baseline_tCO2e": 1000,
+    "reduction_fraction": 0.15,
+    "post_adoption_tCO2e": 850,
+    "technical_gap_tCO2e": 150,
+    "valuation_factor_USD2024_per_tCO2e": 255.12,
+    "baseline_modeled_damage_USD2024": 255120,
+    "post_adoption_modeled_damage_USD2024": 216852,
+    "technical_gap_modeled_damage_USD2024": 38268,
+    "formula": "1000 * 0.15 * 255.12 = 38268",
+    "residual_impact_index_baseline100": 85,
+    "damage_status": "Monetized estimate under selected externality value factor, not observed damage or cash revenue"
+  },
+  "water_case": {
+    "normalization_basis": "Separate per 1000 m3 baseline life-cycle blue-water consumption normalization for source-matched cohort. NOT asserting this is the water consumed by the carbon case cohort.",
+    "baseline_m3": 1000,
+    "reduction_fraction": 0.31,
+    "post_adoption_m3": 690,
+    "technical_gap_m3": 310,
+    "residual_impact_index_baseline100": 69,
+    "modeled_damage_USD2024": null,
+    "reason_not_monetized": "Need location-resolved life-cycle water inventory and corresponding water value factors; Microsoft total on-site consumption is an incompatible denominator"
+  },
+  "energy_case": {
+    "normalization_basis": "Separate per 1000 MJ nonrenewable primary energy normalization; not measured electricity",
+    "baseline_MJ": 1000,
+    "reduction_fraction": 0.15,
+    "post_adoption_MJ": 850,
+    "technical_gap_MJ": 150,
+    "residual_impact_index_baseline100": 85
+  },
+  "deployment_by_2031": {
+    "fraction": null,
+    "company_total_gap_tCO2e": null,
+    "company_total_gap_USD2024": null,
+    "eligible_cohort_baseline_G_tCO2e": null,
+    "formula_if_measured": "G * 0.15 tCO2e; G * 38.268 USD2024, where G is source-matched baseline lifecycle emissions of only the cohort converted by2031",
+    "interpretation": "100% design adoption within this defined unit case does not mean 100% fleet adoption; eligible refresh inventory absent. Do not multiply lifecycle-annualized results by years without explicit time profile."
+  },
+  "fund_additionality": {
+    "quantified": false,
+    "repayable_cashflow_usd": null,
+    "reason": "Existing installations/commitments must be excluded; financing-caused extra eligible adoption and repayment contracts absent",
+    "rule": "Avoided externality dollars are not revenues. No principal guarantee."
+  },
+  "key_assumptions": [
+    "15-year datacenter and six-year servers in source model",
+    "Cold-plate model includes 20% overclocking, 28% more virtual cores and 3% lower PUE",
+    "Equivalent service/SLA and workload must be independently verified; not an AI GPU universal factor",
+    "LCA includes materials, operations and end-of-life; Scope 2-only or corporate Scope 1-3 denominator cannot substitute",
+    "Zero-evaporation heat rejection is a separate case that may increase electrical demand"
+  ],
+  "sources": [
+    {
+      "title": "Alissa et al., Nature 641, 331\u2013338 (2025)",
+      "url": "https://www.nature.com/articles/s41586-025-08832-3",
+      "pdf_url": "https://d-nb.info/137120098X/34",
+      "locator": "Table3 p335; Table4 p336; Fig4 and illustrative example p337",
+      "local_file": "sources/microsoft/cooling-lca-2025.pdf",
+      "inspection": "Article Figure4 normalized to100; p337 1kgCO2e/core example explicitly hypothetical, not absolute baseline."
+    },
+    {
+      "title": "Global Value Factors Database version4",
+      "local_file": "sources/global-value-factors-v4.xlsx",
+      "locator": "GHGs worksheet H15; G15 $/tCO2e; version-control note specifies2024USD",
+      "factor": 255.12,
+      "verification": "Independently read workbook ZIP/XML cached value and unit; 2024USD note read."
+    },
+    {
+      "title": "Vertiv commercially available direct-to-chip cooling products",
+      "url": "https://www.vertiv.com/en-emea/about/news-and-events/news-releases/vertiv-expands-liquid-cooling-portfolio-with-scalable-solutions-for-ai-and-hpc-applications/",
+      "date": "2025-06-03"
+    }
+  ],
+  "pitch": "A Microsoft-authored, peer-reviewed design study supports a 15% climate-impact gap for matched air-cooled compute service using available cold-plate technology: 150 tonnes and $38,268 in modeled climate damage per1000 baseline lifecycle tonnes. The same design comparison reduces life-cycle blue water31%. These are engineering opportunity rates; the Microsoft-wide deployable denominator and investor-additional opportunity remain unmeasured."
+}

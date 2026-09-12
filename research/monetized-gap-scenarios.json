@@ -1,0 +1,62 @@
+[
+  {
+    "company": "Walmart",
+    "scenario": "IF 25% of source emissions are eligible and treated; extent is assumed",
+    "annual_tco2e_reduction": 1019465.9685863873,
+    "factor_usd2024_per_tco2e": 255.12,
+    "damage_avoided_usd2024": 260086157.90575916,
+    "boundary": "Direct refrigerant emissions only; energy/lifecycle penalties excluded",
+    "source_file": "walmart-gap-scenarios.json",
+    "forecast": false
+  },
+  {
+    "company": "Walmart",
+    "scenario": "IF 50% of source emissions are eligible and treated; extent is assumed",
+    "annual_tco2e_reduction": 2038931.9371727747,
+    "factor_usd2024_per_tco2e": 255.12,
+    "damage_avoided_usd2024": 520172315.8115183,
+    "boundary": "Direct refrigerant emissions only; energy/lifecycle penalties excluded",
+    "source_file": "walmart-gap-scenarios.json",
+    "forecast": false
+  },
+  {
+    "company": "Walmart",
+    "scenario": "IF 100% of source emissions are eligible and treated; extent is assumed",
+    "annual_tco2e_reduction": 4077863.8743455494,
+    "factor_usd2024_per_tco2e": 255.12,
+    "damage_avoided_usd2024": 1040344631.6230366,
+    "boundary": "Direct refrigerant emissions only; energy/lifecycle penalties excluded",
+    "source_file": "walmart-gap-scenarios.json",
+    "forecast": false
+  },
+  {
+    "company": "ExxonMobil",
+    "scenario": "IF 25% of source emissions are eligible and treated; extent is assumed",
+    "annual_tco2e_reduction": 43788.54,
+    "factor_usd2024_per_tco2e": 255.12,
+    "damage_avoided_usd2024": 11171332.3248,
+    "boundary": "Methane capture less complete combustion CO2; other lifecycle effects excluded",
+    "source_file": "exxon-gap-scenarios.json",
+    "forecast": false
+  },
+  {
+    "company": "ExxonMobil",
+    "scenario": "IF 50% of source emissions are eligible and treated; extent is assumed",
+    "annual_tco2e_reduction": 87577.08,
+    "factor_usd2024_per_tco2e": 255.12,
+    "damage_avoided_usd2024": 22342664.6496,
+    "boundary": "Methane capture less complete combustion CO2; other lifecycle effects excluded",
+    "source_file": "exxon-gap-scenarios.json",
+    "forecast": false
+  },
+  {
+    "company": "ExxonMobil",
+    "scenario": "IF 100% of source emissions are eligible and treated; extent is assumed",
+    "annual_tco2e_reduction": 175154.16,
+    "factor_usd2024_per_tco2e": 255.12,
+    "damage_avoided_usd2024": 44685329.2992,
+    "boundary": "Methane capture less complete combustion CO2; other lifecycle effects excluded",
+    "source_file": "exxon-gap-scenarios.json",
+    "forecast": false
+  }
+]

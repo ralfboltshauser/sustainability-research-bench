@@ -1,0 +1,35 @@
+{
+  "source": "https://www.ishares.com/us/products/239726/ishares-core-s-p-500-etf/latest-holdings.csv",
+  "metadata": [
+    "iShares Core S&P 500 ETF",
+    "Fund Holdings as of,\"Sep 10, 2026\"",
+    "Inception Date,\"May 15, 2000\"",
+    "Shares Outstanding,\"1,102,650,000.00\"",
+    "Stock,\"-\"",
+    "Bond,\"-\"",
+    "Cash,\"-\"",
+    "Other,\"-\"",
+    ""
+  ],
+  "matched_holdings": [
+    {
+      "Ticker": "DUK",
+      "Name": "DUKE ENERGY CORP",
+      "Sector": "Utilities",
+      "Asset Class": "Equity"
+    },
+    {
+      "Ticker": "UPS",
+      "Name": "UNITED PARCEL SERVICE INC CLASS B",
+      "Sector": "Industrials",
+      "Asset Class": "Equity"
+    },
+    {
+      "Ticker": "DAL",
+      "Name": "DELTA AIR LINES",
+      "Sector": "Industrials",
+      "Asset Class": "Equity"
+    }
+  ],
+  "interpretation": "S&P 500 tracker holdings corroboration, not direct index feed."
+}

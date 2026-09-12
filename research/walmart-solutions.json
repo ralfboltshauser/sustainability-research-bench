@@ -1,0 +1,325 @@
+{
+  "company": "Walmart",
+  "as_of": "2026-09-12",
+  "assessment": "Four technically feasible intervention families. No defensible company-wide 2031 adoption or investable reduction total from public inputs collected. Unit-process and historical normalized scenarios are computable, explicitly conditional.",
+  "baseline_policy": "Use FY2026 fixed operational service volumes, preserving separate CY2025 waste period. Do not infer activity from revenue intensity. All adoption quantities are null pending asset data.",
+  "interventions": [
+    {
+      "id": "refrigeration",
+      "name": "Leak prevention and lower-GWP equipment replacement",
+      "technology_available": "Leak detection, preventive maintenance, trained technicians and commercial CO2 systems; choose leak repair or equipment replacement for each system, not additive independent full reductions.",
+      "activity_baseline": {
+        "value": 4.08,
+        "unit": "million tCO2e/year",
+        "source": "W26",
+        "page": "31",
+        "geography": "global Walmart",
+        "baseline": "FY2026",
+        "lifecycle_boundary": "onsite refrigerants Scope 1; excludes electricity and equipment manufacture"
+      },
+      "evidence": [
+        {
+          "value": 619,
+          "unit": "US facilities partially or fully using ultra-low-GWP refrigerants",
+          "source": "W26",
+          "page": "31",
+          "geography": "United States",
+          "baseline": "December 31 2025",
+          "lifecycle_boundary": "deployment count, not refrigerant-charge or cooling-capacity share"
+        },
+        {
+          "value": 0.05,
+          "unit": "annual leak fraction (individual stores below this demonstrated)",
+          "source": "EPA_LEAK",
+          "page": "2",
+          "geography": "United States",
+          "baseline": "historical commercial supermarket systems by 2011",
+          "lifecycle_boundary": "operational refrigerant loss; advanced technology plus practices, not leakage-only causal estimate"
+        },
+        {
+          "value": 3922,
+          "unit": "kgCO2e/kg R-404A emitted",
+          "source": "EPA_GWP",
+          "page": "R-404A row",
+          "geography": "global physical factor; US regulatory table",
+          "baseline": "100-year GWP",
+          "lifecycle_boundary": "direct atmospheric release only"
+        },
+        {
+          "value": 1,
+          "unit": "kgCO2e/kg R-744 emitted",
+          "source": "EPA_GWP",
+          "page": "R-744 row",
+          "geography": "global physical factor; US regulatory table",
+          "baseline": "100-year GWP",
+          "lifecycle_boundary": "direct atmospheric release only"
+        }
+      ],
+      "fixed_activity_formula": "For each system at fixed baseline cooling service: direct avoided kgCO2e = charge0_kg*leak0*GWP0 - charge1_kg*leak1*GWP1. Add metered electricity delta times a consistent grid factor; separately count installation/end-of-life recovery losses. Aggregate only verified adopted systems.",
+      "bounded_scenario": {
+        "kind": "unit-process arithmetic, not company reduction or adoption forecast",
+        "functional_unit": "1 kg/year of verified avoided R-404A leakage",
+        "avoided_tco2e_per_year": 3.922,
+        "basis": "EPA_GWP; 3922 kgCO2e/kg divided by 1000 kg/t",
+        "counterfactual": "Same cooling service and equipment; leakage would otherwise continue. No electricity credit.",
+        "replacement_sensitivity": "At equal emitted mass, substitution of 1 kg R-404A by 1 kg CO2 reduces direct emissions by 3.921 tCO2e. Equal leakage mass is only a sensitivity, not an engineering forecast."
+      },
+      "feasible_adoption_by_2031": null,
+      "company_remaining_gap_tco2e": null,
+      "repayable_mechanism": "Shared-savings maintenance contract from documented avoided refrigerant purchases/repair costs; equipment lease only when net utility and maintenance savings or contracted service payments cover debt.",
+      "additionality": "Existing corporate replacement schedule and required compliance are baseline. Finance must demonstrably accelerate specific assets or address a documented procurement/skills bottleneck.",
+      "dependencies": [
+        "system charge/gas composition and actual leak logs",
+        "cooling duty and local climate",
+        "technician/vendor capacity",
+        "capex, remaining asset life and incremental opex",
+        "committed replacement schedule"
+      ],
+      "overlaps": [
+        "Do not add full leak-repair savings to full gas-replacement savings for the same charge.",
+        "Electricity changes belong once in energy ledger."
+      ]
+    },
+    {
+      "id": "building_energy",
+      "name": "Residual legacy lighting replacement and controls",
+      "technology_available": "Commercial LEDs and controls; only applicable where a current audit finds eligible legacy fixtures.",
+      "evidence": [
+        {
+          "value": [
+            0.44,
+            0.63
+          ],
+          "unit": "fraction lighting electricity saved",
+          "source": "DOE_LED",
+          "page": "2 initial-results table",
+          "geography": "Leavenworth Kansas US",
+          "baseline": "2012 new-site LED design versus respectively 400 W and 1000 W pulse-start metal-halide alternatives",
+          "lifecycle_boundary": "use-phase parking-lot electricity; not whole building or embodied energy"
+        },
+        {
+          "value": [
+            6.2,
+            7.5
+          ],
+          "unit": "years simple payback",
+          "source": "DOE_LED",
+          "page": "2 initial-results table",
+          "geography": "Leavenworth Kansas US",
+          "baseline": "same comparisons at historical USD0.056/kWh",
+          "lifecycle_boundary": "historical project cost/energy/maintenance comparison; not financing IRR"
+        },
+        {
+          "value": 0.056,
+          "unit": "USD/kWh",
+          "source": "DOE_LED",
+          "page": "2",
+          "geography": "Leavenworth Kansas US",
+          "baseline": "2012 case-study melded tariff",
+          "lifecycle_boundary": "electricity cash bill"
+        }
+      ],
+      "fixed_activity_formula": "Eligible baseline lighting kWh * verified savings fraction; constant lit service and operating hours. Scope2 benefit = saved kWh * consistent site grid/contract emission factor.",
+      "bounded_scenario": {
+        "kind": "normalized historical engineering scenario, not Walmart remaining stock",
+        "functional_unit": "100 MWh/year of eligible legacy parking-lot lighting under the source comparator conditions",
+        "saved_mwh_per_year": [
+          44,
+          63
+        ],
+        "remaining_mwh_per_year": [
+          56,
+          37
+        ],
+        "historical_energy_bill_savings_usd_per_year": [
+          2464,
+          3528
+        ],
+        "basis": "100 MWh * 44% or 63%; savings kWh * historical USD0.056/kWh. Endpoints are different comparator designs, not statistical confidence limits.",
+        "excluded": "Current tariffs, emissions factors, current installed stock, capex, financing costs and current realized payback unknown."
+      },
+      "feasible_adoption_by_2031": null,
+      "company_remaining_gap_tco2e": null,
+      "repayable_mechanism": "Equipment lease or energy-performance contract repaid from metered net utility and maintenance savings; audit first.",
+      "additionality": "This may already be largely exhausted at Walmart. No investable volume assumed from an old successful demonstration.",
+      "dependencies": [
+        "current fixture inventory",
+        "baseline metered lighting kWh",
+        "photometric service requirements",
+        "current bids/tariffs and committed retrofits"
+      ],
+      "overlaps": [
+        "Renewable electricity procurement and efficiency cannot each claim the original same kWh emissions.",
+        "Refrigeration/HVAC energy effects require separate measurement."
+      ]
+    },
+    {
+      "id": "yard_electrification",
+      "name": "Electric yard tractors for verified compatible duty cycles",
+      "technology_available": "Battery-electric yard trucks already deployed; site operations are more bounded than long-haul trucking.",
+      "evidence": [
+        {
+          "value": 0.75,
+          "unit": "fraction reduction exceeded per operating hour",
+          "source": "W26",
+          "page": "33",
+          "geography": "Walmart distribution/fulfillment operations; exact trial sites undisclosed",
+          "baseline": "electric yard trucks versus diesel yard equipment, FY2026 disclosure",
+          "lifecycle_boundary": "corporate claimed emissions per hour; electricity methodology and vehicle lifecycle boundary not disclosed",
+          "evidence_status": "corporate claim, not independently validated"
+        }
+      ],
+      "fixed_activity_formula": "Verified baseline yard-hours * (diesel emissions per hour minus electric electricity per hour * consistent grid factor), with equal task output and uptime; report vehicle/battery manufacturing separately.",
+      "bounded_scenario": null,
+      "feasible_adoption_by_2031": null,
+      "company_remaining_gap_tco2e": null,
+      "repayable_mechanism": "Truck/charger lease funded by net avoided fuel and maintenance expenditure, subject to tariff, utilization and replacement-cost diligence.",
+      "additionality": "Subtract already ordered electrification and corporate investment. No blanket application of the reported percentage to total fleet emissions.",
+      "dependencies": [
+        "remaining diesel yard count and hours",
+        "diesel litres/hour and electric kWh/hour",
+        "charging interconnection capacity and demand charges",
+        "truck/charger prices and maintenance history",
+        "payload/shift duty and uptime",
+        "raw boundary supporting corporate factor"
+      ],
+      "overlaps": [
+        "Do not apply yard factor to long-haul tractors or mobile refrigerants.",
+        "Electricity enters Scope2; renewable claim must use same ledger."
+      ]
+    },
+    {
+      "id": "food_waste",
+      "name": "Prevent spoilage and use higher-value recovery pathways",
+      "technology_available": "Forecasting, inventory visibility, markdowns, cold-chain monitoring, and de-packaging/recovery are deployed technologies. Prevention and disposal diversion need separate outcomes.",
+      "evidence": [
+        {
+          "value": 1420,
+          "unit": "million lb food/year sent to landfill or incineration",
+          "source": "W26",
+          "page": "137",
+          "geography": "global operational Walmart food reporting, excluding India",
+          "baseline": "CY2025",
+          "lifecycle_boundary": "operational food destination mass; not edible share, upstream lifecycle emissions or US-only volume"
+        },
+        {
+          "value": 4500,
+          "unit": "US locations exceeded by de-packaging deployment",
+          "source": "W_WASTE",
+          "page": "Reducing Food Loss and Waste",
+          "geography": "United States",
+          "baseline": "2025 reported deployment",
+          "lifecycle_boundary": "location count"
+        },
+        {
+          "value": 0.6,
+          "unit": "increase fraction recovered organic material",
+          "source": "W_WASTE",
+          "page": "Reducing Food Loss and Waste",
+          "geography": "US participating locations",
+          "baseline": "versus prior recovery at participating sites; raw protocol undisclosed",
+          "lifecycle_boundary": "recovered mass, not food prevented or GHG reduction"
+        },
+        {
+          "value": 0.12,
+          "unit": "decrease fraction compactor trash",
+          "source": "W_WASTE",
+          "page": "Reducing Food Loss and Waste",
+          "geography": "US participating locations",
+          "baseline": "versus prior trash at participating sites; raw protocol undisclosed",
+          "lifecycle_boundary": "trash mass, not total food waste"
+        },
+        {
+          "value": 5.1,
+          "unit": "financial benefit/cost ratio",
+          "source": "WRI",
+          "page": "15 Table 3; 6 methodology",
+          "geography": "grocery subset geography not separately disclosed; study spans 17 countries",
+          "baseline": "historical grocery waste projects reported by 2017; 10 sites",
+          "lifecycle_boundary": "project-period tangible financial flows; not annual ROI or lifecycle GHG factor"
+        }
+      ],
+      "fixed_activity_formula": "Hold food-service output/product mix constant. Prevented kg * commodity-specific upstream marginal factor only if procurement/production actually falls; rerouted kg * difference between geographically appropriate waste-treatment factors, including energy, methane capture and transport.",
+      "bounded_scenario": null,
+      "feasible_adoption_by_2031": null,
+      "company_remaining_gap_tco2e": null,
+      "repayable_mechanism": "Working-capital/process-improvement loan or shared-savings contract funded by verified lower write-offs, net markdown margin, avoided purchasing and disposal bills. Do not assume food donation creates cash repayment.",
+      "additionality": "Recovery is already widespread. Establish untreated-site/purchased-food baseline and causal lift beyond planned rollouts; no 60% factor applied to global disposed tonnage.",
+      "dependencies": [
+        "site/commodity-level preventable and inedible waste",
+        "baseline food throughput rather than revenue alone",
+        "existing recovery coverage and committed rollout",
+        "procurement response to prevention",
+        "destination-specific disposal and recovery costs/emission factors",
+        "incremental product margin, staff costs and capex"
+      ],
+      "overlaps": [
+        "Prevented food cannot also earn full diversion credit.",
+        "Avoided upstream procurement and supplier Project Gigaton must not be added as separate company reductions.",
+        "Composting/AD can improve disposal impacts while still counting as food loss under the FLW standard."
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "W26",
+      "url": "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2026/FY2026-Walmart-ESG-Report.pdf",
+      "title": "Walmart FY2026 ESG Report",
+      "date": "2026-07-29",
+      "type": "corporate primary disclosure",
+      "pages": "8, 31, 33, 137",
+      "caveat": "FY2026 operations generally Feb 1 2025-Jan 31 2026; food pathways CY2025; deployment cutoff separately stated. Company performance claims are not independent intervention trials."
+    },
+    {
+      "id": "EPA_LEAK",
+      "url": "https://www.epa.gov/sites/default/files/documents/leakpreventionrepairguidelines.pdf",
+      "title": "GreenChill Commercial Refrigeration Leak Prevention and Repair",
+      "date": "2011-05",
+      "type": "government technical guidance",
+      "pages": "printed page 2",
+      "caveat": "Historical US industry evidence; not Walmart current performance."
+    },
+    {
+      "id": "EPA_GWP",
+      "url": "https://www.epa.gov/hfcs/technology-transitions-gwp-reference-table",
+      "title": "Technology Transitions GWP Reference Table",
+      "type": "government reference",
+      "pages": "table rows R-404A, R-744",
+      "caveat": "100-year GWP regulatory reference; align to corporate inventory GWP basis before aggregation."
+    },
+    {
+      "id": "DOE_LED",
+      "url": "https://www1.eere.energy.gov/buildings/commercial/pdfs/walmart_leavenworth_case_study.pdf",
+      "title": "Walmart Leavenworth Kansas: Largest Retailer Goes LED",
+      "date": "2012-06",
+      "type": "DOE/PNNL corporate-site case study",
+      "pages": "1-2, tables on page 2",
+      "caveat": "Historical new-build design comparison, not a current remaining-stock audit or contemporary retrofit quotation."
+    },
+    {
+      "id": "W_WASTE",
+      "url": "https://corporate.walmart.com/purpose/esgreport/waste-and-circularity",
+      "title": "Walmart Waste and Circularity, FY2026",
+      "type": "corporate primary disclosure",
+      "pages": "Reducing Food Loss and Waste",
+      "caveat": "Pilot/recovery result lacks public raw measurement design."
+    },
+    {
+      "id": "WRI",
+      "url": "https://docs.wbcsd.org/2017/03/Report_The_Business_Case_for_Reducing_Food_Loss_and_Waste.pdf",
+      "title": "WRI/WRAP The Business Case for Reducing Food Loss and Waste",
+      "date": "2017-03",
+      "type": "original multi-company retrospective research",
+      "pages": "6 methodology; 14 financial flows; 15 Table 3",
+      "caveat": "Anonymous selected sample. Grocery subgroup geography and project duration not separately disclosed; not a Walmart underwriting factor."
+    }
+  ],
+  "missing_data": [
+    "site-level remaining addressable activity and committed 2031 replacement plans",
+    "project capex/opex and contracted cash flows",
+    "matching lifecycle factors and gas/grid methodology",
+    "causal counterfactual establishing external investor additionality"
+  ],
+  "fund_note": "Principal repayment comes from contracted project cash flow, never monetized environmental damage unless an actual enforceable payment exists. No allocation of a billion-dollar fund or return guarantee is supported.",
+  "aggregation_note": "Project Gigaton is supplier-reported avoided/reduced/sequestered activity across projects/time; it is not a deduction from Walmart annual Scope3 inventory. Do not subtract it. Technical possibility is distinct from external investor additionality."
+}

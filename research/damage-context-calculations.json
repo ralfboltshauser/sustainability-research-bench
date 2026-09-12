@@ -1,0 +1,18 @@
+[
+  {
+    "case": "Walmart onsite refrigerants",
+    "type": "Source damage proxy, not avoidable harm",
+    "baseline_tco2e": 4080000,
+    "damage_usd2024": 1040889600.0
+  },
+  {
+    "case": "Nucor current-to-target product comparison",
+    "type": "Company target scenario, not proven available-tech gap",
+    "baseline_kgco2e_per_t_product": 1051,
+    "target_kgco2e_per_t_product": 975,
+    "gap_percent": 7.2312083729781165,
+    "damage_difference_usd2024_per_t_product": 19.38912,
+    "normalized_annual_output_t_product": 1000000,
+    "normalized_damage_difference_usd2024": 19389120.0
+  }
+]

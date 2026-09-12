@@ -1,0 +1,142 @@
+[
+  {
+    "company": "Walmart",
+    "metric": "Onsite refrigerant share of rounded operational inventory",
+    "formula": "4.08 / 14.4 * 100",
+    "result": 28.333333333333332,
+    "unit": "%",
+    "status": "Derived footprint share; not avoidable share",
+    "limits": "Scope1 plus market-based Scope2 only. Source reports28.4% using unrounded inputs.",
+    "source": "walmart-footprint.json WMT01/WMT02"
+  },
+  {
+    "company": "Walmart",
+    "metric": "Direct impact per kg R-404A leakage prevented",
+    "formula": "3922 / 1000",
+    "result": 3.922,
+    "unit": "tCO2e per kg leakage prevented",
+    "status": "Unit-level conditional factor",
+    "limits": "EPA reference GWP basis; actual gas mix, leakage avoided, energy and recovery effects required.",
+    "source": "https://www.epa.gov/hfcs/technology-transitions-gwp-reference-table"
+  },
+  {
+    "company": "Walmart",
+    "metric": "Food disposal mass conversion",
+    "formula": "1420e6 * 0.45359237 / 1000",
+    "result": 644101.1653999999,
+    "unit": "metric tonnes",
+    "status": "Derived reported disposal pool",
+    "limits": "CY2025 excludes India. Not all edible, preventable, landfilled, or methane-generating.",
+    "source": "walmart-footprint.json food disposition"
+  },
+  {
+    "company": "Microsoft",
+    "metric": "Water balance",
+    "formula": "13266 - 5096",
+    "result": 8170,
+    "unit": "ML",
+    "status": "Reported balance arithmetic",
+    "limits": "FY25 consumption; not savings or monetized local harm.",
+    "source": "microsoft-footprint.json Table8"
+  },
+  {
+    "company": "Microsoft",
+    "metric": "Scope1 plus market Scope2 plus Scope3",
+    "formula": "170887 + 2707428 + 18243000",
+    "result": 21121315,
+    "unit": "tCO2e",
+    "status": "Inventory reconciliation",
+    "limits": "Rounds to reported21,121,000. Different from management-adjusted inventory.",
+    "source": "microsoft-footprint.json Table1A"
+  },
+  {
+    "company": "ExxonMobil",
+    "metric": "Approximate upstream tank/storage methane pool",
+    "formula": "142000 * 0.96 * 0.05",
+    "result": 6816.0,
+    "unit": "tCH4/year",
+    "status": "Company source-pool estimate",
+    "limits": "Rounded source shares total101%. Not measured eligible untreated tanks or feasible abatement.",
+    "source": "exxon-footprint.json methane sources"
+  },
+  {
+    "company": "ExxonMobil",
+    "metric": "VRU sensitivity if entire estimated tank pool were eligible and untreated",
+    "formula": "142000 * 0.96 * 0.05 * 0.95",
+    "result": 6475.2,
+    "unit": "tCH4/year",
+    "status": "Conditional engineering envelope; not achievable forecast",
+    "limits": "Full eligibility unsupported; direct methane only; combustion, power and existing controls excluded.",
+    "source": "exxon-footprint.json; https://www.epa.gov/natural-gas-star-program/vapor-recovery-units"
+  },
+  {
+    "company": "ExxonMobil",
+    "metric": "Routine flaring annual volume",
+    "formula": "4e6 * 365",
+    "result": 1460000000.0,
+    "unit": "standard cubic feet/year",
+    "status": "Annualized reported volume",
+    "limits": "Existing commitment; no inferred sales, net carbon benefit or fund additionality.",
+    "source": "exxon-footprint.json flaring"
+  },
+  {
+    "company": "Nucor",
+    "metric": "Current hot-rolled product intensity target gap",
+    "formula": "1051 - 975",
+    "result": 76,
+    "unit": "kgCO2e/t hot-rolled steel",
+    "status": "Current-to-target difference; not validated technical frontier",
+    "limits": "2025 actual vs2030 goal; same GSCC boundary. Already committed work included.",
+    "source": "nucor-footprint.json N03"
+  },
+  {
+    "company": "Nucor",
+    "metric": "Current hot-rolled product target gap percentage",
+    "formula": "(1051 - 975) / 1051 * 100",
+    "result": 7.2312083729781165,
+    "unit": "%",
+    "status": "Target-gap percentage; not company sustainability score",
+    "limits": "Cannot apply to23Mt cast steel. Feasible remaining deployment and investor effect unverified.",
+    "source": "nucor-footprint.json N03"
+  },
+  {
+    "company": "Nucor",
+    "metric": "Current-target normalized annual product difference",
+    "formula": "(1051 - 975) * 1e6 / 1000",
+    "result": 76000.0,
+    "unit": "tCO2e/year per1Mt/year matched hot-rolled output",
+    "status": "Analyst-normalized scenario",
+    "limits": "1Mt is normalization, not eligible corporate output. No cumulative5-year claim.",
+    "source": "nucor-footprint.json N03"
+  },
+  {
+    "company": "JPMorgan route / GM exemplar",
+    "metric": "Historical cooling project simple gross-savings payback",
+    "formula": "2000000 / 760000",
+    "result": 2.6315789473684212,
+    "unit": "years",
+    "status": "Historical illustrative economics",
+    "limits": "GM case not established JPMorgan borrower; excludes incentives, incremental costs, defaults and current quotes.",
+    "source": "https://betterbuildingssolutioncenter.energy.gov/showcase-projects/general-motors-chilled-water-system-optimization-project"
+  },
+  {
+    "company": "JPMorgan route / GM exemplar",
+    "metric": "Five-year gross savings before additional costs",
+    "formula": "760000 * 5",
+    "result": 3800000,
+    "unit": "historical nominal USD",
+    "status": "Conditional illustration",
+    "limits": "Assumes five full operating years and unchanged savings; not collectible net cash forecast.",
+    "source": "jpmorgan-solutions.json GM cooling case"
+  },
+  {
+    "company": "JPMorgan route / GM exemplar",
+    "metric": "Annual principal-only payment on historical cost over5years",
+    "formula": "2000000 / 5",
+    "result": 400000.0,
+    "unit": "USD/year",
+    "status": "Arithmetic repayment requirement",
+    "limits": "No guarantee of recovery; credit, operating, administration and performance costs still required.",
+    "source": "jpmorgan-solutions.json GM cooling case"
+  }
+]

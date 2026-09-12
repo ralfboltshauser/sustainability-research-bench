@@ -1,0 +1,326 @@
+{
+  "company": "Walmart Inc.",
+  "research_cutoff": "2026-09-12",
+  "baseline_period": {
+    "emissions": "FY2026: 2025-02-01 to 2026-01-31",
+    "food_and_waste": "CY2025: 2025-01-01 to 2025-12-31",
+    "report_published": "July2026; announcement2026-07-29",
+    "comparability": "FY2026 emissions aligned to fiscal year. Report p8 says no prior-year restatement for timing because immaterial, but historical emission factors updated and prior Scope3 restated. Never splice FY2025 report CY2024 values into this series."
+  },
+  "sp500_membership": {
+    "status": "verified with current primary fund holdings; corroborated index-provider search snapshot",
+    "evidence": "ProShares S&P500 Ex-Technology ETF holdings2026-09-11 includes Walmart; fund explicitly tracks S&P500 excluding IT. S&P500 Value search index snapshot dated2026-08-31 also listed Walmart, but live extracted constituent table did not render.",
+    "url": "https://www.proshares.com/our-etfs/strategic/spxt"
+  },
+  "observations": [
+    {
+      "id": "WMT01",
+      "metric": "Operational GHG inventory",
+      "value": {
+        "scope1": 8.16,
+        "scope2_market_based": 6.24,
+        "scope2_location_based": 9.66,
+        "scope1_plus_scope2_market_based": 14.4
+      },
+      "unit": "million metric tonnes CO2e",
+      "period": "FY2026: 2025-02-01 to 2026-01-31",
+      "boundary": "Walmart global operations; consolidated subsidiaries excluding platforms/marketplaces unless specifically included",
+      "reported_vs_modeled": "company reported; measured and estimated inputs",
+      "assurance": "Scope 1/2 calculations subject to third-party limited assurance aligning ISO 14064-3; specific statement not independently inspected",
+      "source_url": "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2026/FY2026-Walmart-ESG-Report.pdf",
+      "source_locator": "pp.30-31,126; Operational emissions / Climate data tables",
+      "notes": "Market and location Scope 2 are alternative accounting views, never additive. Scope1+Scope2 LB derived=17.82. Prior FY2025 displayed total15.6; components9.04+6.53=15.57. Company reports FY2026 YoY -7.5% using unrounded values."
+    },
+    {
+      "id": "WMT02",
+      "metric": "Scope 1 sources",
+      "value": {
+        "onsite_refrigerants": 4.08,
+        "transport_fuel_and_mobile_refrigerants": 2.28,
+        "stationary_fuel": 1.8
+      },
+      "unit": "million metric tonnes CO2e",
+      "period": "FY2026: 2025-02-01 to 2026-01-31",
+      "boundary": "Walmart global operations; consolidated subsidiaries excluding platforms/marketplaces unless specifically included",
+      "reported_vs_modeled": "company reported; measured and estimated inputs",
+      "assurance": "Scope 1/2 calculations subject to third-party limited assurance aligning ISO 14064-3; specific statement not independently inspected",
+      "source_url": "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2026/FY2026-Walmart-ESG-Report.pdf",
+      "source_locator": "p.31 FY2026 Scope 1 and 2 Emissions Sources",
+      "notes": "Components sum8.16. Refrigerants roughly50% of direct footprint. Transport combines fuel and mobile leaks; cannot apply fuel-only intervention to all2.28 without split. Stationary mainly natural gas for heat/hot water/backup per p32."
+    },
+    {
+      "id": "WMT03",
+      "metric": "Scope 2 market-based sources",
+      "value": {
+        "purchased_electricity": 6.23,
+        "purchased_steam": 0.01
+      },
+      "unit": "million metric tonnes CO2e",
+      "period": "FY2026: 2025-02-01 to 2026-01-31",
+      "boundary": "Walmart global operations; consolidated subsidiaries excluding platforms/marketplaces unless specifically included",
+      "reported_vs_modeled": "company reported; measured and estimated inputs",
+      "assurance": "Scope 1/2 calculations subject to third-party limited assurance aligning ISO 14064-3; specific statement not independently inspected",
+      "source_url": "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2026/FY2026-Walmart-ESG-Report.pdf",
+      "source_locator": "p.31 emissions source table",
+      "notes": "Sum6.24. Not electricity consumption; MWh unavailable in reviewed latest report."
+    },
+    {
+      "id": "WMT04",
+      "metric": "Electricity sourcing",
+      "value": {
+        "renewable_including_grid": 53.3,
+        "direct_procurement_excluding_grid": 35.0,
+        "grid_contribution": 18.3
+      },
+      "unit": "percent of global electricity",
+      "period": "FY2026: 2025-02-01 to 2026-01-31",
+      "boundary": "Walmart global operations; consolidated subsidiaries excluding platforms/marketplaces unless specifically included",
+      "reported_vs_modeled": "company reported; measured and estimated inputs",
+      "assurance": "No separate assurance established for percentages",
+      "source_url": "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2026/FY2026-Walmart-ESG-Report.pdf",
+      "source_locator": "pp.34,126; Renewable Electricity Progress",
+      "notes": "35.0% follows RE100 unique-attribute definition. 53.3% includes grid contributions; not a contractual procurement share. Source p34 footnote names U.S. EIA while p126 names IEA; retain this internal inconsistency."
+    },
+    {
+      "id": "WMT05",
+      "metric": "Low-GWP deployment",
+      "value": {
+        "US_facilities_partly_or_fully_ultra_low_GWP": 619
+      },
+      "unit": "facilities",
+      "period": "as of 2025-12-31",
+      "boundary": "U.S. facilities, including partial systems",
+      "reported_vs_modeled": "company reported; measured and estimated inputs",
+      "assurance": "No separate assurance established",
+      "source_url": "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2026/FY2026-Walmart-ESG-Report.pdf",
+      "source_locator": "p.31 Using Lower-GWP Refrigeration Systems",
+      "notes": "Partial/full CO2, glycol, ammonia equipment; not619 fully converted stores. All new stores/clubs transcritical CO2 is reported policy. 20.7% annual leak-emissions reduction already included in baseline; no additional credit."
+    },
+    {
+      "id": "WMT06",
+      "metric": "Fleet activity proxies",
+      "value": {
+        "electric_last_mile_vans": 1250,
+        "charging_store_locations_approx": 1000,
+        "renewable_diesel_heavy_duty_fuel_percent": 5.6,
+        "renewable_diesel_California_fuel_percent_approx": 69
+      },
+      "unit": "mixed: vans, sites, percent",
+      "period": "Vans deployed since2022 through reporting date; fuel FY2026",
+      "boundary": "Van/charging deployment Walmart last-mile; heavy-duty fuel company fleet; California subset explicit",
+      "reported_vs_modeled": "company reported; measured and estimated inputs",
+      "assurance": "No separate assurance established",
+      "source_url": "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2026/FY2026-Walmart-ESG-Report.pdf",
+      "source_locator": "p.33 Fleet / Scaling Proven Technologies",
+      "notes": "Vans reported more than1250; charging nearly1000. No total tractor count, diesel gallons, miles, tonne-km, or mobile refrigerant split recovered. Yard-truck >75% reduction/hour is company technology-performance claim, not whole-fleet inventory reduction."
+    },
+    {
+      "id": "WMT07",
+      "metric": "Scope 3 footprint",
+      "value": 635,
+      "unit": "million metric tonnes CO2e",
+      "period": "FY2026: 2025-02-01 to 2026-01-31",
+      "boundary": "Categories1,2,11,12; Canada, Central America, Chile, China, India(Flipkart), Mexico, U.S.; reported >95% comprehensive footprint",
+      "reported_vs_modeled": "company modeled broad estimate from product-category sales and industry factors",
+      "assurance": "No Scope 3 assurance established",
+      "source_url": "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2026/FY2026-Walmart-ESG-Report.pdf",
+      "source_locator": "pp.36,126 Scope 3 table and footnotes75-76",
+      "notes": "FY2025 restated618; FY2024 restated600. Category11 contains lifetime emissions of products sold this period, not annual use emissions only. Latest category-specific values absent; cannot treat635 as a directly controlled annual operating footprint."
+    },
+    {
+      "id": "WMT08",
+      "metric": "Food disposition pathways",
+      "value": {
+        "donation": 878,
+        "animal_feed": 225,
+        "compost": 669,
+        "anaerobic_digestion": 247,
+        "biochemical_processing": 54.2,
+        "landfill_or_incineration": 1420
+      },
+      "unit": "million pounds",
+      "period": "CY2025: 2025-01-01 to 2025-12-31",
+      "boundary": "Global operational food, India excluded per footnote89",
+      "reported_vs_modeled": "company reported; measured and estimated inputs",
+      "assurance": "Not independently assured; waste vendors/food banks/facilities; estimates where weights absent",
+      "source_url": "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2026/FY2026-Walmart-ESG-Report.pdf",
+      "source_locator": "p.137 Food Loss and Waste / Food disposition pathways",
+      "notes": "FLW intensity excludes packaging and inedible parts. Donation/feed not FLW waste; compost/AD are FLW waste despite diversion. 1 million lb =453.59237 metric tonnes; landfill/incineration =644101.1654 tonnes. Pathways sum3493.2 million lb, not necessarily a reconciled FLW total."
+    },
+    {
+      "id": "WMT09",
+      "metric": "Operational waste diversion",
+      "value": {
+        "global": 84.0,
+        "US": 84.8,
+        "Canada": 85.1,
+        "Mexico": 82.8
+      },
+      "unit": "percent diverted from landfill and incineration",
+      "period": "CY2025: 2025-01-01 to 2025-12-31",
+      "boundary": "Global operational waste excluding India; country boundaries as named",
+      "reported_vs_modeled": "company reported; measured and estimated inputs",
+      "assurance": "Not independently assured; reported/estimated waste weights",
+      "source_url": "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2026/FY2026-Walmart-ESG-Report.pdf",
+      "source_locator": "p.137 Operational Waste, footnotes86-88",
+      "notes": "US/Mexico/Canada together93.83% of global operational waste. Absolute all-material waste mass not found, so16% residual cannot be converted to tonnes."
+    },
+    {
+      "id": "WMT10",
+      "metric": "Operational food waste intensity reduction against2016",
+      "value": 3.45,
+      "unit": "percent reduction vs CY2016 baseline",
+      "period": "CY2025: 2025-01-01 to 2025-12-31",
+      "boundary": "Global operational food, India excluded",
+      "reported_vs_modeled": "company reported; measured and estimated inputs",
+      "assurance": "Not independently assured",
+      "source_url": "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2026/FY2026-Walmart-ESG-Report.pdf",
+      "source_locator": "pp.9,137 Food Waste Reporting and Food Loss and Waste",
+      "notes": "Intensity=food waste mass / food sold mass. Prior CY2024 reduction12.1%; CY2023 21.7%. Shift animal-feed to compost/AD worsens FLW metric while remaining diverted. Absolute food-sales mass and absolute FLW intensity missing."
+    },
+    {
+      "id": "WMT11",
+      "metric": "Physical retail and distribution footprint",
+      "value": {
+        "retail_units": 10955,
+        "retail_gross_area_ft2": 1056829000,
+        "distribution_facilities": 371,
+        "US_retail_units_including_Sams": 5212
+      },
+      "unit": "mixed: units, square feet, facilities",
+      "period": "2026-01-31, except International other than Canada 2025-12-31",
+      "boundary": "Walmart global operations; consolidated subsidiaries excluding platforms/marketplaces unless specifically included",
+      "reported_vs_modeled": "company reported; measured and estimated inputs",
+      "assurance": "Company Form10-K property disclosure; not separately assurance-checked",
+      "source_url": "https://stock.walmart.com/2026-annual-report",
+      "source_locator": "2026 annual report printed p.29 / PDF p.31; Item2 Properties",
+      "notes": "Floor-area table reports thousands square feet; correctly multiplied1000. Gross area not sales/service volume. Distribution includes fulfillment/return facilities."
+    },
+    {
+      "id": "WMT12",
+      "metric": "Project Gigaton supplier claims, separate ledger",
+      "value": {
+        "reporting_year_expected_avoided_reduced_sequestered": 187,
+        "cumulative_since2017": 1370
+      },
+      "unit": "million metric tonnes CO2e",
+      "period": "FY2026: 2025-02-01 to 2026-01-31",
+      "boundary": "Supplier-reported projects across global value chains, not necessarily Walmart-attributable inventory",
+      "reported_vs_modeled": "supplier-reported project counterfactual estimates, not Walmart inventory reductions",
+      "assurance": "Not independently assured",
+      "source_url": "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2026/FY2026-Walmart-ESG-Report.pdf",
+      "source_locator": "pp.37,126; Project Gigaton and supply chain data table",
+      "notes": "Never subtract from635 or add as achieved annual abatement. Cumulative figure rounded1.37 billion; includes expected avoided/reduced/sequestered emissions."
+    }
+  ],
+  "candidate_intervention_inputs": [
+    {
+      "intervention": "Refrigerant leakage and low-GWP replacement",
+      "baseline_observations": [
+        "WMT02",
+        "WMT05"
+      ],
+      "quantification": "At fixed refrigeration service, allocate4.08MMT across existing equipment cohorts; multiply cohort emissions by adoption and residual leakage/GWP improvement. Apply leak management and replacement sequentially on shared cohorts.",
+      "control": "direct",
+      "missing": "charge mass and refrigerant species/GWP, actual leak rate, U.S./global split, system age, replacement schedule and cost, incremental electricity, technician capacity",
+      "horizon": "adoption by2031; annual steady-state impact, not cumulative"
+    },
+    {
+      "intervention": "Electricity efficiency and additional clean supply",
+      "baseline_observations": [
+        "WMT03",
+        "WMT04",
+        "WMT11"
+      ],
+      "quantification": "MWh saved times appropriate marginal/attributional emissions factors; then procurement on residual load. Maintain floor area, opening hours, refrigeration service and merchandise throughput. Track location and market accounting separately.",
+      "control": "direct demand and procurement; grid largely external",
+      "missing": "MWh by country/end-use/hour, residual equipment stock, project capex, tariffs, grid factors, procurement terms"
+    },
+    {
+      "intervention": "Fleet efficiency/electrification and stationary heat electrification",
+      "baseline_observations": [
+        "WMT02",
+        "WMT06"
+      ],
+      "quantification": "Fuel savings at fixed delivered tonne-km; heat pumps at fixed useful heat. Net Scope1 decrease against added Scope2 and upstream fuel/electricity effects.",
+      "control": "direct, with technology/infrastructure dependencies",
+      "missing": "fuel species/volumes, transport-refrigerant split, tonnes/miles/hours, heat load/COP, electricity factors, asset replacement capacity"
+    },
+    {
+      "intervention": "Food prevention, donation and disposal treatment",
+      "baseline_observations": [
+        "WMT08",
+        "WMT10"
+      ],
+      "quantification": "CY2025 landfill/incineration644101t is bounded physical pool, not entirely preventable. Split edible/avoidable and landfill/incineration, food categories and sites; hold edible food service fixed, reduce procurement for prevented waste. Account upstream avoided production only where displaced, and residual treatment separately.",
+      "control": "direct inventory and handling; suppliers and disposal contractors shared",
+      "missing": "avoidable fractions, food-category composition, sold tonnes, landfill methane capture, disposal split, program costs and displacement evidence"
+    },
+    {
+      "intervention": "Supplier product/process changes",
+      "baseline_observations": [
+        "WMT07",
+        "WMT12"
+      ],
+      "quantification": "Build product-specific life-cycle inventory and allocated Walmart purchasing quantities. Do not apply arbitrary reduction rate to635MMT or claim Gigaton reductions as inventory abatement.",
+      "control": "supplier influence/shared, customer use largely indirect",
+      "missing": "category-resolved Scope3, product quantities, supplier-specific factors, attribution, physical product lifetime and use assumptions"
+    }
+  ],
+  "missing_data": [
+    "Global operational water withdrawal, consumption, discharge and stressed-basin breakdown not located in latest report; do not substitute philanthropic irrigation-savings claim.",
+    "Absolute electricity MWh and stationary/mobile fuel quantities absent in latest report reviewed.",
+    "Latest Scope3 category1/2/11/12 amounts and material/product physical volumes absent.",
+    "Refrigerant charge/species/leak rate and full conversion count absent.",
+    "All-material waste tonnes and food sales/avoidable waste quantities absent.",
+    "Specific FY2026 limited assurance statement linked in PDF was not independently inspected; no assurance inferred for Scope3, waste, water or project claims."
+  ],
+  "sources": [
+    {
+      "id": "ESG26",
+      "url": "https://corporate.walmart.com/content/dam/corporate/documents/esgreport/2026/FY2026-Walmart-ESG-Report.pdf",
+      "title": "Walmart FY2026 ESG Report",
+      "local_file": "sources/walmart-2026-esg.pdf",
+      "method": "downloaded original PDF, pdftotext table extraction; page31 visually checked",
+      "pages": [
+        8,
+        9,
+        30,
+        31,
+        32,
+        33,
+        34,
+        36,
+        37,
+        126,
+        137
+      ]
+    },
+    {
+      "id": "ANN26",
+      "url": "https://stock.walmart.com/2026-annual-report",
+      "title": "Walmart2026 Annual Report",
+      "locator": "Item2 Properties, printed29/PDF31"
+    },
+    {
+      "id": "PUB26",
+      "url": "https://corporate.walmart.com/news/2026/07/29/walmart-publishes-fy2026-esg-report",
+      "title": "Publication announcement"
+    },
+    {
+      "id": "SPXT",
+      "url": "https://www.proshares.com/our-etfs/strategic/spxt",
+      "title": "S&P500 Ex-Technology ETF holdings",
+      "date": "2026-09-11"
+    }
+  ],
+  "checks": {
+    "scope1_components": 8.16,
+    "scope2_MB_components": 6.24,
+    "operational_total_MB": 14.4,
+    "operational_total_LB_derived": 17.82,
+    "food_landfill_incineration_tonnes": 644101.1654,
+    "food_pathways_sum_million_lb": 3493.2,
+    "rule": "No aggregate corporate harm score. CO2e, waste tonnes and water volumes remain separate absent explicit valuation."
+  }
+}
