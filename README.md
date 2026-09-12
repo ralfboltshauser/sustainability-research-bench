@@ -1,5 +1,7 @@
 # Sustainability Research Bench
 
+**Start here: [Project context, approach and next steps](PROJECT_CONTEXT.md).** This handoff explains the original goal, decisions, completed work, limitations and how to continue rigorously. AI agents should begin with [AGENTS.md](AGENTS.md).
+
 **[Open the live app](https://preventable-gap-app.vercel.app)** · [Expanded research synthesis](research/expansion/RESEARCH-UPDATE.md) · [App dataset](app/data.json)
 
 Next.js research prototype for a sustainability hackathon. Eight S&P 500 company cases demonstrate an auditable path from reported footprint to available technology to explicitly conditional preventable impact.
